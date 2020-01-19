@@ -1,0 +1,9 @@
+{
+  "docs": {
+    "Introduction": ["doc1"],
+    "Compiling From Source": ["source"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
