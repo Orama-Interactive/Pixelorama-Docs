@@ -30,8 +30,6 @@ class Footer extends React.Component {
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
                 alt={this.props.config.title}
-                width="66"
-                height="58"
               />
             )}
           </a>
@@ -50,17 +48,19 @@ class Footer extends React.Component {
               User Showcase
             </a>
             <a href="https://discord.gg/GTMtr8s">Discord Chat</a>
-            <a
-              href="https://twitter.com/OramaInteractiv"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
-            </a>
+            {this.props.config.twitterUsername && (
+              <div className="social">
+                <a
+                  href={`https://twitter.com/${this.props.config.twitterUsername}`}
+                  className="twitter-follow-button">
+                  Follow @{this.props.config.twitterUsername}
+                </a>
+              </div>
+            )}
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/Orama-Interactive/Pixelorama">GitHub</a>
+            <a href="http://orama-interactive.com/">Website</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -71,15 +71,6 @@ class Footer extends React.Component {
               aria-label="Star this project on GitHub">
               Star
             </a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${this.props.config.twitterUsername}`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
-            )}
             {this.props.config.facebookAppId && (
               <div className="social">
                 <div
