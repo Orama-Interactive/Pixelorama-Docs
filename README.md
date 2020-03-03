@@ -1,4 +1,6 @@
 # Pixelorama-Docs
+![Build Status](https://travis-ci.com/Orama-Interactive/Pixelorama-Docs.svg?branch=master)
+
 Documentation for [**Pixelorama**](https://github.com/Orama-Interactive/Pixelorama), your free &amp; open-source sprite editor.
 Developed and maintained by Orama Interactive.
 
