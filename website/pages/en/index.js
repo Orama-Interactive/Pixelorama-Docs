@@ -159,7 +159,7 @@ class Index extends React.Component {
             content: 'The content of my second feature',
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Development and Contribution',
+            title: '[Development and Contribution](docs/contributing.html)',
           },
         ]}
       </Block>
