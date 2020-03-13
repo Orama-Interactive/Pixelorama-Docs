@@ -13,6 +13,9 @@ Pixelorama is a free and open-source project. This means that all of our income 
 ## Contributing Code
 You are free to open pull-requests to [Pixelorama's GitHub Repository](https://github.com/Orama-Interactive/Pixelorama) to fix issues or implement new features. Keep in mind, however, that not all PRs will be merged. Some may need discussion, or others may be downright closed.
 
+## Contributing Feedback
+Did you find a bug? Do you have a super cool idea for the development of Pixelorama and want to share it? Then the best way to do it is by opening an [issue on Githib](https://github.com/Orama-Interactive/Pixelorama/issues). That is the most effective way for your feedback to be seen and discussed with the team and other developers that are interested in helping.
+
 ## Contributing Translations
 
 If you wish to contribute a translation, make sure to use [Pixelorama's Crowdin page](https://crowdin.com/project/pixelorama). Crowdin is a web-based translation platform, where people can contribute translations together and with ease. Please use Crowdin and do not directly open pull requests to Pixelorama's GitHub repository.
