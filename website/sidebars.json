@@ -1,6 +1,6 @@
 {
   "docs": {
-    "About": ["introduction", "faq", "changelog", "doc changelog"]
+    "About": ["introduction", "toolbar", "faq", "changelog", "doc changelog"]
   },
   "docs-other": {
     "Contributions": ["contributing"]
