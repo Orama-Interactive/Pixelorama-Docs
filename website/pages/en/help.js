@@ -22,16 +22,18 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
+        'introduction.html',
       )})`,
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: 'Ask questions and offer feedback about Pixelorama and its documentation by [joining our Discord server.](https://discord.gg/GTMtr8s)',
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
+      content: `Find out what's new with this project by [reading the changelog.](${docUrl(
+		'changelog.html',
+	  )})`,
       title: 'Stay up to date',
     },
   ];
@@ -43,7 +45,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>This project is maintained by Orama Interactive's open-source developers (Programa Labs) and contributors.</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
