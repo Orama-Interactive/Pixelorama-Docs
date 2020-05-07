@@ -4,7 +4,7 @@ title: User Interface Basics
 sidebar_label: User Interface Basics
 ---
 
-Pixelorama aims for a simplistic and understandable, yet aiming for professional use, User Interface (from now on referred as UI). Optimized for quick access to everything, Pixelorama's UI looks like this:
+Pixelorama aims for a simplistic and understandable, yet professional User Interface (from now on referred as UI). Optimized for quick access to everything, Pixelorama's UI looks like this:
 
 ![UI](assets/ui.png)
 
@@ -29,7 +29,7 @@ Around the canvas you can locate the canvas rulers. They basically work like nor
 
 ![UI-topbar](assets/ui-topbarmenu.png)
 
-Located at the top of the UI, the top menu bar is consisted of the following menus:
+Located at the top of the UI, the top menu bar consists of the following menus:
 
 - File
 - Edit

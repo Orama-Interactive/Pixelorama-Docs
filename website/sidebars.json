@@ -2,10 +2,14 @@
   "docs": {
     "About": [
 	"introduction", 
-	"toolbar", 
 	"faq", 
 	"changelog", 
 	"doc_changelog"
+	],
+
+	"Tutorials": [
+		"user_interface_basics",
+		"toolbar"
 	],
 	
 	"Contributions": [
