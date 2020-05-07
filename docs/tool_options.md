@@ -45,13 +45,13 @@ For now the rectangular selection has no tool options, so when you click the too
 
 It is worth noting that there are some hotkeys regarding the rectangular selection that apply on the canvas. Those are:
 
-**Ctrl+C** to copy the selection's contents.
+**Ctrl+C** to copy the selection's contents, and **Ctrl-V** to paste them.
 
 **Delete** to delete its contents.
 
-**Shift+Mouse Click** To move the selection with its contents.
+**Shift+Mouse Click and move** To move the selection with its contents.
 
-**Mouse Click** To move the selection without its contents.
+**Mouse Click and move** To move the selection without its contents.
 
 ##### *Mouse click can either be left click or right click, depending on where the tool is mapped. Also the hotkeys may vary for Mac users.
 
