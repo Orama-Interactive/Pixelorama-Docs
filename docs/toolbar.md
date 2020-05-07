@@ -4,8 +4,6 @@ title: Toolbar
 sidebar_label: Toolbar
 ---
 
-###### One of the first things you'll come across when you launch the program is this toolbar on your left.
-
 ### Pixelorama's toolbar can be found on the left side of the UI:
 
 ![Toolbar](assets/ui-toolbar.png)
