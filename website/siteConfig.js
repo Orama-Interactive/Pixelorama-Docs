@@ -35,6 +35,7 @@ const siteConfig = {
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
+  editUrl: 'https://github.com/Orama-Interactive/Pixelorama-Docs/edit/master/docs/',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -85,11 +86,12 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
+  scrollToTop: true,
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
+  twitter: 'true',
   twitterImage: 'img/undraw_tweetstorm.svg',
-
   twitterUsername : 'OramaInteractiv',
 
   // For sites with a sizable amount of content, set collapsible to true.
