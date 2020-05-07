@@ -28,8 +28,11 @@ sidebar_label: Example Page
 Also, make sure to locate the sidebar file, found in `website/sidebars.json` and open it with a text editor.
 Then, add your new page's id inside a fitting category. Keep in mind that the order you put the page ids does matter.
 
-## To add images
-Put the image files you want to add inside the `docs/assets` directory with meaningful names (preferrably using snake_case) and include them to your page with `![Alt Text](assets/example_image.png)`
+### To add images
+Put the image files you want to add inside the `docs/assets` directory with meaningful names (preferrably using snake_case) and include them to your page with 
+```
+![Alt Text](assets/example_image.png)
+```
 <br><br>
 
 ## Contributing translations
