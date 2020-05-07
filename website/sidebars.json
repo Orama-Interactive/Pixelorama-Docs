@@ -9,12 +9,21 @@
 
 	"Tutorials": [
 		"user_interface_basics",
+		"canvas",
+		"rulers",
+		"topmenu_bar",
+		"canvas_preview",
 		"toolbar",
-		"tool_options"
+		"tool_options",
+		"selected_colors",
+		"timeline",
+		"layer_options",
+		"timeline_options",
+		"palettes"
 	],
 	
 	"Contributions": [
-	"contributing"
+	"development_and_contributing"
 	]
   }
 }
