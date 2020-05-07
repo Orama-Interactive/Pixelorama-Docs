@@ -113,7 +113,7 @@ Right under the tool options, there are the palettes. There are some palette opt
 
 While we have already talked about the vertical grabber that is used to make another preview appear, there are 2 more, horizontal grabbers visible by default. You can click them and grab them up and down to expand the available UI if you ever need more space for the timeline or the palettes. 
 
-### And that sums up the basics of the current User Interface of Pixelorama. Each category will be having its own documentation page where it will be analyzed in depth, but the purpose of this page was to explain what you see at a first glance when you open the program and recognise all the elements for future reference!
+ **And that sums up the basics of the current User Interface of Pixelorama. Each category will be having its own documentation page where it will be analyzed in depth, but the purpose of this page was to explain what you see at a first glance when you open the program and recognise all the elements for future reference!**
 
 
 

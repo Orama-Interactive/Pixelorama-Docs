@@ -33,7 +33,6 @@ Put the image files you want to add inside the `docs/assets` directory with mean
 ```
 ![Alt Text](assets/example_image.png)
 ```
-<br><br>
 
 ## Contributing translations
 Not available yet.
