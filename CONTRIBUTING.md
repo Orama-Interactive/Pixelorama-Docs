@@ -11,14 +11,13 @@
 - Make sure the changes you are contributing are written in **English** and are grammatically correct.
 - Changes should be at the `master` branch. Please do not open Pull Requests for the `gh-pages` branch.
 
-### If you want to edit an existing page, locate its `.md` source file in the `docs/` directory of the repository and open it
-in your favorite text editor - or directly within GitHub, although that is not recommended because you might lose your work.
-You can then commit the changes, push them to your fork and open a pull request.
+### If you want to edit an existing page
+Locate its `.md` source file in the `docs/` directory of the repository and open it
+in your favorite text editor - or directly within GitHub, although that is not recommended because you might lose your work. You can then commit the changes, push them to your fork and open a pull request.
 
-### If you want to add a new page, create a `.md` file inside the `docs/` directory with a meaningful name
-(preferrably using snake_case). You can then edit the file with your favorite text editor, and write its content
-like you do for any other file. At the top of the file, make sure to include its **unique id**, preferrably the same as
-the file name, the page title and the siderbar label. They should be in a format like this:
+### If you want to add a new page
+Create a `.md` file inside the `docs/` directory with a meaningful name (preferrably using snake_case). You can then edit the file with your favorite text editor, and write its content
+like you do for any other file. At the top of the file, make sure to include its **unique id**, preferrably the same as the file name, the page title and the siderbar label. They should be in a format like this:
 ```
 ---
 id: example_page
@@ -28,6 +27,9 @@ sidebar_label: Example Page
 ```
 Also, make sure to locate the sidebar file, found in `website/sidebars.json` and open it with a text editor.
 Then, add your new page's id inside a fitting category. Keep in mind that the order you put the page ids does matter.
+
+## To add images
+Put the image files you want to add inside the `docs/assets` directory with meaningful names (preferrably using snake_case) and include them to your page with `![Alt Text](assets/example_image.png)`
 <br><br>
 
 ## Contributing translations
