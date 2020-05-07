@@ -1,5 +1,5 @@
 ---
-id: contributing
+id: development_and_contributing
 title: Ways to contribute
 ---
 (Page is still under construction)
