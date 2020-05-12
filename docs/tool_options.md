@@ -4,9 +4,9 @@ title: Tool Options
 sidebar_label: Tool Options
 ---
 
-## An Introduction of how the Tool Options Work
+## An Introduction to how the Tool Options Work
 
-### Pixelorama's tool options are located in about the middle of the right UI panel an indicated in the picture:
+Pixelorama's tool options are located in about the middle of the right UI panel as indicated in the picture:
 
 ![Tool_Options](assets/ui-tooloptions.png)
 
@@ -83,8 +83,15 @@ The second one is 100% zoom. This basically makes the canvas its exact pixel dim
 
 ## The Color Picker Tool
 
--Section Under construction-
+Selecting the color picker tool will result in the appearance of the following option:
 
+![Tool_Options_ColorPicker](assets/colorpicker_options.png)
+
+This one is fairly simple to comprehend. The color picker tool is used for getting a sample of an existing color on the canvas with the purpose of replicating it, depending on which pixel the selection is done at.
+
+Now, there's only one category available as an option for the time being, called "Pick for:". This means that the sample taken will replace the color on the **selected colors** according to whether you choose **Left Color** or **Right Color**. Choosing **Left Color** replaces the left selected color, while right replaces the right selected color. 
+
+*Tip: A quick and helpful way to use the color picker is having it selected on your* ***right click*** but on the ***Left Color*** option *while having the* ***brush tool*** *selected on your* ***left click.*** *The color picker can compliment the brush by selecting the color you next desire to paint with, making it an immediate way of switching between hues.*
 ## The Brush Tool
 
 -Section Under construction-
