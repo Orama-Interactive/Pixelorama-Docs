@@ -111,9 +111,16 @@ Now, there's only one category available as an option for the time being, called
 ## Making Your Own Custom Brushes
 
 Pixelorama gives you the option to create your own custom brushes, which you can later use to draw. There are two brush types, File and Project brushes. File brushes are `.png` files saved in the `pixelorama/Brushes` directory. They are available for all projects. To create a "File" custom brush, all you need to do is create your brush, and save is as a `.png` file in the `pixelorama/Brushes` directory. They will be found on the "File" tab.
-There are also Random brushes. Each time you draw using a random brush, the result will be something different! To make a random brush, save your sprites as multiple `.png` files, with `"%"` at the beginning of their filename, and save them in the same sub-directory. For example, if you want to save a grass random brush, you can create a `pixelorama/Brushes/Grass` directory, and name the files something like `%grass1.png`, `%grass2.png`, `%grass3.png`, `%grass4.png`, and so on.
+
+![File brushes tab](assets/file_brushes.png)
+
+There are also Random brushes. Each time you draw using a random brush, the result will be something different! To make a random brush, save your sprites as multiple `.png` files, with `"%"` at the beginning of their filename, and save them in the same sub-directory. For example, if you want to save a grass random brush, you can create a `pixelorama/Brushes/Grass` directory, and name the files something like `%Grass1.png`, `%Grass2.png`, `%Grass3.png`, `%Grass4.png`, and so on. The more files you add, the more variation (random values) your random brush will have.
+
+![Random brush files](assets/grass_random_brush.png)
 
 Project brushes are project-dependent, which means that they're not available for all projects. They are saved inside `.pxo` files. To create a "Project" brush, you can use the rectangle selection tool, select the drawing you want to save as brush, and press Ctrl-C. They will be found on the "Project" tab.
+
+![Project brushes tab](assets/project_brushes.png)
 
 ## Making Your Own Custom Tiles
 
