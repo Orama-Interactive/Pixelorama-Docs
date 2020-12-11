@@ -22,7 +22,7 @@ A: Pixelorama is being developed by [Orama Interactive](https://www.orama-intera
 A: Pixelorama is being developed with the Godot Engine (version 3.2.1), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Can I contribute to this project?
-Yes! Read our [Ways to Contribute](development_and_contributing.html) page to learn more.
+Yes! Read our [Ways to Contribute](development_and_contributing) page to learn more.
 
 ## Q: Will Pixelorama ever become Godot's Plugin?
 A: Pixelorama was originally created as a stand-alone program. Our current focus is to keep improving it and not implmenting it into Godot itself, but we are not declining the possibility of it being a plugin one day.
