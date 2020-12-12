@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    About: ["introduction", "faq", "changelog"],
+    About: ["introduction", "faq", "changelog", "troubleshooting"],
     Tutorials: ["user_interface_basics","canvas",
 		"rulers",
 		"topmenu_bar",
