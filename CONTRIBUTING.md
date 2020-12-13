@@ -25,7 +25,7 @@ title: Example Page
 sidebar_label: Example Page
 ---
 ```
-Also, make sure to locate the sidebar file, found in `website/sidebars.json` and open it with a text editor.
+Also, make sure to locate the sidebar file, found in `sidebars.js` and open it with a text editor.
 Then, add your new page's id inside a fitting category. Keep in mind that the order you put the page ids does matter.
 
 ### To add images
