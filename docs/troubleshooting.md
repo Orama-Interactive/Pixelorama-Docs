@@ -4,7 +4,7 @@ title: Troubleshooting
 sidebar_label: Troubleshooting
 ---
 
-This page lists common issues encountered when using Pixelorama and possible solutions.
+This page lists common issues encountered when using Pixelorama and possible solutions. To experience as less issues as possible, make sure you are always using the latest stable version of Pixelorama.
 
 ## Pixelorama crashed while I was working on my project!
 Crashes are unfortunate, and while we are doing our best to fix them, it is possible that some issues that cause the application to crash have escaped our grasp. The good news is that you can enable **automatic backups**, that save your work every a certain time interval. You can enable them from the Edit menu, Preferences, Backup and then by ticking on "Enable autosave".
