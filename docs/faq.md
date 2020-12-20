@@ -12,14 +12,14 @@ A: Pixelorama is available for the *extremely cheap price of $0.00!* That's righ
 - You are free to modify, distribute, redistribute, and remix Pixelorama to your heart’s content, for any reason, both non-commercially and commercially.
 
 ## Q: What platforms is Pixelorama available on?
-A: Pixelorama is currently available for Windows, Linux and Mac. More platforms may be supported in the future.
+A: Pixelorama is currently available for Windows, Linux, Mac and Web browsers. More platforms may be supported in the future.
 You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama) and [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases). It is also available on Scoop for Windows and as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
 
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.orama-interactive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
 
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
-A: Pixelorama is being developed with the Godot Engine (version 3.2.1), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
+A: Pixelorama is being developed with the Godot Engine (version 3.2.3), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Can I contribute to this project?
 Yes! Read our [Ways to Contribute](development_and_contributing) page to learn more.
