@@ -28,4 +28,4 @@ Yes! Read our [Ways to Contribute](development_and_contributing) page to learn m
 A: Pixelorama was originally created as a stand-alone program. Our current focus is to keep improving it and not implmenting it into Godot itself, but we are not declining the possibility of it being a plugin one day.
 
 ## Q: What languages is Pixelorama available in?
-A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama).
+A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in, is the system language of your device. You can easily change it by going to the Edit menu, Preferences, Language.
