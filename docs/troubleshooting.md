@@ -27,6 +27,7 @@ If neither of these works, you could save your projects as a pxo file, open the 
 
 ## Guides are not being created
 To create guides, you have to drag them out from the rulers, on the top and on the left of the canvas. However, sometimes this doesn't appear to do anything. There are two possibilities for this.
+
 1) You have disabled guide visibility. To make sure that they are visible, go to the View menu and see if "Show Guides" is ticked on. If it is not, make sure to tick it.
 
 2) A known bug is preventing guide creation. This is related to [Issue #331](https://github.com/Orama-Interactive/Pixelorama/issues/331) on GitHub. To work around this, you can just make a simple change to the image, like drawing, and then you can try dragging a guide again. We are working on finding a solution for this issue.
