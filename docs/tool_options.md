@@ -122,7 +122,7 @@ Project brushes are project-dependent, which means that they're not available fo
 
 ![Project brushes tab](assets/project_brushes.png)
 
-## Making Your Own Custom Tiles
+## Making Your Own Custom Patterns
 
 -Section Under construction-
 
