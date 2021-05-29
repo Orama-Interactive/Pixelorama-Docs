@@ -25,6 +25,12 @@ It is also possible that this issue may be solved if you run Pixelorama as an ad
 If neither of these works, you could save your projects as a pxo file, open the Web version, drag and drop the pxo file there, and export the png file from the Web version.
 
 
+## macOS says that Pixelorama is damaged!
+You may encounter some errors saying that Pixelorama is damaged. This is because the latest versions of MacOS mark the launcher of unknown binaries as a non-executable file. This most likely has to do with the fact that Pixelorama is not signed. 
+
+Read this guide for more information: https://disable-gatekeeper.github.io/
+
+
 ## Guides are not being created
 To create guides, you have to drag them out from the rulers, on the top and on the left of the canvas. However, sometimes this doesn't appear to do anything. There are two possibilities for this.
 
