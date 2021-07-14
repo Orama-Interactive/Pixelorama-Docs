@@ -1,6 +1,6 @@
 {
   "name": "pixelorama-docs",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -12,8 +12,8 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.1",
-    "@docusaurus/preset-classic": "2.0.0-beta.1",
+    "@docusaurus/core": "^2.0.0-beta.ff31de0ff",
+    "@docusaurus/preset-classic": "^2.0.0-beta.ff31de0ff",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
