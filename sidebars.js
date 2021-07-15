@@ -1,17 +1,26 @@
 module.exports = {
-  someSidebar: {
-    About: ["introduction", "faq", "changelog", "troubleshooting"],
-    Tutorials: ["user_interface_basics","canvas",
-		"rulers",
-		"topmenu_bar",
-		"canvas_preview",
+  docs: [
+  "introduction",
+  {
+      type: 'category',
+      label: 'User Manual',
+      collapsed: true,
+      items: ["user_interface_basics", "canvas",
 		"toolbar",
 		"tool_options",
 		"selected_colors",
 		"timeline",
 		"layer_options",
-		"timeline_options",
-		"palettes"],
-    Contributions: ["development_and_contributing"],
-  },
+		"timeline_options"],
+    },
+    {
+      type: 'category',
+      label: 'Concepts',
+      collapsed: true,
+      items: ["project", "cel", "palette"],
+    },
+	"faq",
+	"troubleshooting",
+    "development_and_contributing",
+  ],
 };
