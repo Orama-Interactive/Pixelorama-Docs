@@ -8,10 +8,7 @@ module.exports = {
       items: ["user_interface_basics", "canvas",
 		"toolbar",
 		"tool_options",
-		"selected_colors",
-		"timeline",
-		"layer_options",
-		"timeline_options"],
+		"timeline"],
     },
     {
       type: 'category',
