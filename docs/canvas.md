@@ -35,6 +35,9 @@ The Pixel Grid is a rectangular 1x1 grid that appears after a certain zoom level
 
 To toggle its visibility, you can click on "Show Pixel Grid" in the View menu, or by pressing <kbd>Control + H</kbd>.
 
+## Tile Mode
+If you are working with tiles, it might be useful to preview them in such a way so you can see if they repeat seamlessly. For this reason, you can enable Tile Mode, which repeats the canvas in multiple dimensions around the central area. To enable Tile Mode, you can go to the View menu, hover on Tile Mode and select what you want. "None" will disable Tile Mode, "Tiled in Both Axis" will repeat the canvas horizontally, vertically and diagonally, and the other two options will just repeat it either horizontally or vertically. It is also possible to draw in the tiled area.
+
 ## Second Canvas
 On the right side of the canvas, there is a grabber. Moving it to the left will reveal a second canvas. The purpose of this is to easily preview your artwork in different positions or zoom levels. As of right now, you **cannot** draw on it.
 
