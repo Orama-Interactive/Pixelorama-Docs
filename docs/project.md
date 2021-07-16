@@ -10,8 +10,8 @@ A Project contains the following properties:
 - A set of frames for animations, along with their duration, animation tags and FPS, as well as multiple layers. Frames and layers intersect and create [cels](cel), which are the editable images themselves of the project.
 - A size - width and height - in pixels.
 - A name.
-- Brushes that are local to that specific project.
-- Guides - lines that help you draw.
+- [Brushes](brush) that are local to that specific project.
+- [Guides](canvas/#rulers-and-guides) - lines that help you draw.
 
 ![Save Project](assets/save_project.png)
 

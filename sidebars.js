@@ -14,10 +14,10 @@ module.exports = {
       type: 'category',
       label: 'Concepts',
       collapsed: true,
-      items: ["project", "cel", "palette"],
+      items: ["project", "cel", "palette", "brush"],
     },
 	"faq",
 	"troubleshooting",
-    "development_and_contributing",
+  "development_and_contributing",
   ],
 };
