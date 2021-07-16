@@ -8,7 +8,7 @@ sidebar_label: Tool Options
 
 Pixelorama's tool options are located in about the middle of the right UI panel as indicated in the picture:
 
-![Tool_Options](assets/ui-tooloptions.png)
+![Tool_Options](../../../static/img/ui-tooloptions.png)
 
 ##### By default the left tool corresponds to the brush tool and the right tool corresponds to the eraser tool. This is also indicated on the toolbar, because the brush tool button appears half-blue and the eraser half-orange.
 
@@ -27,7 +27,7 @@ From the toolbar, if you right-click a tool you will see its available options a
 
 Let's see an example indicating the connection of the toolbar with the tool options:
 
-![Tool_Options_example](assets/tooloptions_intro.png)
+![Tool_Options_example](../../../static/img/tooloptions_intro.png)
 
 As you can see from the toolbar above, the left click is mapped for the bucket tool and the right click is mapped for the zoom tool. That means that the left tool options reflect to the bucket tool and the right tool options reflect to the zoom tool. 
 
@@ -39,7 +39,7 @@ Although, other than the right and left click mapping, there is no difference be
 
 For now the rectangular selection has no tool options, so when you click the tool it looks like this:
 
-![Tool_Options_rectselect](assets/tooloptions_rectselect.png)
+![Tool_Options_rectselect](../../../static/img/tooloptions_rectselect.png)
 
 *Selections are used for multiple purposes. For example you can use a selection if you want to edit only a predefined area instead of the whole canvas. Another use for the selection could be to move an element of your artwork without having to erase it and redraw it from scratch. Layers compliment the selection's use since a seletion only affects the current layer and not all of them. Be sure to combine the use of selections with the use of layers to make your workflow more optimized!*
 
@@ -63,7 +63,7 @@ It is worth noting that there are some hotkeys regarding the rectangular selecti
 
 If you select the zoom tool, the zoom options by default look like this:
 
-![Tool_Options_zoom](assets/tooloptions_zoom.png)
+![Tool_Options_zoom](../../../static/img/tooloptions_zoom.png)
 
 *The zoom tool's purpose is to make it easier for the user to draw something, since they can zoom in to draw details and zoom out to see how those details affeted the greater image!*
 
@@ -79,13 +79,13 @@ The second one is 100% zoom. This basically makes the canvas its exact pixel dim
 
 *It is worth noting that the current zoom % of your canvas appears, and changes dynamically, at the top menu bar in the middle, as shown on this image:
 
-![Tool_Options_zoomtopbar](assets/tooloptions_zoomtopbar.png)
+![Tool_Options_zoomtopbar](../../../static/img/tooloptions_zoomtopbar.png)
 
 ## The Color Picker Tool
 
 Selecting the color picker tool will result in the appearance of the following option:
 
-![Tool_Options_ColorPicker](assets/colorpicker_options.png)
+![Tool_Options_ColorPicker](../../../static/img/colorpicker_options.png)
 
 This one is fairly simple to comprehend. The color picker tool is used for getting a sample of an existing color on the canvas with the purpose of replicating it, depending on which pixel the selection is done at.
 

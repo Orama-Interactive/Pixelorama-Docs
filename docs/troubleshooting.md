@@ -8,7 +8,7 @@ This page lists common issues encountered when using Pixelorama and possible sol
 
 ## Pixelorama crashed while I was working on my project!
 Crashes are unfortunate, and while we are doing our best to fix them, it is possible that some issues that cause the application to crash have escaped our grasp. The good news is that you can enable **automatic backups**, that save your work every a certain time interval. You can enable them from the Edit menu, Preferences, Backup and then by ticking on "Enable autosave".
-![Enable Autosave](assets/enable_autosave.png)
+![Enable Autosave](../static/img/enable_autosave.png)
 
 Besides that, it is **strongly recommended** that you save often, and keep copies of your files as backups in case something gets lost.
 
@@ -16,7 +16,7 @@ You can also aid us in our fight against crashes by [reporting issues on GitHub]
 
 
 ## Error code 12 when exporting png files
-![Error code 12](assets/error_code_12.png)
+![Error code 12](../static/img/error_code_12.png)
 
 This error has only been spotted in the Windows platform. Sometimes, when exporting png files, the process may fail due to "Error code 12". This most likely happens when you try to export in a directory that is protected by **anti-virus software**. To resolve it, you can try tweaking the settings of your anti-virus to either whitelist Pixelorama or disable folder protection. We can't guarantee that this will work, as it also depends on what anti-virus software you are using. Alternatively, you can export in a directory that is not protected by the anti-virus.
 

@@ -4,7 +4,7 @@ title: The Canvas
 sidebar_label: The Canvas
 ---
 
-![Pixelorama's Canvas](assets/canvas.png)
+![Pixelorama's Canvas](../../../static/img/canvas.png)
 
 The canvas is the area where your drawing is located and it's also where you apply all of the tools at your disposal. While you can scroll around the canvas without limits, you cannot draw outside the canvas's boundaries, which are set by the size of the image. Of course, you can always resize the project to expand or shrink your canvas's limits.
 
@@ -23,7 +23,7 @@ You can mirror your view horizontally and undestructively by going to the View m
 ## Grid
 The grid is an important tool that aids the user in accurately drawing lines. Currently, Pixelorama has two types of grids, rectangular and isometric. The rectangular grid is what you will probably use most of the time, while the isometric grid is great if you are making isometric art, like the one pictured below.
 
-![Isometric Grid](assets/canvas_isometric_grid.png)
+![Isometric Grid](../../../static/img/canvas_isometric_grid.png)
 
 ### Editing the Grid
 The grid's properties can be edited in the Preferences, which is found under the Edit menu, and then selecting "Canvas" on the left side. The option include the grid type itself (rectangular, isometric or both), the width and height of the rectangular grid, the width and height of the isometric bounds of the cells, the x and y offset of the grid, the grid color and whether to draw over Tile Mode.

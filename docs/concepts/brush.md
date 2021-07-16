@@ -16,14 +16,14 @@ Image-based brushes will also have one extra option in the tool settings; a "Bru
 ### File Brushes
 Pixelorama gives you the option to create your own custom brushes, which you can later use to draw. There are two brush types, File and Project brushes. File brushes are `.png` files saved in the `pixelorama_data/Brushes` directory. They are available for all projects. To create a "File" custom brush, all you need to do is create your brush, and save is as a `.png` file in the `pixelorama_data/Brushes` directory. They will be found on the "File" tab.
 
-![File brushes tab](assets/file_brushes.png)
+![File brushes tab](../../static/img/file_brushes.png)
 
 ### Random Brushes
 To make a random brush, save your sprites as multiple `.png` files, with `"~"` at the beginning of their filename, and save them in the same sub-directory. For example, if you want to save a grass random brush, you can create a `pixelorama_data/Brushes/Grass` directory, and name the files something like `~Grass1.png`, `~Grass2.png`, `~Grass3.png`, `~Grass4.png`, and so on. The more files you add, the more variation (random values) your random brush will have.
 
-![Random brush files](assets/grass_random_brush.png)
+![Random brush files](../../static/img/grass_random_brush.png)
 
 ### Project Brushes
-Project brushes are project-dependent, which means that they're not available for all projects. They are saved inside `.pxo` files. To create a Project brush you can [select](selecting) the part of the drawing you want to save as brush, and press <kbd>Control + B</kbd> or go to Edit, New Brush. They will be found on the "Project" tab.
+Project brushes are project-dependent, which means that they're not available for all projects. They are saved inside `.pxo` files. To create a Project brush you can [select](../user_manual/selecting) the part of the drawing you want to save as brush, and press <kbd>Control + B</kbd> or go to Edit, New Brush. They will be found on the "Project" tab.
 
-![Project brushes tab](assets/project_brushes.png)
+![Project brushes tab](../../static/img/project_brushes.png)
