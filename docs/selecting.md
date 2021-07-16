@@ -4,7 +4,7 @@ title: Selecting
 sidebar_label: Selecting
 ---
 
-You can select specific areas of your sprite to make changes at. When there is an available selection, any operation such as drawing, shading and image effect application will only affect the selected part(s) of the drawing. Selections also allow you to apply easily apply transformations to specific parts of the image, such as moving and scaling. An active selection is denoted by a [marching ants effect](https://en.wikipedia.org/wiki/Marching_ants) around the selected pixels.
+You can select specific areas of your sprite to make changes at. When there is an available selection, any operation such as drawing, shading and image effect application will only affect the selected part(s) of the drawing. Selections also allow you to apply easily [apply transformations to specific parts of the image, such as moving and scaling](transforming). An active selection is denoted by a [marching ants effect](https://en.wikipedia.org/wiki/Marching_ants) around the selected pixels.
 
 ## Selection Tools
 You can use one of the available selection tools in Pixelorama. Each tool selects things slightly differently.

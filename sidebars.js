@@ -10,7 +10,8 @@ module.exports = {
 		"toolbar",
 		"tool_options",
 		"timeline",
-    "selecting"],
+    "selecting",
+    "transforming"],
     },
     {
       type: 'category',
