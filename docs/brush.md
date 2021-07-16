@@ -24,6 +24,6 @@ To make a random brush, save your sprites as multiple `.png` files, with `"~"` a
 ![Random brush files](assets/grass_random_brush.png)
 
 ### Project Brushes
-Project brushes are project-dependent, which means that they're not available for all projects. They are saved inside `.pxo` files. To create a Project brush, you can use the rectangle selection tool, select the drawing you want to save as brush, and press <kbd>Control + B</kbd> or go to Edit, New Brush. They will be found on the "Project" tab.
+Project brushes are project-dependent, which means that they're not available for all projects. They are saved inside `.pxo` files. To create a Project brush you can [select](selecting) the part of the drawing you want to save as brush, and press <kbd>Control + B</kbd> or go to Edit, New Brush. They will be found on the "Project" tab.
 
 ![Project brushes tab](assets/project_brushes.png)
