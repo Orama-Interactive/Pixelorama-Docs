@@ -18,7 +18,7 @@ You can use one of the available selection tools in Pixelorama. Each tool select
 | Magic Wand | Selects the neighboring same-color area of the pixel the cursor was in on mouse button press. | L: <kbd>Q</kbd>, R: <kbd> Alt + Q</kbd> |
 | Lasso / Free Select Tool | Selects a rough outline of an area. | L: <kbd>F</kbd>, R: <kbd> Alt + F</kbd> |
 
-Similar to the shape drawing tools, you can use keyboard shortcuts to modify how the rectangular and elliptical selections are being created.
+Similar to the [shape drawing tools](drawing), you can use keyboard shortcuts to modify how the rectangular and elliptical selections are being created.
 - Mouse click + <kbd>Shift</kbd> = Create a 1:1 (square/circle) selection.
 - Mouse click + <kbd>Control</kbd> = Create a selection that expands from center.
 - Mouse click + <kbd>Alt</kbd> = Displaces the origin of the selection.
