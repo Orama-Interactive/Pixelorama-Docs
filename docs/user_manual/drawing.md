@@ -18,6 +18,7 @@ You can use one of the available drawing tools in Pixelorama to bring your heart
 | Ellipse Tool | Create an ellipse. | L: <kbd>C</kbd>, R: <kbd> Alt + C</kbd> |
 
 Tools that are not used for drawing but are very helpful to help you draw:
+
 | Name      | Description | Default Shortcut |
 | ----------- | ----------- | ----------- |
 | Color Picker | Get the color of the pixel on mouse position. | L: <kbd>O</kbd>, R: <kbd> Alt + O</kbd> |
@@ -38,6 +39,7 @@ The "Fill inside" option fills the entire area with the selected color between t
 The Pencil and Eraser (and [Shading](shading)!) tools have an option called "Pixel Perfect". This essentially creates "pixel perfect" lines for you by automatically removing the middle pixel of L-shapes. In other words, it removes extra adjacent pixels often referred to as "doubles" in order to create lines that are one-pixel thick.
 
 Not pixel-perfect line vs pixel perfect line.
+
 ![Not pixel-perfect line vs pixel perfect line](../../static/img/pixel_perfect_line_diff.png)
 
 ## Bucket
