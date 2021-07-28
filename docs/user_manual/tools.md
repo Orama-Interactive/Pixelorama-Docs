@@ -37,8 +37,8 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 ### [Canvas](user_interface/canvas) navigation tools
 | Name      | Description | Default Shortcut |
 | ----------- | ----------- | ----------- |
-| Zoom | Create a rectangular selection.| L: <kbd>Z</kbd>, R: <kbd> Alt + Z</kbd> |
-| Pan | Create an elliptical selection. | L: <kbd>M</kbd>, R: <kbd> Alt + M</kbd> |
+| Zoom | Allows the user to change the zoom level of the canvas.| L: <kbd>Z</kbd>, R: <kbd> Alt + Z</kbd> |
+| Pan | Allows the user to move around the canvas. | L: <kbd>M</kbd>, R: <kbd> Alt + M</kbd> |
 
 ### [Drawing tools and drawing-assisting tools](drawing)
 | Name      | Description | Default Shortcut |
