@@ -13,10 +13,10 @@ A Project contains the following properties:
 - [Brushes](brush) that are local to that specific project.
 - [Guides](../user_manual/user_interface/canvas/#rulers-and-guides) - lines that help you draw.
 
-![Save Project](../../static/img/save_project.png)
-
+## Saving a project
 To save a project, you can go to the File menu and select Save, or press <kbd>Control + S</kbd>. If you are using a Desktop version, you will be able to choose where you want the file to be saved. If you use the Web version, you will be asked for a file name and the .pxo file will be downloaded by your browser.
 
+![Save Project](../../static/img/save_project.png)
 
 ## .pxo files
 Pxo files are Pixelorama's custom file format that saves the entire content of the project. It cannot be opened in other image editors.
