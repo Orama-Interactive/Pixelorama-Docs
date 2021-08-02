@@ -7,6 +7,7 @@
 # Generated files
 .docusaurus
 .cache-loader
+package-lock.json
 
 # Misc
 .DS_Store
@@ -18,6 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
 
 # Visual Studio Code ignores
 .vscode/
