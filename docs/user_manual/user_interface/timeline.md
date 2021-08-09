@@ -4,7 +4,7 @@ title: The Timeline
 sidebar_label: The Timeline
 ---
 
-The timeline's main purpose is to help you with creating animations. It is composed of frames, which are used for creating animations, and layers, which help you seperate your frames in different parts. Each frame is essentially a collection of multiple layers, and each individual intersection of a frame and a layer is called a [cel](../../concepts/cel). All frames have the same amount of layers.
+The timeline's main purpose is to help you with creating animations. It is composed of frames, which are used for creating animations, and layers, which help you separate your frames in different parts. Each frame is essentially a collection of multiple layers, and each individual intersection of a frame and a layer is called a [cel](../../concepts/cel). All frames have the same amount of layers.
 ![Screenshot of Pixelorama's timeline](../../../static/img/timeline_cels.png)
 
 ## Animation
@@ -49,7 +49,15 @@ You can also drag and drop frame buttons to re-arrange them. This will also affe
 On the top side of the timeline you will find frame-related buttons which offer the same functionality as the frame button right click menu, like adding, removing, cloning and moving frames. You will also find a button that is used to modify `frame tags`.
 
 ### Frame tags
--- Section under construction --
+Frame tags are used to organize different parts of your animated sprite. Those parts can also be exported independently using frame tags.
+
+Clicking on the button mentioned above will bring up this window.
+![Frame tags](../../../static/img/frame_tag_window.png)
+Here you can see the list of all of the frame tags of the current [project](../../concepts/project). Using the plus (+) sign, you can add more tags. A tag has a starting frame (from), an ending frame (to), a name and a color.
+
+To edit an already existing tag, you can click on the "Edit" button next to the tag you want.
+
+If "Animation plays only on frames of the same tag" is toggled on, then, when you preview your animation, it will only preview the frames that belong on the same tag as the currently selected frame. This is a great way to preview parts of your animation separately.
 
 ## Cels
 -- Section under construction --
