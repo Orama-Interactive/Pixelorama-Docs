@@ -29,8 +29,6 @@ The button on the right simply toggles onion skinning on and off, and the one on
 ## Layers
 On the left side of the timeline, you will see the layer buttons. Clicking on a layer button will select the current layer. Double clicking will let you change the name of that layer. 
 
-You can also drag and drop layer buttons to re-arrange them. This will also affect their corresponding cels.
-
 The layer buttons have three more buttons on them. The first toggles the layer's visibility. While invisible, the layer cannot be edited by the user. It will also remain invisible on export. The second locks and unlocks the layer. If the layer is locked, it cannot be edited by the user, but it does remain visible. The third button is used to automatically link the new cels that are being created. If it's toggled on, it is essentially a fast way to create linked cels.
 
 There are 6 more buttons located on top of the layers. These, in order of appearance: add a new layer, remove the current active layer, move the current layer up and down, clone current layer and merge the current layer with the one directly below it.
@@ -60,4 +58,16 @@ To edit an already existing tag, you can click on the "Edit" button next to the 
 If "Animation plays only on frames of the same tag" is toggled on, then, when you preview your animation, it will only preview the frames that belong on the same tag as the currently selected frame. This is a great way to preview parts of your animation separately.
 
 ## Cels
--- Section under construction --
+Cels are the intersection of layers and frames. For a more detailed explanation, you can [read this page](../../concepts/cel). To select a cel in order to draw on it, you can left click on their respective button. The cel buttons take the most space in the timeline, and they are located to the right of the layer buttons and below the frame buttons. They also have a small preview of their image data on them.
+
+Right clicking on a cel button will bring up a menu, with options such as Link (or Unlink) Cel, and Delete, which clears the content of the cel, making it fully transparent.
+
+:::tip Selecting multiple cels
+You can select/deselect multiple cels by holding the <kbd>Control</kbd> key and left-clicking individual cels, or hold the <kbd>Shift</kbd> key and left-click a cel to also select all of the cels between the one that was clicked and the one that has been selected last.
+
+This also works on frame and layer buttons. For example, selecting two frame buttons using <kbd>Control</kbd> or <kbd>Shift</kbd> will select all of their cels as well. The same is true for layer buttons.
+:::
+
+:::tip Drag and drop
+You can drag and drop layer, frame and cel buttons to re-arrange them. Re-arranging frame and layer buttons also affects their cels.
+:::
