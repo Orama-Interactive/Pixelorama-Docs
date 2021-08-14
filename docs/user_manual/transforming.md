@@ -38,5 +38,5 @@ When moving or scaling a selection with its contents, the selected pixels will s
 ### Applying A Transformation
 To apply your changes, you can either press <kbd>Enter</kbd>, or by doing any other action, such as drawing, applying an image effect, selecting another cel, adding a new frame or layer, etc. Doing any of these will automatically apply your changes.
 
-### Cancelling A Transformation
+### Canceling A Transformation
 To cancel a transformation, you can either press <kbd>Escape</kbd>, or undo. You will not be able to redo your actions if you decide to cancel.
