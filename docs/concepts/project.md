@@ -14,15 +14,13 @@ A Project contains the following properties:
 - [Guides](../user_manual/user_interface/canvas/#rulers-and-guides) - lines that help you draw.
 
 ## Saving a project
-To save a project, you can go to the File menu and select Save, or press <kbd>Control + S</kbd>. If you are using a Desktop version, you will be able to choose where you want the file to be saved. If you use the Web version, you will be asked for a file name and the .pxo file will be downloaded by your browser.
-
-![Save Project](../../static/img/save_project.png)
+See [this page](../user_manual/save_and_export/#saving) to learn how to save a project.
 
 ## .pxo files
 Pxo files are Pixelorama's custom file format that saves the entire content of the project. It cannot be opened in other image editors.
 
 ### File structure
-The file essentially consists of two lines. The first line is all of the project's metadata, such as project name, size, number of layers, number of frames, tags, [project brushes](brush), fps etc. They are stored in JSON form, so they can easily be read by other software.
+The file essentially consists of two lines. The first line is all of the project's metadata, such as project name, size, number of layers, number of frames, tags, [project brushes](brush/#project-brushes), fps etc. They are stored in JSON form, so they can easily be read by other software.
 
 The second line contains all of the image data as buffers. First, all of the image data for every [cel](cel) is being stored. It starts from the very first cel, which is equivalent to the bottom-most layer and the first frame, then it continues for every layer from bottom to top and once it reaches the final layer, moves on to the next frame, where it again starts from the bottommost layer and continues saving up to the top. After all of the cel image data has been saved, the image data of the project brushes are being saved, if the project has any.
 
