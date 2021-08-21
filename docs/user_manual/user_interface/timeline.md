@@ -50,7 +50,9 @@ On the top side of the timeline you will find frame-related buttons which offer 
 Frame tags are used to organize different parts of your animated sprite. Those parts can also be exported independently using frame tags.
 
 Clicking on the button mentioned above will bring up this window.
+
 ![Frame tags](../../../static/img/frame_tag_window.png)
+
 Here you can see the list of all of the frame tags of the current [project](../../concepts/project). Using the plus (+) sign, you can add more tags. A tag has a starting frame (from), an ending frame (to), a name and a color.
 
 To edit an already existing tag, you can click on the "Edit" button next to the tag you want.

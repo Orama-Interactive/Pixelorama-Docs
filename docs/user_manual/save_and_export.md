@@ -20,6 +20,8 @@ By selecting `Save...` again on a project you have already saved, the file name 
 ## Exporting
 To export your project, you can go to the File menu and select `Export...`, or press <kbd>Control + E</kbd>, and a window will appear. If you are using a Desktop version, you will be able to choose where you want the file to be saved. If you use the Web version, you will be asked for a file name and the `.png` or `.gif` file(s) will be downloaded by your browser. You are also given the option resize on export, with a chosen interpolation method. This is useful for when you want to share your art and make it easier for people to preview it, because pixel art is most often using small canvas sizes.
 
+Just like with save, you have to use the `Export as...` option or <kbd> Shift + Control + E</kbd> to export to a new directory.
+
 You can choose what you want to export by clicking on one of the tabs on the top of the window.
 
 ### Export one frame
