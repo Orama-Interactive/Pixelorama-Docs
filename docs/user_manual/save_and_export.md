@@ -42,3 +42,6 @@ Here, you are given two options. Either save your animation as a sequence of mul
 If you save your animation as multiple `.png` files, then every file will have a number attached to its name. For example, if the name is `filename.png`, the exported file names will be `filename_1.png`, `filename_2.png`, `filename_3.png` and so on. If these frames also have a frame tag, the name of the tag will be included in the file name as well. You can also choose to automatically create a new directory for each frame tag, for extra organization. This will place all of the frames of the same tag in a different directory.
 
 You save your animation as a single `.gif` file by selecting the "All frames as as single file animation" option under the preview. You are also given the option to select the `.gif`'s animation direction from either forwards, backwards or a ping-pong loop. Keep in mind that if you are working with a large canvas size and/or multiple frames, the `.gif` exporting process can be a bit slow.
+
+![Exported Gif](../../static/img/exported_gif.gif)
+##### The above project exported as a gif file with Pixelorama
