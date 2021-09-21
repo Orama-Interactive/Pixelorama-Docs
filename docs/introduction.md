@@ -6,7 +6,7 @@ sidebar_position: 1
 slug: /
 ---
 :::caution version 0.9
-This documentation is written with version 0.9 in mind, which is still in beta. If you are still using a previous version, keep in mind that some of the written content will not be relevant to the version you are using.
+This documentation is written with version 0.9 in mind. If you are still using a previous version, keep in mind that some of the written content will not be relevant to the version you are using. It is advised that you update to the latest stable version.
 :::
 
 Welcome fellow dreamer to the documentation of Pixelorama, your free and open source pixel-art creation tool, developed by Orama Interactive and our contributors. If you are new to this documentation, we recommend you start by reading the [User Interface Basics](user_manual/user_interface/user_interface_basics) page to familiarize yourself with Pixelorama's workspace. The ultimate goal of this program is to be able to catch up with the user's imagination and assist them in creating any kind of pixel art they wish. This could be a cool landscape, a dope animation, game graphics, random sketches or a well thought pixelated meme. Thank you for coming this far into researching our tool!
