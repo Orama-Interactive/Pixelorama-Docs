@@ -15,6 +15,16 @@ Besides that, it is **strongly recommended** that you save often, and keep copie
 You can also aid us in our fight against crashes by [reporting issues on GitHub](https://github.com/Orama-Interactive/Pixelorama/issues) and uploading the contents of Pixelorama's log files. You can find the log files in `C:\Users\[USERNAME]\AppData\Roaming\Godot\app_userdata\Pixelorama\logs` on Windows, `~/.local/share/godot/app_userdata/Pixelorama/logs` on Linux and `/Users/[USERNAME]/Library/Application Support/Godot/Pixelorama/logs` for macOS. It is also extremely helpful, if not necessary, to be as specific as possible with the steps that led to the crash. By giving us specific steps to reproduce the issue, we can solve it faster.
 
 
+## macOS says that Pixelorama is damaged!
+You may encounter some errors saying that Pixelorama is damaged. This is because the latest versions of MacOS mark the launcher of unknown binaries as a non-executable file. This most likely has to do with the fact that Pixelorama is not signed. 
+
+Read this guide for more information: https://disable-gatekeeper.github.io/
+
+
+## I have a hiDPI monitor and the User Interface is very small!
+It is possible to change the scale of the UI, by going to the Edit menu, seelcting Preferences and going to the Interface tab. There, you can change the display scale, which goes from 1 (smallest) to 4 (biggest). 4 essentially means that the UI will be 4 times bigger than the default UI. Then, you click Apply to set the changes. Keep in mind that it's best to use integer values, such as 1, 2, 3 and 4, otherwise the UI may appear blurry.
+
+
 ## Error code 12 when exporting png files
 ![Error code 12](../static/img/error_code_12.png)
 
@@ -23,12 +33,6 @@ This error has only been spotted in the Windows platform. Sometimes, when export
 It is also possible that this issue may be solved if you run Pixelorama as an administrator.
 
 If neither of these works, you could save your projects as a pxo file, open the Web version, drag and drop the pxo file there, and export the png file from the Web version.
-
-
-## macOS says that Pixelorama is damaged!
-You may encounter some errors saying that Pixelorama is damaged. This is because the latest versions of MacOS mark the launcher of unknown binaries as a non-executable file. This most likely has to do with the fact that Pixelorama is not signed. 
-
-Read this guide for more information: https://disable-gatekeeper.github.io/
 
 
 ## Guides are not being created
