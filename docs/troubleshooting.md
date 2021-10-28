@@ -21,6 +21,12 @@ You may encounter some errors saying that Pixelorama is damaged. This is because
 Read this guide for more information: https://disable-gatekeeper.github.io/
 
 
+## I have performance issues, Pixelorama is very slow on my machine
+We are doing our best to optimize the performance. That being said, you can improve the performance of the app significantly by changing its maximum framerate, in order to reduce CPU usage. To do that, you can go to the Edit menu, Preferences and clicking on the Performance tab. There, you can set a maximum value for the FPS in "Set application FPS limit:". Keep in mind that the lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive, so make sure not to set it *too low*. 0 means that there is no limit.
+
+If you have a specific performance issue you'd like us to look at, feel free to [open an issue on Pixelorama's GitHub Repository](https://github.com/Orama-Interactive/Pixelorama/issues).
+
+
 ## I have a hiDPI monitor and the User Interface is very small!
 It is possible to change the scale of the UI, by going to the Edit menu, seelcting Preferences and going to the Interface tab. There, you can change the display scale, which goes from 1 (smallest) to 4 (biggest). 4 essentially means that the UI will be 4 times bigger than the default UI. Then, you click Apply to set the changes. Keep in mind that it's best to use integer values, such as 1, 2, 3 and 4, otherwise the UI may appear blurry.
 
