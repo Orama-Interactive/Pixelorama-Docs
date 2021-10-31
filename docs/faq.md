@@ -13,7 +13,7 @@ A: Pixelorama is available for the *extremely cheap price of $0.00!* That's righ
 
 ## Q: What platforms is Pixelorama available on?
 A: Pixelorama is currently available for Windows, Linux, Mac and Web browsers. More platforms may be supported in the future.
-You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama) and [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases). It is also available on Scoop for Windows and as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
+You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama) and [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux and in the [Open Store](https://open-store.io/app/pixelorama.orama-interactive) for Ubuntu Touch.
 
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.orama-interactive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
