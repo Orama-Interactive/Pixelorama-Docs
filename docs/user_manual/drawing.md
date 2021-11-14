@@ -28,7 +28,7 @@ Tools that are not used directly for drawing but are very helpful for your drawi
 ## Pencil and Eraser
 The main tools of Pixelorama. Used to draw or erase pixels at an individual pixel level. You can select from multiple [brushes](../concepts/brush) and change their size. You can also hold <kbd>Shift</kbd> before drawing to create lines between two points, and by also holding <kbd>Control</kbd>, you constrain them either by 15 degrees, or always making them be pixel-perfect angles by having the "Pixel Perfect" option enabled.
 
-The eraser erases pixels by simply overwriting their color value to be (0, 0, 0 ,0), which is equivalent to black that is completely transparent.
+The eraser erases pixels by simply subtracting color RGBA value by the opacity value. if the opacity value is 255 then the color RGBA value becomes (0, 0, 0 ,0), which is equivalent to black that is completely transparent.
 
 ### Pencil Tool Options
 The Pencil tool also has an "Overwrite Color" tool option. If this is enabled, the color of the drawn pixels will always become the same color as the selected one. Otherwise, if the colors are transparent, their alpha values will blend. For example, if the color of the drawn pixels have are 30% transparent and your currently selected color is 25% transparent, the resulting transparency will be 55%. While if the overwrite color option is on, the resulting transparency will always be 25%.
