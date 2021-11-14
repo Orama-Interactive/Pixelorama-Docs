@@ -61,7 +61,7 @@ This one is fairly simple to comprehend. While not a drawing tool itself, the co
 Now, there's only one category available as an option for the time being, called "Pick for:". This means that the sample taken will replace one of the colors, either the **Left Color** or **Right Color**. Choosing **Left Color** replaces the left selected color, while right replaces the right selected color. 
 
 :::tip Quick access
-You can quickly access the color picker **without changing tools** by simply holding <kbd>Alt</kbd> and <kbd>Left/Right Click</kbd> the desired color to assign it for Left or Right tools respectively
+You can quickly access the color picker **without changing tools** by simply holding <kbd>Alt</kbd> and <kbd>Left/Right Click</kbd> the desired color to assign it for Left or Right tools respectively.
 :::
 
 :::tip Quick access
