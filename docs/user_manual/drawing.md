@@ -63,6 +63,7 @@ Now, there's only one category available as an option for the time being, called
 :::tip Quick access
 You can quickly access the color picker **without changing tools** by simply holding <kbd>Alt</kbd> and <kbd>Left/Right Click</kbd> the desired color to assign it for Left or Right tools respectively
 :::
+
 :::tip Quick access
 Another quick and helpful way to use the color picker is having it mapped to your **right mouse button** and having the **Left Color** option selected while having a drawing tool mapped to your **left mouse button.** The color picker can compliment the drawing tool by selecting the color you next desire to paint with, making it an immediate way of switching between hues.
 :::
