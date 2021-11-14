@@ -64,7 +64,7 @@ Hovering your mouse over a tool button will reveal a small display that can give
 Almost every tool has certain properties that the user can tweak, such as brush type and size, different modes, color or mirroring. The tool options are located in the right side of the application window and they are separated in left tool and right tool settings. These, of course, correspond to the two tools you have mapped at your two mouse buttons. The two colors are also mapped to different mouse buttons. The left one is for the left mouse button tool, and the right one is for the right mouse button tool.
 
 :::tip Change mode quickly!
-Most of the tools have some binary property that has to be changed often. Holding CTRL will allow you to quickly alternate between the properties for a given tool as follows:
+Most of the tools have some binary property that has to be changed often. Holding <kbd>Ctrl</kbd> will allow you to quickly alternate between the properties for a given tool as follows:
 | Tool | Alternating Property |
 | ---- | -------------------- |
 | Zoom | zoom in / zoom out |
