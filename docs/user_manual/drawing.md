@@ -60,7 +60,12 @@ This one is fairly simple to comprehend. While not a drawing tool itself, the co
 
 Now, there's only one category available as an option for the time being, called "Pick for:". This means that the sample taken will replace one of the colors, either the **Left Color** or **Right Color**. Choosing **Left Color** replaces the left selected color, while right replaces the right selected color. 
 
-*Tip: A quick and helpful way to use the color picker is having it mapped to your* ***right mouse button*** *and having the* ***Left Color*** *option selected while having a drawing tool mapped to your* ***left mouse button.*** *The color picker can compliment the drawing tool by selecting the color you next desire to paint with, making it an immediate way of switching between hues.*
+:::tip Quick access
+You can quickly access the color picker **without changing tools** by simply holding <kbd>Alt</kbd> and <kbd>Left/Right Click</kbd> the desired color to assign it for Left or Right tools respectively
+:::
+:::tip Quick access
+Another quick and helpful way to use the color picker is having it mapped to your **right mouse button** and having the **Left Color** option selected while having a drawing tool mapped to your **left mouse button.** The color picker can compliment the drawing tool by selecting the color you next desire to paint with, making it an immediate way of switching between hues.
+:::
 
 ## Mirroring
 All drawing tools can work with symmetry. Symmetry in Pixelorama is either horizontal, vertical or both at the same time. It can be enabled from the tool options. If, for example, horizontal symmetry is enabled, whatever you draw will get mirrored, meaning it will also get drawn on the other horizontal side, having the same distance from the symmetry line as your original drawing. So if you draw a pixel two pixels from the left of the vertical symmetry line and horizontal symmetry is enabled, then the pixel two pixels from the right of the symmetry line and on the same vertical position will also get drawn. The same holds true for when vertical symmetry is enabled.
