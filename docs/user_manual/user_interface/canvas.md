@@ -12,13 +12,21 @@ The canvas is the area where your drawing is located and it's also where you app
 You can navigate around the canvas in multiple ways.
 
 ### Zoom
-To zoom, you can use the mouse wheel. Scroll the wheel up to zoom in, and down to zoom out. You can also use <kbd>+</kbd> on your keyboard to zoom in and <kbd>-</kbd> to zoom out. There is also a dedicated zoom tool, which you can use like any other tool, by pressing either the left or the right mouse button, depending on where you mapped it.
+To zoom, you can use the mouse wheel. Scroll the wheel up to zoom in, and down to zoom out. You can also use <kbd>+</kbd> on your keyboard to zoom in and <kbd>-</kbd> to zoom out. You can see the current zoom level of the canvas in the top bar of the user interface.
+
+There is also a dedicated zoom tool, which you can use like any other tool, by pressing either the left or the right mouse button, depending on where you mapped it. The zoom tool can prove useful for users with no mouse, such as graphics tablet or touch screen users. From the tool's options, you can switch it to either zoom in or out, and you can also find two buttons.
+
+![Zoom tool options](../../../static/img/tooloptions_zoom.png)
+
+The first one is "Fit to frame" which basically centers your canvas and makes it as big as possible without any portion of it not being visible.
+
+The second one is 100% zoom. This basically makes the canvas its exact pixel dimensions based on your screen. For example if your canvas is 64x64 pixels, pressing this button will make the canvas appear on a 64x64 area of your screen. This gives you an idea of how your art looks at its original dimensions.
 
 ### Pan
 You can pan by either holding the middle mouse button or <kbd>Space</kbd> on your keyboard and simply moving the mouse. You can also use the arrow keys to move around. Like with zoom, there is also a dedicated pan tool.
 
 ### Mirror
-You can mirror your view horizontally and undestructively by going to the View menu and clicking "Mirror View", or by pressing <kbd>Shift + M</kbd>.
+You can mirror your view horizontally and non-destructively by going to the View menu and clicking "Mirror View", or by pressing <kbd>Shift + M</kbd>.
 
 ## Grid
 The grid is an important tool that aids the user in accurately drawing lines. Currently, Pixelorama has two types of grids, rectangular and isometric. The rectangular grid is what you will probably use most of the time, while the isometric grid is great if you are making isometric art, like the one pictured below.
@@ -42,7 +50,7 @@ If you are working with tiles, it might be useful to preview them in such a way 
 On the right side of the canvas, there is a grabber. Moving it to the left will reveal a second canvas. The purpose of this is to easily preview your artwork in different positions or zoom levels. As of right now, you **cannot** draw on it.
 
 ## Rulers and Guides
-On the top and left sides of the canvas, you can find two rulers. These serve two purposes, the first is to let the user easily and effortesly measure distances in pixels, and the second is to create guides by clicking on them with the left mouse button and, while it's being hold, dragging the cursor to the position you want your guide to be at. Guides are either horizontal or vertical lines that can be used as references to help you to properly align stuff on your canvas.
+On the top and left sides of the canvas, you can find two rulers. These serve two purposes, the first is to let the user easily and effortlessly measure distances in pixels, and the second is to create guides by clicking on them with the left mouse button and, while it's being hold, dragging the cursor to the position you want your guide to be at. Guides are either horizontal or vertical lines that can be used as references to help you to properly align stuff on your canvas.
 
 ### Editing Guides
 To move an already created guide, you can drag the guide by clicking and holding the left mouse button while your cursor is pointing at the guide but it's also **outside the canvas boundaries**. If it's not, it will simply apply your currently selected tool. If the guide is completely moved outside the canvas area, it will be removed.

@@ -10,4 +10,5 @@ In Pixelorama, the term "Cel" (from [celluloid](http://en.wikipedia.org/wiki/Cel
 
 Cels can be found in the timeline. They are the square buttons which you can click to edit. You can select/deselect multiple by holding the <kbd>Control</kbd> key and left-clicking individual cels, or hold the <kbd>Shift</kbd> key and left-click a cel to also select all of the cels between the one that was clicked and the one that has been selected last.
 
+## Linked cels
 You can also right click cels to link them together. Linked cels share the same image data, meaning that if you make changes to one linked cel, the changes are shared with all other linked cels. Keep in mind that, as of right now, linked cels are layer-local. You cannot have cels linked that belong to different layers, only different frames. Linked cels are marked with a green outline.

@@ -13,8 +13,8 @@ To move pixels around in the canvas, you can use the Move tool. It works by simp
 
 - Mouse movement + <kbd>Shift</kbd> = Moves & snaps selection to axis.
 - Mouse movement + <kbd>Control</kbd> = Moves & snaps selection to rectangular grid.
-- <kbd>Control</kbd> + <kbd>Alt</kbd> + Mouse movement = Moves selection without content. **This only works for the selection tools and not the Move tool.**
-- <kbd>Alt</kbd> + mouse movement = Copies selection and moves it without cutting it from the original position. This is basically a quick way to copy and move stuff around without <kbd>Control + C</kbd> and <kbd>Control + V</kbd>. **This only works for the selection tools and not the Move tool.**
+- <kbd>Alt</kbd> + Mouse movement = Moves selection without content. **This only works for the selection tools and not the Move tool.**
+- <kbd>Control</kbd> + <kbd>Alt</kbd> + mouse movement = Copies selection and moves it without cutting it from the original position. This is basically a quick way to copy and move stuff around without <kbd>Control + C</kbd> and <kbd>Control + V</kbd>. **This only works for the selection tools and not the Move tool.**
 
 If you have a selection tool active, you can also use the arrow keys to move the selection and contents. Pressing <kbd>Alt</kbd> only moves the selection without content, and holding <kbd>Control</kbd> moves the selection by the size of the rectangular grid tiles. You can also manually change the position of the selection from the tool options. If there is an active transformation, the content will be affected as well, otherwise it will only move the selection itself without its content.
 
@@ -38,5 +38,5 @@ When moving or scaling a selection with its contents, the selected pixels will s
 ### Applying A Transformation
 To apply your changes, you can either press <kbd>Enter</kbd>, or by doing any other action, such as drawing, applying an image effect, selecting another cel, adding a new frame or layer, etc. Doing any of these will automatically apply your changes.
 
-### Cancelling A Transformation
+### Canceling A Transformation
 To cancel a transformation, you can either press <kbd>Escape</kbd>, or undo. You will not be able to redo your actions if you decide to cancel.
