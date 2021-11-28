@@ -6,5 +6,5 @@ Developed and maintained by Orama Interactive.
 
 Link to the docs: https://orama-interactive.github.io/Pixelorama-Docs/
 
-Made using [**Docusaurus v2.0.0-beta.3**](https://docusaurus.io/) and **GitHub Pages**.
+Made using [**Docusaurus v2.0.0-beta.9**](https://docusaurus.io/) and hosted with **GitHub Pages**.
 The documentation pages are still WIP, but feel free to contribute if you have anything to add.
