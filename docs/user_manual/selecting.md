@@ -44,7 +44,7 @@ Inverting the selection means that all of the currently selected pixels will get
 If you **don't** have an active transformation, holding <kbd>Control + Alt + Mouse click</kbd> will *duplicate* whatever was below it and place it in active transformation.
 
 :::tip Duplicating Quickly!
-**During active transformation** <kbd>Control + Alt + Mouse click</kbd> will not only apply transformation but will also **retain** it's contents, which you can use again. Handy when duplicating something multiple times.
+**During active transformation** <kbd>Control + Alt + Mouse click</kbd> will not only apply transformation but will also **retain** its content, which you can use again. Handy when duplicating something multiple times.
 :::
 
 ## Copy, Paste, Cut and Delete
