@@ -8,11 +8,12 @@ This page lists common issues encountered when using Pixelorama and possible sol
 
 ## Pixelorama crashed while I was working on my project!
 Crashes are unfortunate, and while we are doing our best to fix them, it is possible that some issues that cause the application to crash have escaped our grasp. The good news is that you can enable **automatic backups**, that save your work every a certain time interval. You can enable them from the Edit menu, Preferences, Backup and then by ticking on "Enable autosave".
+
 ![Enable Autosave](../static/img/enable_autosave.png)
 
 Besides that, it is **strongly recommended** that you save often, and keep copies of your files as backups in case something gets lost.
 
-You can also aid us in our fight against crashes by [reporting issues on GitHub](https://github.com/Orama-Interactive/Pixelorama/issues) and uploading the contents of Pixelorama's log files. You can find the log files in `C:\Users\[USERNAME]\AppData\Roaming\Godot\app_userdata\Pixelorama\logs` on Windows, `~/.local/share/godot/app_userdata/Pixelorama/logs` on Linux and `/Users/[USERNAME]/Library/Application Support/Godot/Pixelorama/logs` for macOS. It is also extremely helpful, if not necessary, to be as specific as possible with the steps that led to the crash. By giving us specific steps to reproduce the issue, we can solve it faster.
+You can also aid us in our fight against crashes by [reporting issues on GitHub](https://github.com/Orama-Interactive/Pixelorama/issues) and uploading the content of Pixelorama's log files. You can find the log files in `C:\Users\[USERNAME]\AppData\Roaming\Godot\app_userdata\Pixelorama\logs` on Windows, `~/.local/share/godot/app_userdata/Pixelorama/logs` on Linux and `/Users/[USERNAME]/Library/Application Support/Godot/Pixelorama/logs` for macOS. It is also extremely helpful, if not necessary, to be as specific as possible with the steps that led to the crash. By giving us specific steps to reproduce the issue, we can solve it faster.
 
 
 ## macOS says that Pixelorama is damaged!
