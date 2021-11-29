@@ -41,10 +41,10 @@ If you want to delete the entire selection, the easiest way is to deselect every
 Inverting the selection means that all of the currently selected pixels will get deselected, while all of the unselected pixels will get selected. You can do this by either pressing <kbd>Control + I</kbd>, or going to the Select menu and pressing **Invert**. If you have everything selected, inverting will clear the selection. Likewise, if you have nothing selecting, inverting will select everything.
 
 ## Duplicating
-If you **don't** have an active selection, holding <kbd>Control + Alt + Mouse click</kbd> will *duplicate* whatever was below it and place it in active selection.
+If you **don't** have an active transformation, holding <kbd>Control + Alt + Mouse click</kbd> will *duplicate* whatever was below it and place it in active transformation.
 
 :::tip Duplicating Quickly!
-**During active selection** <kbd>Control + Alt + Mouse click</kbd> will not only apply selection but will also **retain** it's contents, which you can use again. Handy when duplicating something multiple times.
+**During active transformation** <kbd>Control + Alt + Mouse click</kbd> will not only apply transformation but will also **retain** it's contents, which you can use again. Handy when duplicating something multiple times.
 :::
 
 ## Copy, Paste, Cut and Delete
