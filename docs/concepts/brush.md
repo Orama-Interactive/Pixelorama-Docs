@@ -14,7 +14,7 @@ Image-based brushes will also have one extra option in the tool settings; a "Bru
 ## Making Your Own Custom Brushes
 
 ### File Brushes
-Pixelorama gives you the option to create your own custom brushes, which you can later use to draw. There are two brush types, File and Project brushes. File brushes are `.png` files saved in the `pixelorama_data/Brushes` directory. They are available for all projects. To create a "File" custom brush, all you need to do is create your brush, and save is as a `.png` file in the `pixelorama_data/Brushes` directory. They will be found on the "File" tab.
+Pixelorama gives you the option to create your own custom brushes, which you can later use to draw. There are two brush types, File and Project brushes. File brushes are `.png` files saved in the `pixelorama_data/Brushes` directory. They are available for all projects. To create a "File" custom brush, all you need to do is create your brush, and save it as a `.png` file in the `pixelorama_data/Brushes` directory. They will be found on the "File" tab.
 
 ![File brushes tab](../../static/img/file_brushes.png)
 

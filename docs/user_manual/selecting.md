@@ -40,6 +40,13 @@ If you want to delete the entire selection, the easiest way is to deselect every
 ### Inverting Selection
 Inverting the selection means that all of the currently selected pixels will get deselected, while all of the unselected pixels will get selected. You can do this by either pressing <kbd>Control + I</kbd>, or going to the Select menu and pressing **Invert**. If you have everything selected, inverting will clear the selection. Likewise, if you have nothing selecting, inverting will select everything.
 
+## Duplicating
+If you **don't** have an active transformation, holding <kbd>Control + Alt + Mouse click</kbd> will *duplicate* whatever was below it and place it in active transformation.
+
+:::tip Duplicating Quickly!
+**During active transformation** <kbd>Control + Alt + Mouse click</kbd> will not only apply transformation but will also **retain** its content, which you can use again. Handy when duplicating something multiple times.
+:::
+
 ## Copy, Paste, Cut and Delete
 If you have an active selection, you can copy its contents by pressing <kbd>Control + C</kbd>. Then, you can paste it whenever you like, either on the same cel, on another cel or even a completely different project with <kbd>Control + V</kbd>. Pasting will create a new transformation which will be created on the same position as the original selection was when it was copied, but you will easily be able to move it to where you want. Keep in mind that copy/paste **does not** work at an Operating System level. Meaning, you won't be able to copy/paste image data between different applications on your device.
 
