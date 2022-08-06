@@ -2,13 +2,14 @@
 id: development_and_contributing
 title: Ways to contribute
 ---
-(Page is still under construction)
+## Say something nice!
+While material help is great, we don't want anyone to feel forced or obliged to give money to us, especially if they can't afford to. Sometimes saying something nice can go a long way! Showing your love and appreciation to someone could make their day, and give them strength to pursue their dreams and make their visions a reality. If you like Pixelorama and wish to help somehow, consider leaving a positive comment. And not just to to the main development team, but to the awesome contributors who helped shape this software in so many ways! It's up to us to make a more wholesome world, and every little bit counts. Of course, if you have more feedback and criticism to share, feel free to do so!
 
 ## Spread the word!
 Talk to your friends, co-workers, people from your communities and anyone who might be interested about Pixelorama! You can promote it on your social media, make videos about it or, even better, draw! Create content using Pixelorama and tell the world that you used it for your creations! Making Pixelorama more popular is a win-win scenario for everyone, because more people knowing about it means that we will get more feedback, which will be used to make Pixelorama even better, and some people might be interested even in contributing code directly!
 
 ## Donations
-Pixelorama is a free and open-source project. This means that all of our income so far comes solely from donations. If you wish to see this project grow and help us financially, you can become our [Patron](https://patreon.com/OramaInteractive). You can also buy Pixelorama on [itch.io](https://orama-interactive.itch.io/pixelorama), for an amount of your choice!
+Pixelorama is a free and open-source project. This means that all of our income so far comes solely from donations. Unfortunately, while our creativity stems from our love of the project, today's world rules force us to make a living using real life currencies. We need that money to survive and to keep our focus on our projects, such as Pixelorama, without having to worry about how to afford our rent and groceries by working at jobs that do not represent us. If you wish to see this project grow and help us financially, you can become our [Patron](https://patreon.com/OramaInteractive) and receive some nice benefits. You can also buy Pixelorama on [itch.io](https://orama-interactive.itch.io/pixelorama), for an amount of your choice!
 
 [![Become a Patron!](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://patreon.com/OramaInteractive)
 
