@@ -19,7 +19,7 @@ You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pix
 A: Pixelorama is being developed by [Orama Interactive](https://www.orama-interactive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
 
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
-A: Pixelorama is being developed with the Godot Engine (version 3.3), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
+A: Pixelorama is being developed with the Godot Engine (version 3.5), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Can I contribute to this project?
 Yes! Read our [Ways to Contribute](development_and_contributing) page to learn more.
