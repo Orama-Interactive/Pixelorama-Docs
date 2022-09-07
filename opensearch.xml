@@ -5,7 +5,7 @@
   <Description>Search Pixelorama Documentation</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://Orama-Interactive.github.io/Pixelorama-Docs/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://Orama-Interactive.github.io//Pixelorama-Docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://Orama-Interactive.github.io//Pixelorama-Docs/opensearch.xml" />
-  <moz:SearchForm>https://Orama-Interactive.github.io//Pixelorama-Docs/</moz:SearchForm>
+  <Url type="text/html" method="get" template="https://Orama-Interactive.github.io/Pixelorama-Docs/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://Orama-Interactive.github.io/Pixelorama-Docs/opensearch.xml" />
+  <moz:SearchForm>https://Orama-Interactive.github.io/Pixelorama-Docs/</moz:SearchForm>
 </OpenSearchDescription>
