@@ -39,6 +39,7 @@ module.exports={
   "plugins": [],
   "themeConfig": {
 	"algolia": {
+      appId: 'Q1VSXGNOJI',
       "apiKey": '9702a7187ea2079fe9def3138dd61b8b',
       "indexName": 'pixelorama',
 
@@ -50,7 +51,6 @@ module.exports={
 
       //... other Algolia params
     },
-	"hideableSidebar": true,
     "navbar": {
       "title": "Pixelorama Documentation",
       "logo": {
