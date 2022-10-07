@@ -4,7 +4,7 @@ title: Save and Export
 sidebar_label: Save and Export
 ---
 
-You can either save or export your projects. Saving a project will create a [.pxo file](../concepts/project/#pxo-files), which is Pixelorama's custom file format, while exporting means that one (or multiple, in case of animations) `.png`(s) or a `.gif` file(s) will be created. 
+You can either save or export your projects. Saving a project will create a [.pxo file](../concepts/project/#pxo-files), which is Pixelorama's custom file format, while exporting means that one (or multiple, in case of animations) `.png`(s) or a `.gif` file will be created.
 
 :::tip saving vs exporting
 Basically, you should **save** your project if you intent to use it again on Pixelorama and keep all of your data, such as layers, [project brushes](../concepts/brush/#project-brushes), animation tags, etc. While, if you want to share your artwork, import it in another software such as a game engine, or view it on an image editor, you should **export** it. Of course, nothing is stopping you from doing both, which is actually the recommended approach.
@@ -18,11 +18,15 @@ To save a project, you can go to the File menu and select `Save..`, or press <kb
 By selecting `Save...` again on a project you have already saved, the file name and path you chose before will still be automatically used, which means that the old file will be replaced with a new one with the changes you have made. If you'd like to save a different file, you have to use the `Save as...` option, or press <kbd>Shift + Control + S</kbd>.
 
 ## Exporting
-To export your project, you can go to the File menu and select `Export...`, or press <kbd>Control + E</kbd>, and a window will appear. If you are using a Desktop version, you will be able to choose where you want the file to be saved. If you use the Web version, you will be asked for a file name and the `.png` or `.gif` file(s) will be downloaded by your browser. You are also given the option resize on export, with a chosen interpolation method. This is useful for when you want to share your art and make it easier for people to preview it, because pixel art is most often using small canvas sizes.
+To export your project, you can go to the File menu and select `Export...`, or press <kbd>Control + E</kbd>, and a window will appear. If you are using a Desktop version, you will be able to choose where you want the file to be saved. If you use the Web version, you will be asked for a file name and the `.png` or `.gif` file(s) will be downloaded by your browser.
 
 Just like with save, you have to use the `Export as...` option or <kbd> Shift + Control + E</kbd> to export to a new directory.
 
 You can choose what you want to export by clicking on one of the tabs on the top of the window.
+
+:::tip resize while exporting
+If you draw on a small canvas, the exported image will have a relatively slow resolution. Some software and websites tend to blur small images, which can make pixel art look bad. To avoid that, you are also given the option resize on export, with a chosen interpolation method. This is useful for when you want to share your art and make it easier for people to preview it. For most cases, sticking with the default Nearest interpolation should be fine.
+:::
 
 ### Export one frame
 ![Export Frame](../../static/img/export_frame.png)
