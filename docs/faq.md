@@ -18,6 +18,9 @@ You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pix
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.orama-interactive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
 
+## Q: Is Pixelorama safe?
+A: Pixelorama is completely safe, as long as you download it from official sources (see `Q: What platforms is Pixelorama available on?` above). Its open-source nature allows for perfect transparency, thus it is impossible for us to sneak in malicious code without anyone noticing. The official builds are also being generated directly from the source code using GitHub Actions, so there is no worry that someone is sneaking in malicious code in the process of compiling. You may, however, get some security warnings from security software, such as Windows SmartScreen. The reason for this is that Pixelorama is not signed, and thus not recognized by the security system. You can safely ignore these warnings and proceed to run Pixelorama.
+
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
 A: Pixelorama is being developed with the Godot Engine (version 3.5), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
