@@ -31,7 +31,7 @@ Yes! Read our [Ways to Contribute](development_and_contributing) page to learn m
 A: Pixelorama was originally created as a stand-alone program. Our current focus is to keep improving it and not implementing it into Godot itself, but we are not declining the possibility of it being a plugin one day. However, if you are interested in direct Pixelorama support from Godot, you can use this amazing [Godot Pixelorama importer plugin](https://github.com/Technohacker/godot_pixelorama_importer) which can be used to make Godot import pxo files.
 
 ## Q: What languages is Pixelorama available in?
-A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in, is the system language of your device. You can easily change it by going to the Edit menu, Preferences, Language.
+A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in is the system language of your device. You can easily change it by going to the Edit menu, Preferences, Language.
 
 ## Q: What are the minimum system requirements to run Pixelorama?
 A: Pixelorama is a relatively lightweight software and it should run on most devices, as long as OpenGL 2.1 / OpenGL ES 2.0 is supported.

@@ -7,7 +7,7 @@ sidebar_label: Save and Export
 You can either save or export your projects. Saving a project will create a [.pxo file](../concepts/project/#pxo-files), which is Pixelorama's custom file format, while exporting means that one (or multiple, in case of animations) `.png`(s) or a `.gif` file will be created.
 
 :::tip saving vs exporting
-Basically, you should **save** your project if you intent to use it again on Pixelorama and keep all of your data, such as layers, [project brushes](../concepts/brush/#project-brushes), animation tags, etc. While, if you want to share your artwork, import it in another software such as a game engine, or view it on an image editor, you should **export** it. Of course, nothing is stopping you from doing both, which is actually the recommended approach.
+Basically, you should **save** your project if you intend to use it again on Pixelorama and keep all of your data, such as layers, [project brushes](../concepts/brush/#project-brushes), animation tags, etc. While, if you want to share your artwork, import it in another software such as a game engine, or view it on an image editor, you should **export** it. Of course, nothing is stopping you from doing both, which is actually the recommended approach.
 :::
 
 ## Saving
@@ -25,7 +25,7 @@ Just like with save, you have to use the `Export as...` option or <kbd> Shift + 
 You can choose what you want to export by clicking on one of the tabs on the top of the window.
 
 :::tip resize while exporting
-If you draw on a small canvas, the exported image will have a relatively slow resolution. Some software and websites tend to blur small images, which can make pixel art look bad. To avoid that, you are also given the option resize on export, with a chosen interpolation method. This is useful for when you want to share your art and make it easier for people to preview it. For most cases, sticking with the default Nearest interpolation should be fine.
+If you draw on a small canvas, the exported image will have a relatively slow resolution. Some software and websites tend to blur small images, which can make pixel art look bad. To avoid that, you are also given the option to resize on export, with a chosen interpolation method. This is useful when you want to share your art and make it easier for people to preview it. For most cases, sticking with the default Nearest interpolation should be fine.
 :::
 
 ### Export one frame
@@ -45,7 +45,7 @@ Here, you are given two options. Either save your animation as a sequence of mul
 
 If you save your animation as multiple `.png` files, then every file will have a number attached to its name. For example, if the name is `filename.png`, the exported file names will be `filename_1.png`, `filename_2.png`, `filename_3.png` and so on. If these frames also have a frame tag, the name of the tag will be included in the file name as well. You can also choose to automatically create a new directory for each frame tag, for extra organization. This will place all of the frames of the same tag in a different directory.
 
-You save your animation as a single `.gif` file by selecting the "All frames as as single file animation" option under the preview. You are also given the option to select the `.gif`'s animation direction from either forwards, backwards or a ping-pong loop. Keep in mind that if you are working with a large canvas size and/or multiple frames, the `.gif` exporting process can be a bit slow.
+You save your animation as a single `.gif` file by selecting the "All frames as as single file animation" option under the preview. You are also given the option to select the `.gif`'s animation direction from either forward, backward or a ping-pong loop. Keep in mind that if you are working with a large canvas size and/or multiple frames, the `.gif` exporting process can be a bit slow.
 
 ![Exported Gif](../../static/img/exported_gif.gif)
 ##### The above project exported as a gif file with Pixelorama

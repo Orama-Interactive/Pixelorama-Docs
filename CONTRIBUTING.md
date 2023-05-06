@@ -15,7 +15,7 @@
 Locate its `.md` source file in the `docs/` directory of the repository and open it in your favorite text editor - or directly within GitHub, although that is not recommended because you might lose your work. You can then commit the changes, push them to your fork and open a pull request.
 
 ### If you want to add a new page
-Create a `.md` file inside the `docs/` directory with a meaningful name (preferrably using snake_case). You can then edit the file with your favorite text editor, and write its content like you do for any other file. At the top of the file, make sure to include its **unique id**, preferrably the same as the file name, the page title and the siderbar label. They should be in a format like this:
+Create a `.md` file inside the `docs/` directory with a meaningful name (preferably using snake_case). You can then edit the file with your favorite text editor, and write its content like you do for any other file. At the top of the file, make sure to include its **unique id**, preferably the same as the file name, the page title and the sidebar label. They should be in a format like this:
 ```
 ---
 id: example_page
@@ -25,7 +25,7 @@ sidebar_label: Example Page
 ```
 
 ### To add images
-Put the image files you want to add inside the `static/img/assets` directory with meaningful names (preferrably using snake_case) and include them to your page with 
+Put the image files you want to add inside the `static/img/assets` directory with meaningful names (preferably using snake_case) and include them on your page with
 ```
 ![Alt Text](../static/img/example_image.png)
 ```
