@@ -5,7 +5,7 @@ sidebar_label: User Interface Basics
 sidebar_position: 1
 ---
 
-Pixelorama aims for a simplistic and understandable, yet professional User Interface (from now on referred as UI). Optimized for quick access to everything, Pixelorama's UI looks like this:
+Pixelorama aims for a simplistic and understandable, yet professional User Interface (from now on referred as "UI"). Optimized for quick access to everything, Pixelorama's UI looks like this:
 
 ![A screenshot of Pixelorama's UI which has been edited to have its interface numbered.](../../../static/img/ui-introduction.png)
 
@@ -21,7 +21,7 @@ Now, let's categorize the common elements of which the UI is consisted of and gi
 - **6** - The [tool options](../tools/#tool-options). This is where you can configure some settings of your currently active tools, as well as select your left and right colors.
 - **7** - The [palettes](../palettes). Useful for easily picking pre-set colors.
 
-Located in the middle of your view, the [canvas](canvas) is the "sheet" on which you are creating your artwork. This is the main area of the workspace, because this is where you will be doing all of the drawing.
+Located in the middle of your view, the [canvas](canvas) is the "sheet" on which you are creating your artwork. This is the main area of the workspace because this is where you will be doing all of the drawing.
 
 Each UI element has its own detailed page in the documentation, where it is analyzed in depth.
 

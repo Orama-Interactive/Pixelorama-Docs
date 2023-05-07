@@ -4,7 +4,7 @@ title: Palettes
 sidebar_label: Palettes
 ---
 
-Palettes are a way to organise colors in your projects.
+Palettes are a way to organize colors in your projects.
 
 Pixelorama ships on most platforms with several pre-made palettes. These palettes can be freely modified.
 
@@ -17,11 +17,11 @@ Palettes currently don't support undo/redo so be careful with any modifications 
 ## Palettes panel
 ![Pixelorama's Canvas](../../static/img/palettes-panel.png)
 
-Top of the panel consists of `Palettes selector`, [`Edit palette button`](#editing-palette-metadata) and [`Add new palette button`](#creating-new-palette).
+The top of the panel consists of `Palettes selector`, [`Edit palette button`](#editing-palette-metadata) and [`Add new palette button`](#creating-new-palette).
 
-The main section is the [`Palette grid`](#palette-grid) displaying all colors present in the currently selected palette.
+The main section is the [`Palette grid`](#palette-grid), displaying all colors present in the currently selected palette.
 
-In the left of the [`Palette grid`](#palette-grid) are [`tools`](#palette-grid-tools) used to edit colors of the palette.
+On the left of the [`Palette grid`](#palette-grid) are [`tools`](#palette-grid-tools) used to edit the colors of the palette.
 
 ### Creating a new palette {#creating-new-palette}
 ![Pixelorama's Canvas](../../static/img/palette-create.png)
@@ -39,16 +39,16 @@ You can select one of the presets to initialize a new palette with colors.
 | From Current Selection | Colors will be imported from the current selection. |
 
 #### Name
-Name of the palette is also used as a palette file name.
+The name of the palette is also used as a palette file name.
 
 #### Comment
-The palettes description. Default Pixelorama palettes use this field to credit palette authors.
+The palette's description. Default Pixelorama palettes use this field to credit palette authors.
 
 #### Width and Height
-Palettes have set width and height (can be resized later) which define its grid size. Allowed values are from 1 to 64.
+Palettes have set width and height (can be resized later) which define their grid size. Allowed values are from 1 to 64.
 
 #### Create colors with alpha component
-If this option is not toggled on colors will be imported without alpha channel and transparency is ignored.
+If this option is not toggled on, colors will be imported without alpha channel and transparency is ignored.
 
 #### Get colors from
 
@@ -63,7 +63,7 @@ You can limit colors import to just some or all cels (as seen in the animation t
 ### Editing palette metadata {#editing-palette-metadata}
 ![Pixelorama's Canvas](../../static/img/palette-edit.png)
 
-Currently selected palette metadata can be edited with `Edit palette button`.
+Currently, selected palette metadata can be edited with `Edit palette button`.
 
 The majority of properties are identical to create a new palette dialog.
 
@@ -112,14 +112,14 @@ Colors can be moved and copied around in the palette grid.
 | <kbd>Ctrl</kbd> + `Mouse drag` | Color is copied where dropped. If dropped on another color the original color is overwritten.  |
 
 ## Palettes import
-To import a palette either `drag and drop` palette file into Pixelorama window or use `File > Open` dialog.
+To import a palette, either `drag and drop` a palette file into Pixelorama window or use `File > Open` dialog.
 
-Imported palette will be converted to `Pixelorama palette`, stored physicall to Pixelorama data folder and added to palettes select in `Palettes panel`.
+An imported palette will be converted to `Pixelorama palette`, stored physically in the Pixelorama data folder and added to the palettes selection in `Palettes panel`.
 
-The only exception to import behaviour is `Image palette`. Importing an image to Pixelorama will open `Import Options` dialog in which you can select `Import as > New palette` to process an image to import a palette.
+The only exception to import behavior is `Image palette`. Importing an image to Pixelorama will open `Import Options` dialog in which you can select `Import as > New palette` to process an image to import a palette.
 
 :::tip palette extraction
-You can import any image as a palette and extract colors from it. Every color from the image will be added to the palette only once. With bigger images it can take longer time to finish.
+You can import any image as a palette and extract colors from it. Every color from the image will be added to the palette only once. With bigger images, it can take longer time to finish.
 :::
 
 ### Supported formats
@@ -137,5 +137,5 @@ Palette format detection uses file extensions to determine how to parse palette 
 :::
 
 :::caution pre-0.9 pixelorama palettes
-Palettes created in versions of Pixelorama prior to 0.9 have to be reimported. The save format was changed from `.json` to more Godot compatible `.tres`.
+Palettes created in versions of Pixelorama prior to 0.9 have to be reimported. The save format was changed from `.json` to more Godot-compatible `.tres`.
 :::

@@ -11,14 +11,14 @@ Tools are the main way to interact with your artwork.
 
 ## Left and right mouse buttons
 :::tip tools for left and right mouse buttons
-Left clicking a tool will assign this tool to your left mouse button and right clicking it will assign the tool you clicked to your right mouse button. If you left click on the canvas, your left tool will be activated, and if you right click on the canvas, your right tool will be activated.
+Left-clicking a tool will assign this tool to your left mouse button and right-clicking it will assign the tool you clicked to your right mouse button. If you left-click on the canvas, your left tool will be activated, and if you right-click on the canvas, your right tool will be activated.
 :::
 
 In Pixelorama, you are given the ability to map a different tool to each mouse button, left and right. This essentially means that you can use a different tool with your left mouse button, and a different tool with your right mouse button. The two mouse buttons can be used **independently** of one another. In the toolbar, you will see one of the tool buttons having a half background on the left side of the button as **blue**. This represents the left mouse button, and it means that this specific tool has been **mapped to the left mouse button**. Similarly, the tool button with that has has a half background on the right side as **orange is mapped to the right mouse button**. If a tool button has both a blue and orange background, then this means that this tool has been mapped to both left and right mouse buttons.
 
-So, to sum up, blue represents the left mouse button and orange represents the right mouse button. To map a tool to your left mouse button you can left click the button of the tool you want to map in the toolbar, and to map a tool to your right mouse button you can right click the tool button.
+So, to sum up, blue represents the left mouse button and orange represents the right mouse button. To map a tool to your left mouse button you can left-click the button of the tool you want to map in the toolbar, and to map a tool to your right mouse button you can right-click the tool button.
 
-When you are on your [canvas](user_interface/canvas), if you left click, the tool that you left clicked on the toolbar will be used and if you right click, the tool that you right clicked will be used.
+When you are on your [canvas](user_interface/canvas), if you left-click, the tool that you left-clicked on the toolbar will be used and if you right-click, the tool that you right-clicked will be used.
 
 ![A screenshot example of the Pencil tool having a blue half background, which is mapped to the left mouse button and the Eraser tool having an orange half background, which is mapped to the right mouse button.](../../static/img/left_right_tools.png)
 
@@ -81,4 +81,4 @@ The tool options change every time the user changes the available tool, and most
 ##### An example of tool options, for the Pencil and Eraser tool.
 
 ### Changing colors
-On the above screenshot, on the top side, you can see two color buttons, for the left and right tools. To change them, you can either click on them and a color picker window will appear, or you can also choose a color from the palette. Left clicking a swatch from the palette will change the left color, and right clicking a swatch will change the right color. You can also switch between them by clicking on the double-arrow button above the two color buttons (also mapped to the <kbd>X</kbd> keyboard button by default). The small button below the two color buttons is used to change them back to the default colors, which are black for the left color, and white for the right color.
+On the above screenshot, on the top side, you can see two color buttons, for the left and right tools. To change them, you can either click on them and a color picker window will appear, or you can also choose a color from the palette. Left-clicking a swatch from the palette will change the left color, and right-clicking a swatch will change the right color. You can also switch between them by clicking on the double-arrow button above the two color buttons (also mapped to the <kbd>X</kbd> keyboard button by default). The small button below the two color buttons is used to change them back to the default colors, which are black for the left color, and white for the right color.
