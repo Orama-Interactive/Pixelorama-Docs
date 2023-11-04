@@ -50,10 +50,13 @@ jobs:
       - name: Build PDF
         run: npx docusaurus-prince-pdf --include-index -u https://www.oramainteractive.com/Pixelorama-Docs/
 
+      - name: Rename File
+        run: mv pdf/www.oramainteractive.com-Pixelorama-Docs.pdf pdf/Pixelorama-Docs.pdf
+        
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
-          name: result
+          name: Pixelorama Documentation
           # The output filename can be specified with --output option
           path: pdf/www.oramainteractive.com-Pixelorama-Docs.pdf
           if-no-files-found: error
