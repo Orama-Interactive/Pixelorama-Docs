@@ -47,12 +47,12 @@ jobs:
         run: npx docs-to-pdf docusaurus --initialDocURLs="https://www.oramainteractive.com/Pixelorama-Docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
 
       - name: Rename File
-        run: mv pdf/www.oramainteractive.com-Pixelorama-Docs.pdf pdf/Pixelorama-Docs.pdf
+        run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
         
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
           name: Pixelorama Documentation
           # The output filename can be specified with --output option
-          path: pdf/Pixelorama-Docs.pdf
+          path: Pixelorama-Docs.pdf
           if-no-files-found: error
