@@ -1,0 +1,33 @@
+name: Make Pdf Documentation
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    # Review gh actions docs if you want to further define triggers, paths, etc
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+jobs:
+  build:
+    # prerequisites...
+
+    - name: Install Prince
+      run: |
+        curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+        tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+        cd prince-14.2-linux-generic-x86_64
+        yes "" | sudo ./install.sh
+
+    - name: Build PDF
+      run: npx docusaurus-prince-pdf --include-index -u https://www.oramainteractive.com/Pixelorama-Docs/
+
+    - name: Upload results
+      uses: actions/upload-artifact@v3
+      with:
+        name: result
+        # The output filename can be specified with --output option
+        path: pdf/docusaurus.io-docs.pdf
+        if-no-files-found: error
+
+    # ...other steps
