@@ -40,15 +40,11 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
-      - name: Install Prince
-        run: |
-          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
-          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
-          cd prince-14.2-linux-generic-x86_64
-          yes "" | sudo ./install.sh
+      - name: Install docs-to-pdf 
+        run: sudo npm install -g docs-to-pdf
 
       - name: Build PDF
-        run: npx docusaurus-prince-pdf --include-index -u https://www.oramainteractive.com/Pixelorama-Docs/
+        run: npx docs-to-pdf docusaurus --initialDocURLs="https://www.oramainteractive.com/Pixelorama-Docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://docusaurus.io/img/docusaurus.png" --coverTitle="Docusaurus v2"
 
       - name: Rename File
         run: mv pdf/www.oramainteractive.com-Pixelorama-Docs.pdf pdf/Pixelorama-Docs.pdf
