@@ -44,7 +44,7 @@ jobs:
         run: sudo npm install -g docs-to-pdf
 
       - name: Build PDF
-        run: npx docs-to-pdf docusaurus --initialDocURLs="https://www.oramainteractive.com/Pixelorama-Docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://camo.githubusercontent.com/b9f6be50d3191b180be2cf7217bae12fcfd2104d87e46debddc87030f0f83518/68747470733a2f2f696d672e697463682e7a6f6e652f615731685a3255764e4463774d7a59334c7a63774d5445314e7a55756347356e2f6f726967696e616c2f37596b722532466a2e706e67" --coverTitle="Pixelorama Documentation"
+        run: npx docs-to-pdf docusaurus --initialDocURLs="https://www.oramainteractive.com/Pixelorama-Docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --coverTitle="Pixelorama Documentation"
 
       - name: Rename File
         run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
