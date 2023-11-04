@@ -23,12 +23,6 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
-      - name: Install Prince
-        run: |
-          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
-          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
-          cd prince-14.2-linux-generic-x86_64
-          yes "" | sudo ./install.sh
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
@@ -46,6 +40,13 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
+      - name: Install Prince
+        run: |
+          curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+          tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+          cd prince-14.2-linux-generic-x86_64
+          yes "" | sudo ./install.sh
+
       - name: Build PDF
         run: npx docusaurus-prince-pdf --include-index -u https://www.oramainteractive.com/Pixelorama-Docs/
 
@@ -54,5 +55,5 @@ jobs:
         with:
           name: result
           # The output filename can be specified with --output option
-          path: pdf/docusaurus.io-docs.pdf
+          path: pdf/www.oramainteractive.com-Pixelorama-Docs.pdf
           if-no-files-found: error
