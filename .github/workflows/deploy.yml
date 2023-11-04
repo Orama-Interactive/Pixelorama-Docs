@@ -58,5 +58,5 @@ jobs:
         with:
           name: Pixelorama Documentation
           # The output filename can be specified with --output option
-          path: pdf/www.oramainteractive.com-Pixelorama-Docs.pdf
+          path: pdf/Pixelorama-Docs.pdf
           if-no-files-found: error
