@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages and Generate offline PDF
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy to GitHub Pages and Generate offline PDF
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -39,3 +39,20 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Install docs-to-pdf 
+        run: sudo npm install -g docs-to-pdf
+
+      - name: Build PDF
+        run: npx docs-to-pdf docusaurus --initialDocURLs="https://www.oramainteractive.com/Pixelorama-Docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --coverTitle="Pixelorama Documentation" --pdfMargin="10,20,30,40" --paperFormat="A4"
+
+      - name: Rename File
+        run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
+        
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: Pixelorama Documentation
+          # The output filename can be specified with --output option
+          path: Pixelorama-Docs.pdf
+          if-no-files-found: error
