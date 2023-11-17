@@ -2,6 +2,7 @@
 id: palettes
 title: Palettes
 sidebar_label: Palettes
+sidebar_position: 4
 ---
 
 Palettes are a way to organize colors in your projects.
