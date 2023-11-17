@@ -16,6 +16,10 @@ Besides that, it is **strongly recommended** that you save often, and keep copie
 You can also aid us in our fight against crashes by [reporting issues on GitHub](https://github.com/Orama-Interactive/Pixelorama/issues) and uploading the content of Pixelorama's log files. You can find the log files in `C:\Users\[USERNAME]\AppData\Roaming\Pixelorama\logs` on Windows, `~/.local/share/Pixelorama/logs` on Linux and `/Users/[USERNAME]/Library/Application Support/Pixelorama/logs` for macOS. It is also extremely helpful, if not necessary, to be as specific as possible with the steps that led to the crash. By giving us specific steps to reproduce the issue, we can solve it faster.
 
 
+## My images are being saved as pxo files, and not png, jpg, gif, etc
+You are saving instead of exporting. Saving creates pxo files, which are Pixelorama's custom file format for [projects](concepts/project). To create image files such as png, you need to go to the File menu and select Export. You can refer to the [Save and Export](user_manual/save_and_export) page for more information.
+
+
 ## macOS says that Pixelorama is damaged!
 You may encounter some errors saying that Pixelorama is damaged. This is because the latest versions of MacOS mark the launcher of unknown binaries as a non-executable file. This most likely has to do with the fact that Pixelorama is not signed.
 
@@ -43,12 +47,8 @@ If neither of these works, you could save your projects as a pxo file, open the 
 
 
 ## Drawing is very slow when using a drawing tablet
-If you are on Windows, try disabling Windows Ink, as it is known to create some problems with Pixelorama.
+If you are on Windows, try changing the tablet driver Pixelorama is using, from the Edit menu, Preferences, Drivers.
 
 
 ## Guides are not being created
-To create guides, you have to drag them out from the rulers, on the top and the left of the canvas. However, sometimes this doesn't appear to do anything. There are two possibilities for this.
-
-1) You have disabled guide visibility. To make sure that they are visible, go to the View menu and see if "Show Guides" is ticked on. If it is not, make sure to tick it.
-
-2) A known bug is preventing guide creation. This is related to [Issue #331](https://github.com/Orama-Interactive/Pixelorama/issues/331) on GitHub. To work around this, you can just make a simple change to the image, like drawing, and then you can try dragging a guide again. We are working on finding a solution to this issue.
+To create guides, you have to drag them out from the rulers, on the top and the left of the canvas. However, sometimes this doesn't appear to do anything. If that's the case, then it is very likely that you have disabled guide visibility. To make sure that they are visible, go to the View menu and see if "Show Guides" is ticked on. If it is not, make sure to tick it.
