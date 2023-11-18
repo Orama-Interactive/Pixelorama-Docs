@@ -2,10 +2,11 @@
 id: extension_basics
 title: Extension Basics
 sidebar_label: Extension Basics
+sidebar_position: 1
 ---
 
 ## Making an Extension
-This is a step-by-step guide of how you can make an extension for pixelorama. For this tutorial the extension we'll make will be called "Example" 
+Since **Pixelorama v0.10**, you can add/remove extensions to/from Pixelorama. Extensions are distributed as PCK (.pck) or ZIP (.zip) files and you can manage them from **Edit > Preferences > Extensions**. This is a step-by-step guide of how you can make an extension for pixelorama. For this tutorial the extension we'll make will be called "Example" 
 
 ### Prerequisites
 First of all, there are a few prerequisites for you to start creating extensions.
@@ -130,7 +131,7 @@ func serialize() -> Dictionary:
 ## Exporting the Extension
 
 Now that you have the basic extension code ready, let's export it;
-1. From the top bar in Godot editor go to **Project>Export** and choose any platform option (the extension should work on other platforms regardless of which platform you choose).
+1. From the top bar in Godot editor go to **Project > Export** and choose any platform option (the extension should work on other platforms regardless of which platform you choose).
 
 2. In then go to the **Resources** tab and do the following changes;
    - `Export Mode` should be set to `Export all resources in the project`
@@ -144,7 +145,7 @@ Now that you have the basic extension code ready, let's export it;
 
 ## Installing the Extension
 
-To install an extension, from pixelorama's top menu go to **Edit>Preferences>Extensions** and click <kbd>Add Extension</kbd>.
+To install an extension, from pixelorama's top menu go to **Edit > Preferences > Extensions** and click <kbd>Add Extension</kbd>.
 
 :::tip Drag and Drop
 A more easier way would be to drag and drop the extension in Pixelorama.
