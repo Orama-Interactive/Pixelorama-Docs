@@ -13,15 +13,15 @@ This Api gives you the essentials to develop a working extension for Pixelorama.
 The Api consists of many smaller Apis, each giving access to different areas of the Software;
 
 - [general](#generalapi)
-- menu
-- dialog
-- panel
-- theme
-- tools
-- selection
-- project
-- exports
-- signals
+- [menu](#menuapi)
+- [dialog](#dialogapi)
+- [panel](#panelapi)
+- [theme](#themeapi)
+- [tools](#toolsapi)
+- [selection](#selectionapi)
+- [project](#projectapi)
+- [exports](#exportsapi)
+- [signals](#signalsapi)
 
 To access this anywhere in the extension use `get_node_or_null("/root/ExtensionsApi")`
 
