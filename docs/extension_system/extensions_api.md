@@ -12,22 +12,23 @@ This is the Api documentation of Pixelorama 0.x, After Pixelorama 1.0 instead of
 This Api gives you the essentials to develop a working extension for Pixelorama.
 The Api consists of many smaller Apis, each giving access to different areas of the Software;
 
-- [general](#generalapi)
-- [menu](#menuapi)
-- [dialog](#dialogapi)
-- [panel](#panelapi)
-- [theme](#themeapi)
-- [tools](#toolsapi)
-- [selection](#selectionapi)
-- [project](#projectapi)
-- [exports](#exportsapi)
-- [signals](#signalsapi)
-
 To access this anywhere in the extension use `get_node_or_null("/root/ExtensionsApi")`
 
 :::tip
 Keep in mind that this API is targeted towards users who are not fully familiar with Pixelorama's source code. If you need to do something more complicated and more low-level, you would need to interact directly with the source code. 
 :::
+
+### Properties
+- [general](#generalapi)
+- [menu](#menuapi)
+- [dialog](#dialogapi)
+- [panel](#panelapi)
+- [theme](#themeapi)
+- [tools](#toolapi)
+- [selection](#selectionapi)
+- [project](#projectapi)
+- [exports](#exportapi)
+- [signals](#signalsapi)
 
 ### Method Descriptions
 
