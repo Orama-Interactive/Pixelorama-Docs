@@ -1,0 +1,60 @@
+# inspired from https://dev-classmethod-jp.translate.goog/articles/convert-docsaurus-v3-docs-to-pdf-automatically-on-github-actions-2023-11-15/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_hist=true
+name: Generate PDF
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+      CI: 'true'
+    defaults:
+      run:
+        working-directory: "."
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/previous-releases
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+           sudo apt-get update
+           sudo apt-get install -y gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+           sudo apt-get install -y libgbm-dev
+           sudo apt-get install -y chromium-browser
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        args: install
+    - uses: mujo-code/puppeteer-headful@16.6.0
+      env:
+        CI: "true"
+    - run: |
+           npm install
+           npm run docusaurus build
+           npm run docusaurus serve &
+    - name: Sleep for 30 seconds
+      run: sleep 30s
+      shell: bash
+    - run: |
+           npx docs-to-pdf --initialDocURLs="http://localhost:3000/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --coverTitle="Pixelorama Documentation" --pdfMargin="10,20,30,40" --paperFormat="A4"
+    
+    - name: Rename File
+      run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
+        
+    - name: Upload results
+      uses: actions/upload-artifact@v3
+      with:
+        name: Pixelorama Documentation
+        # The output filename can be specified with --output option
+        path: Pixelorama-Docs.pdf
+        if-no-files-found: error
