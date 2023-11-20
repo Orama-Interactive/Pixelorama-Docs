@@ -7,7 +7,7 @@ slug: /
 ---
 
 :::tip Offline Version
-You can also download the [offline version](https://nightly.link/Orama-Interactive/Pixelorama-Docs/workflows/deploy/master/Pixelorama%20Documentation.zip) of this documentation.
+You can also download the [offline version](https://nightly.link/Orama-Interactive/Pixelorama-Docs/workflows/generatePDF/master/Pixelorama%20Documentation.zip) of this documentation.
 :::
 
 Welcome, fellow dreamer, to the documentation of Pixelorama: your free and open-source pixel-art creation tool, developed by Orama Interactive and our contributors. If you are new to this documentation, we recommend you start by learning [how to install the application](user_manual/installation), then reading the [User Interface Basics](user_manual/user_interface/user_interface_basics) page to familiarize yourself with Pixelorama's workspace. The ultimate goal of this program is to be able to keep up with the user's imagination and assist them in creating any kind of pixel art they wish. This could be a cool landscape, a dope animation, game graphics, random sketches or a well-thought pixelated meme. Thank you for researching our tool!
