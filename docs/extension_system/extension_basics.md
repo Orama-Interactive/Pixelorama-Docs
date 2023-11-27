@@ -15,7 +15,7 @@ First of all, there are a few prerequisites for you to start creating extensions
 - [Source code of Pixelorama](https://github.com/Orama-Interactive/Pixelorama) (This is optional but will speed up you debugging workflow).
 
 ### Process
-1. First of all make a new Godot project of name "Example" (the project name is irrelevent but for simplicity we'll name it the same as our extension).
+1. First of all make a new Godot project of name "Example" (the project name is irrelevant but for simplicity we'll name it the same as our extension).
 2. After that make a directory structure as shown in the image below.
 
 ![Extension File Structure](../../static/img/extension_structure.png)
@@ -85,7 +85,7 @@ func _exit_tree() -> void:  # Extension is being uninstalled or disabled
 ```
 
 ## Limitations and Workarounds
-1. New custom classes (e.g `class_name Foo`) can't be created in the extension, but there is a workarround. Don't assign scripts custom class names and instead of doing `Foo.new()` if say your script *"Foo.gd"* is located at `res://src/Extensions/Example/CustomClasses/Foo.gd` then you can use
+1. New custom classes (e.g `class_name Foo`) can't be created in the extension, but there is a workaround. Don't assign scripts custom class names and instead of doing `Foo.new()` if say your script *"Foo.gd"* is located at `res://src/Extensions/Example/CustomClasses/Foo.gd` then you can use
 ```
 preload(res://src/Extensions/Example/CustomClasses/Foo.gd).new()
 ```
@@ -114,16 +114,16 @@ var has_changed: bool
 # They are written to remove (Method not found in class: Project) errors
 # (add more functions below from the real Project class if your extension needs them)
 func _init(_frames := [], _name := tr("untitled"), _size := Vector2(64, 64)) -> void:
-	return  # As the funcion returns void, we are using return without a value
+	return  # As the functions returns void, we are using return without a value
 
 
 func remove() -> void:
-	return  # As the funcion returns void, we are using return without a value
+	return  # As the functions returns void, we are using return without a value
 
 
 func serialize() -> Dictionary:
-	# As the funcion returns a value, we are returning the most basic value of the same type.
-	# for a Dictionary, it's smallest vaue is just an empty dictionary
+	# As the functions returns a value, we are returning the most basic value of the same type.
+	# for a Dictionary, it's smallest value is just an empty dictionary
 	return {}
 
 ```

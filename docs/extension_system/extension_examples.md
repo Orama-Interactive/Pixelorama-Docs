@@ -50,7 +50,7 @@ func _enter_tree() -> void:
 	# add a test panel as a tab  (this is an example) the tab is located at the same
 	# place as the (Tools tab) by default
 	panel = Panel.new()
-	panel.name = "This is a new pannel"  # This is optional
+	panel.name = "This is a new panel"  # This is optional
 	extension_api.panel.add_node_as_tab(panel)
 
 
