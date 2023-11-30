@@ -87,7 +87,7 @@ module.exports={
           ]
         }
       ],
-      "copyright": "Copyright © 2020 Orama Interactive",
+      "copyright": "Copyright © 2020-present Orama Interactive",
       "logo": {
         "src": "./img/oss_logo.png"
       }
