@@ -12,7 +12,7 @@ Since **Pixelorama v0.10**, you can add/remove extensions to/from Pixelorama. Ex
 First of all, there are a few prerequisites for you to start creating extensions.
 - Some knowledge of GdScript.
 - A ready to use [Godot executable](https://godotengine.org/) (See the [Pixelorama Channgelog](https://github.com/Orama-Interactive/Pixelorama/blob/master/CHANGELOG.md) to figure out which version to use).
-- [Source code of Pixelorama](https://github.com/Orama-Interactive/Pixelorama) (This is optional but will speed up you debugging workflow).
+- [Source code of Pixelorama](https://github.com/Orama-Interactive/Pixelorama) (This is optional but will speed up your debugging workflow).
 
 ### Process
 1. First of all make a new Godot project of name "Example" (the project name is irrelevant but for simplicity we'll name it the same as our extension).
