@@ -26,6 +26,10 @@ Directly on the left of the loop mode button, you will find two buttons used for
 
 The button on the right simply toggles onion skinning on and off, and the one on the left brings up options, like the amount of past (previous) and future (next) frames that appear, and blue-red mode, which tints the previous frames blue, and the next frames red.
 
+:::tip ignore onion skinning
+If you want a layer to ignore onion skinning simply add the "_io" suffix in its name.
+:::
+
 ## Layers
 On the left side of the timeline, you will see the layer buttons. Clicking on a layer button will select the current layer. Double-clicking will let you change the name of that layer.
 
