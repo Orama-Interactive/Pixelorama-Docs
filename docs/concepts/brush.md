@@ -6,6 +6,14 @@ sidebar_label: Brush
 
 Brushes can be used to easily draw complex shapes and patterns, without having to copy and paste them. The user can also change their color and size.
 
+To access brushes, select the pencil tool and click on the white square.
+
+![Brush selection](../../static/img/brush_selection.png)
+
+Then, the different brushes are shown.
+
+![Brush types](../../static/img/brush_types.png)
+
 ## Brush Types
 Pixelorama comes with three default brushes, the usual pixel/square brush, a hollow circle and a filled circle brush. These brushes are based on algorithms, while all of the other brushes as of right now are based on image data. The main difference is that the image-based brushes are scaled the same way that images are being scaled, which may not always have the result we desire. The image-based brushes are also divided into two types, File brushes and Project brushes. File brushes are stored as external `.png` files, while project brushes are stored in the [project](project) itself. File brushes can also be Random brushes. Each time you draw using a random brush, the result will be something different!
 
