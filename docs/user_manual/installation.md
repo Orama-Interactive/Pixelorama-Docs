@@ -5,7 +5,7 @@ sidebar_label: Installation
 sidebar_position: 1
 ---
 
-Pixelorama is available for free for all major desktop platforms, namely Windows, Linux and macOS, as well as Ubuntu Touch, a mobile operating system. There is also a Web version available, which can be used directly from your browser, without downloading it. Stay tuned, because more platforms will be supported soon.
+Pixelorama is available for free for all major desktop platforms, namely Windows, Linux and macOS. There is also a Web version available, which can be used directly from your browser, without downloading it. Stay tuned, because more platforms will be supported soon.
 
 ## Itch.io
 Pixelorama is available for free on [itch.io](https://orama-interactive.itch.io/pixelorama) for Windows, Linux and macOS. You can get it by clicking on "Download Now". A dialog will appear that lets you set a price for the tool. While [donations are appreciated and they help with the development of the software](../development_and_contributing), Pixelorama is a free software and paying is optional. After you decide whether you want to donate or not, you will be taken to the download page, where you can download a version of Pixelorama depending on your operating system.
@@ -37,10 +37,7 @@ Pixelorama is available as a [Snap](https://snapcraft.io/pixelorama). If you hav
 ## macOS
 macOS users can download Pixelorama from itch.io and GitHub Releases, as shown above. If you encounter any issues with macOS saying that the application is damaged, [see this troubleshooting page](../troubleshooting/#macos-says-that-pixelorama-is-damaged).
 
-## Ubuntu Touch
-Mobile users with Ubuntu Touch can get Pixelorama on their devices for free from the [Open Store](https://open-store.io/app/pixelorama.orama-interactive).
-
 ## Early Access - "Nightly" Versions
-If you want to try the latest unstable builds of Pixelorama, you can find them [here](https://nightly.link/Orama-Interactive/Pixelorama/workflows/dev-desktop-builds/master), available for Windows 64-bit, Linux 64-bit and Linux 32-bit ARM (for Raspberry Pi 4), as well as macOS. There is also an early-access Web version available [here](https://orama-interactive.github.io/Pixelorama/early_access/).
+If you want to try the latest unstable builds of Pixelorama, you can find them [here](https://nightly.link/Orama-Interactive/Pixelorama/workflows/dev-desktop-builds/master), available for Windows 64-bit, Linux 64-bit, as well as macOS. There is also an early-access Web version available [here](https://orama-interactive.github.io/Pixelorama/early_access/).
 
 Keep in mind that these builds are very unstable and are not recommended for production.
