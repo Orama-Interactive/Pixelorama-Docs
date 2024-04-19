@@ -2,6 +2,7 @@
 id: canvas
 title: The Canvas
 sidebar_label: The Canvas
+sidebar_position: 2
 ---
 
 ![Pixelorama's Canvas](../../../static/img/canvas.png)
