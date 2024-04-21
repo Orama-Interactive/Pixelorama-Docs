@@ -1,5 +1,5 @@
 ---
-id: user_interface_basics
+id: user_interface
 title: User Interface Basics
 sidebar_label: User Interface Basics
 sidebar_position: 1
@@ -18,8 +18,10 @@ Now, let's categorize the common elements of which the UI is consisted of and gi
 - **3** - Project tabs. This is where you will find all of your currently opened projects and switch between them by clicking on their respective tab.
 - **4** - The [timeline](timeline). This is where you will find the sprite's layers and frames for animation.
 - **5** - A small [canvas preview](canvas_preview). There you can also preview your animation independently from your main canvas.
-- **6** - The [tool options](toolbar/#tool-options). This is where you can configure some settings of your currently active tools, as well as select your left and right colors.
-- **7** - The [palettes](palettes). Useful for easily picking pre-set colors.
+- **6** - The [color pickers](color_pickers) for left/right tools.
+- **7** - The [global tool options](global_options) which are same for both left/right tools.
+- **8** - The [tool options](toolbar/#tool-options). This is where you can configure some settings of your currently active tools, as well as select your left and right colors.
+- **9** - The [palettes](palettes). Useful for easily picking pre-set colors.
 
 :::tip Even More Panels!!!
 There are also other panels in pixelorama but they are hidden by default.
