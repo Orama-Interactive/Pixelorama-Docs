@@ -1,0 +1,30 @@
+---
+id: Import
+title: Import
+sidebar_label: Import
+sidebar_position: 4
+---
+
+In Pixelorama, it is possible to import [.pxo files](../concepts/project/#pxo-files), image files, [palette files](palettes) and [extension files](../extension_system/extension_basics). To import a file, either `drag and drop` it into Pixelorama window or use `File > Open` dialog. You can also open files in Pixelorama through the your computer's file explorer by right clicking on a file, selecting "Open with" and selecting Pixelorama, but the process of making this work is different for each operating system/desktop environment. Doing this will open Pixelorama with the file automatically opened. You can also achieve the same thing by opening Pixelorama through the command line, and giving the names of the files you want to open as arguments.
+
+## Supported image formats
+The image formats that can be imported are: `.png`, `.apng`, `.jpg`/`.jpeg`, `.webp`, `.bmp`, `.svg`, `.tga`, `.hdr`.
+
+## Import image options
+When attempting to import an image, a dialog will appear, containing a preview of the image you want to import, along with options that let you change how you want the image to be imported.
+![Import image dialog](../../static/img/import_options_dialog.png)
+
+These options include:
+- New project, that lets you open the image as a new project
+- Spritesheet (new project), that lets you open the image as a spritesheet in a new project. You can manually set the amount of horizontal and vertical frames, or select "smart slice", which attempts to figure out the amount of frames in the spritesheet automatically.
+- Spritesheet (new layer). Same as above, but instead of opening the spritesheet in a new project, it opens it as a new layer in the currently active project.
+- New frame, which opens the image as a new frame in the currently active project. You can specify which layer the new frame will belong to.
+- Replace cel, which replaces a cel at the frame and the layer of your choosing, with the imported image in the currently active project.
+- New layer, which opens the image as a new layer in the currently active project. You can specify in which frame the new layer will be at.
+- New reference image, which opens the image as a reference image in the currently active project.
+- New palette, which creates a new [palette](palettes) using the colors of the imported image.
+- New brush, which opens the imported image as a [brush](../concepts/brush). You can choose whether the new brush will be a file brush, a project brush, or a random brush.
+- New pattern, which opens the imported image as a pattern, which can be used by the bucket tool.
+
+## Importing multiple images
+When importing multiple images at the same time, the import dialogs will also have an "apply to all" checkbox. When toggling this on in a dialog, the rest of the dialogs will hide and all of the imported images will share the same options. This way you can easily import multiple images as multiple projects, frames, layers, etc. The order that they are being imported is backwards, meaning that the he last image that you attempted to import, will be the first one that actually gets opened. For example, if you attempt to import image files named `1.png`, `2.png` and `3.png` in that order as new frames, the first frame would be image `3.png`, then `2.png` and then `1.png`.
