@@ -7,10 +7,15 @@ sidebar_position: 1
 
 Pixelorama is available for free for all major desktop platforms, namely Windows, Linux and macOS. There is also a Web version available, which can be used directly from your browser, without downloading it. Stay tuned, because more platforms will be supported soon.
 
+## Steam
+Pixelorama is coming soon to [Steam](https://store.steampowered.com/app/2779170/Pixelorama/) for Windows and Linux. It will become available once version 1.0 is out, and it will be paid, as a way to financially support the project. The Steam version is essentially the same as the free version, with some added benefits that come naturally from Steam, such as automatic updates. If you wish to be kept up to date as to when it will be available, **please wishlist it on Steam**.
+<iframe src="https://store.steampowered.com/widget/2779170/" frameborder="0" width="646" height="190"></iframe>
+
 ## Itch.io
 Pixelorama is available for free on [itch.io](https://orama-interactive.itch.io/pixelorama) for Windows, Linux and macOS. You can get it by clicking on "Download Now". A dialog will appear that lets you set a price for the tool. While [donations are appreciated and they help with the development of the software](../development_and_contributing), Pixelorama is a free software and paying is optional. After you decide whether you want to donate or not, you will be taken to the download page, where you can download a version of Pixelorama depending on your operating system.
 
 On the itch.io page, you are also able to run Pixelorama's Web version directly through your browser.
+<iframe frameborder="0" src="https://itch.io/embed/470367" width="552" height="167"><a href="https://orama-interactive.itch.io/pixelorama">Pixelorama by Orama Interactive</a></iframe>
 
 ## GitHub Releases
 Pixelorama is available for free on [GitHub](https://github.com/Orama-Interactive/Pixelorama/releases) for Windows, Linux and macOS. On that page, you can also find previous versions of Pixelorama, but it is recommended to always download the most recent one.

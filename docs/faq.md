@@ -11,9 +11,14 @@ A: Pixelorama is available for the *extremely cheap price of $0.00!* That's righ
 - You are free to download and use Pixelorama for any purpose, personal, non-profit, commercial, or otherwise.
 - You are free to modify, distribute, redistribute, and remix Pixelorama to your heart’s content, for any reason, both non-commercially and commercially.
 
+However, the [Steam version](https://store.steampowered.com/app/2779170/Pixelorama/) will be paid.
+
 ## Q: What platforms is Pixelorama available on?
 A: Pixelorama is currently available for Windows, Linux, Mac and Web browsers. More platforms may be supported in the future.
-You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama) and [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux and in the [Open Store](https://open-store.io/app/pixelorama.orama-interactive) for Ubuntu Touch.
+You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama), [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases) and very soon on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
+
+## Q: What benefits does the Steam version provide?
+A: Users who buy Pixelorama through Steam will enjoy the benefits that Steam provides to all of the games and software hosted there, such as automatic updates. It is also a great way to fund the project's development! Apart from that, there will be no other difference between the non-Steam version. All of Pixelorama's features will be the same in all versions, and all versions will receive the same updates. In other words, the Steam version will not be a "Pro" version. It will be exactly the same as the non-Steam version, just with the added benefits that come naturally from Steam.
 
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.oramainteractive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
@@ -35,3 +40,6 @@ A: The main language is English, but Pixelorama is also available in numerous ot
 
 ## Q: What are the minimum system requirements to run Pixelorama?
 A: Pixelorama is a relatively lightweight software and it should run on most devices, as long as OpenGL 2.1 / OpenGL ES 2.0 is supported. Please be aware that once Pixelorama v1.0 is out, these requirements will be increased to OpenGL 3.3 / OpenGL ES 3.0.
+
+## Q: Does Pixelorama work on the Steam Deck?
+A: It should! It works on Linux, so it should work on Steam Deck as well. Pixelorama also supports gamepad shortcuts, so you should be able to map the Steam Deck's buttons to actions such as undo/redo, copy, paste, etc. The reason we're not 100% certain is because we don't currently own a Steam Deck to test it ourselves.
