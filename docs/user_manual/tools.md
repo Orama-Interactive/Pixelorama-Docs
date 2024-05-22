@@ -36,7 +36,13 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 | Select By Color | Selects all parts of the cel that share the same color.| L: <kbd>W</kbd>, R: <kbd> Alt + W</kbd> |
 | Magic Wand | Selects the neighboring same-color area of the pixel the cursor was in on mouse button press. | L: <kbd>Q</kbd>, R: <kbd> Alt + Q</kbd> |
 | Lasso / Free Select Tool | Selects a rough outline of an area. | L: <kbd>F</kbd>, R: <kbd> Alt + F</kbd> |
-| Move | Moves the content of the active cel. Not a selection tool, see [transforming](transforming). | L: <kbd>T</kbd>, R: <kbd> Alt + T</kbd> |
+
+### Utility tools
+| Name      | Description | Default Shortcut |
+| ----------- | ----------- | ----------- |
+| Move | Moves the content of the active cel. A transformation tool, see [transforming](transforming). | L: <kbd>T</kbd>, R: <kbd> Alt + T</kbd> |
+| Crop | Changes the size of the [canvas](user_interface/canvas). |  |
+| 3D Shape Edit | Only enabled when the actively selected layer is a 3D layer. Used to select 3D shapes in the canvas to edit them. |  |
 
 ### [Canvas](user_interface/canvas) navigation tools
 | Name      | Description | Default Shortcut |
