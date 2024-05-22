@@ -8,7 +8,7 @@ In Pixelorama, the term "Project" refers to the entire sprite, which contains al
 
 A Project contains the following properties:
 - A set of frames for animations, along with their duration, animation tags and FPS, as well as multiple layers. Frames and layers intersect and create [cels](cel), which are the editable images themselves of the project.
-- A [size](../user_manual/transforming/#scale) - width and height - in pixels.
+- A [size](transforming/#scale) - width and height - in pixels.
 - A name.
 - [Brushes](brush) that are local to that specific project.
 - [Guides](../user_manual/user_interface/canvas/#rulers-and-guides) - lines that help you draw.

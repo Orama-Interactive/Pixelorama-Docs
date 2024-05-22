@@ -2,7 +2,7 @@
 id: save_and_export
 title: Save and Export
 sidebar_label: Save and Export
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 You can either save or export your projects. Saving a project will create a [.pxo file](../concepts/project/#pxo-files), which is Pixelorama's custom file format, while exporting means that one (or multiple, in case of animations) `.png`(s), an `.apng`, or a `.gif` file will be created.

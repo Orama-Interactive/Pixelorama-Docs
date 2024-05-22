@@ -2,7 +2,6 @@
 id: palettes
 title: Palettes
 sidebar_label: Palettes
-sidebar_position: 4
 ---
 
 Palettes are a way to organize colors in your projects.
@@ -16,7 +15,7 @@ Palettes currently don't support undo/redo so be careful with any modifications 
 :::
 
 ## Palettes panel
-![Pixelorama's Canvas](../../static/img/palettes-panel.png)
+![Pixelorama's Canvas](../../../static/img/palettes-panel.png)
 
 The top of the panel consists of `Palettes selector`, [`Edit palette button`](#editing-palette-metadata) and [`Add new palette button`](#creating-new-palette).
 
@@ -25,7 +24,7 @@ The main section is the [`Palette grid`](#palette-grid), displaying all colors p
 On the left of the [`Palette grid`](#palette-grid) are [`tools`](#palette-grid-tools) used to edit the colors of the palette.
 
 ### Creating a new palette {#creating-new-palette}
-![Pixelorama's Canvas](../../static/img/palette-create.png)
+![Pixelorama's Canvas](../../../static/img/palette-create.png)
 
 A new palette can be created by clicking `Add new palette button`.
 
@@ -62,7 +61,7 @@ You can limit colors import to just some or all cels (as seen in the animation t
 | All frames | Colors imported from all frames and their layers. |
 
 ### Editing palette metadata {#editing-palette-metadata}
-![Pixelorama's Canvas](../../static/img/palette-edit.png)
+![Pixelorama's Canvas](../../../static/img/palette-edit.png)
 
 Currently, selected palette metadata can be edited with `Edit palette button`.
 

@@ -38,7 +38,7 @@ The "Fill inside" option fills the entire area with the selected color between t
 ### Pixel Perfect
 The Pencil and Eraser (and [Shading](shading)!) tools have an option called "Pixel Perfect". This essentially creates "pixel perfect" lines for you by automatically removing the middle pixel of L-shapes. In other words, it removes extra adjacent pixels often referred to as "doubles" in order to create lines that are one-pixel thick.
 
-![Not pixel-perfect line vs pixel perfect line](../../static/img/pixel_perfect_line_diff.png)
+![Not pixel-perfect line vs pixel perfect line](../../../static/img/pixel_perfect_line_diff.png)
 
 ##### Not pixel-perfect line on the left, compared to a pixel perfect line on the right.
 

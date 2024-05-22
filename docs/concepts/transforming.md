@@ -4,6 +4,8 @@ title: Transforming
 sidebar_label: Transforming
 ---
 
+The term transformation describes an operation that changes or distorts something in some way.
+
 Currently, there are three types of transformations in Pixelorama. Translation (moving), scale and rotation. Transformations can either affect the currently active entire cels, or [selections](selecting).
 
 Keep in mind that **any content moved outside the canvas boundaries will be lost**.
