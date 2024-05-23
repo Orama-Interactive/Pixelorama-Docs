@@ -11,4 +11,7 @@ In Pixelorama, the term "Cel" (from [celluloid](http://en.wikipedia.org/wiki/Cel
 Cels can be found in the timeline. They are the square buttons you can click to edit. You can select/deselect multiple by holding the <kbd>Control</kbd> key and left-clicking individual cels, or hold the <kbd>Shift</kbd> key and left-click a cel to also select all of the cels between the one that was clicked and the one that has been selected last.
 
 ## Linked cels
-You can also right-click cels to link them together. Linked cels share the same image data, meaning that if you make changes to one linked cel, the changes are shared with all other linked cels. Keep in mind that, as of right now, linked cels are layer-local. You cannot have cels linked that belong to different layers, only different frames. Linked cels are marked with a green outline.
+You can also right-click cels, that belong to a pixel layer, to link them together. Linked cels share the same image data, meaning that if you make changes to one linked cel, the changes are shared with all other linked cels. Keep in mind that, as of right now, linked cels are layer-local. You cannot have cels linked that belong to different layers, only different frames. Linked cels are marked with a colored rectangle behind their preview.
+
+## Z-Index
+Z-index can be edited through the cel properties, and it is used to change the ordering of individual cels independently of the layer they are in, making them appear behind, or in front of other cels in different layers. The default value of 0 means that the cel's ordering is the same as its layer's. Positive values move it to the front, and negative values move it to the back.
