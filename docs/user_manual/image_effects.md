@@ -5,6 +5,10 @@ sidebar_label: Image effects
 ---
 You can apply multiple image effects to an image, to easily and quickly affect its content, without modifying it pixel by pixel. The image effects can be found under the Image menu.
 
+:::warning
+Image effects are **destructive**. This means that, once they are applied, they directly modify the image data, and the only way to reverse this change is by undoing. If you want to use a non-destructive workflow, use [layer effects](../concepts/layer#layer-effects) instead.
+:::
+
 ## List of image effects
 | Name      | Description |
 | ----------- | ----------- |
@@ -16,6 +20,8 @@ You can apply multiple image effects to an image, to easily and quickly affect i
 | Invert colors | Inverts the colors of the image. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Desaturation | Desaturates the colors of the image, turning them to grayscale. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Adjust Hue/Saturation/Value | Adjusts the hue, saturation and the value of the colors of the image. |
+| Palettize | Limits the number of colors of the image to the colors of the currently active palette. |
+| Pixelize | Pixelates the image by combining its pixels into larger squares, containing their average color. |
 | Posterize | Limits the number of colors of the image to the posterization level. Can also set an optional dither intensity. |
 | Gradient | Generates a gradient. Its colors can be modified from the gradient edit, by clicking on the colored area to add new color steps. Clicking on the color steps with the left mouse allows you to change the color of that step, and right clicking on a step, removes it. Gradients can either be linear or radial, and they can optionally be dithered and/or repeated. You can also generate step gradients by changing the interpolation type to constant. |
 | Gradient map | Converts the colors of the image into a gradient, based on their lightness. Darker colors are mapped to colors on the left side of the gradient, and brighter colors are mapped to colors on the right side of the gradient. |
