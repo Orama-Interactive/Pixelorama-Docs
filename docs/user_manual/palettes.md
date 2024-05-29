@@ -127,16 +127,15 @@ You can import any image as a palette and extract colors from it. Every color fr
 
 | Format | File extension |
 | -------- | --------  |
-| Pixelorama palette | .tres |
+| Pixelorama palette | .json |
 | GIMP GPL | .gpl |
 | PAL | .pal |
 | Image palette | .png, .bmp, .hdr, .jpg, .jpeg, .svg, .tga, .webp |
-| Pixelorama old palette | .json |
 
 :::caution file extensions
 Palette format detection uses file extensions to determine how to parse palette formats. An incorrect extension will result in an import error.
 :::
 
-:::caution pre-0.9 pixelorama palettes
-Palettes created in versions of Pixelorama prior to 0.9 have to be reimported. The save format was changed from `.json` to more Godot-compatible `.tres`.
+:::caution pre-1.0 pixelorama palettes
+Palettes created in versions of Pixelorama prior to 1.0 cannot be reimported. The save format was changed from `.tres` to `.json`, due to security concerns. In order to convert an old palette to a new one, you can export it as an image from version 0.11.4, and import that image to the newest version.
 :::
