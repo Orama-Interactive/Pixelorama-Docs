@@ -4,14 +4,13 @@ title: Project
 sidebar_label: Project
 ---
 
-In Pixelorama, the term "Project" refers to the entire sprite, which contains all of the frames it might have. Each project can be saved as a `.pxo` file. Multiple projects can be opened in Pixelorama at the same time, with each one having its own tab.
+In Pixelorama, the term "Project" refers to the entire sprite, which contains all of the frames and layers it might have. Each project can be saved as a `.pxo` file. Multiple projects can be opened in Pixelorama at the same time, with each one having its own tab.
 
-A Project contains the following properties:
-- A set of frames for animations, along with their duration, animation tags and FPS, as well as multiple layers. Frames and layers intersect and create [cels](cel), which are the editable images themselves of the project.
-- A [size](../user_manual/transforming/#scale) - width and height - in pixels.
-- A name.
+A project contains the following properties:
+- The image data of each individual [cel](cel).
+- The properties of the project itself, such as its name, size and FPS (frames per second).
+- All of the properties of frames, [layers](layer), cels, animation tags, [guides](../user_manual/user_interface/canvas/#rulers-and-guides).
 - [Brushes](brush) that are local to that specific project.
-- [Guides](../user_manual/user_interface/canvas/#rulers-and-guides) - lines that help you draw.
 
 ## Saving a project
 See [this page](../user_manual/save_and_export/#saving) to learn how to save a project.
@@ -20,11 +19,11 @@ See [this page](../user_manual/save_and_export/#saving) to learn how to save a p
 Pxo files are Pixelorama's custom file format that saves the entire content of the project. It cannot be opened in other image editors.
 
 ### File structure
-The file essentially consists of two lines. The first line is all of the project's metadata, such as project name, size, number of layers, number of frames, tags, [project brushes](brush/#project-brushes), fps etc. They are stored in JSON form, so they can easily be read by other software.
+The file format is essentially a .zip file in disguise. It contains a `data.json` file, and an `image_data` folder. The `data.json` file contains all of the project's metadata, such as project name, size, FPS, and the metadata of layers, frames, cels, etc. They are stored in JSON form, so they can easily be read by other software.
 
-The second line contains all of the image data as buffers. First, all of the image data for every [cel](cel) is being stored. It starts from the very first cel, which is equivalent to the bottom-most layer and the first frame, then it continues for every layer from bottom to top and once it reaches the final layer, moves on to the next frame, where it again starts from the bottommost layer and continues saving up to the top. After all of the cel image data has been saved, the image data of the project brushes are saved if the project has any.
+The `image_data` folder contains all of the image data. It contains another folder called `frames`, which in turn contains a folder for each `frame` of the project, and each frame folder contains the image data of every [cel](cel) that belongs to that frame. To preserve a non-destructive workflow, the cel image data are not affected by layer blend modes and layer effects. If the project has [brushes](brush), a `brushes` folder is also created, containing all of the brush image data. If you have enabled the option to include the blended images, the `image_data` folder will also contain all of the final image data for each frame. A final image is composed of every cel, with the layer effects applied to each cel, blended together into a single image, taking the blend modes of each layer into account.
 
-So, in order for a software to read the data of a pxo, it first reads the first line as a JSON object, and then it loops through the buffers, which all have the same size as the project size, until it reads all the frames and layers. After that, if there are more buffers, they correspond to the project brushes, the size of which is stored in the JSON object.
+In order for a software to read the data of a pxo, it has to open it as a zip file, and then it has to read the `data.json` file, and parse it as JSON object. Then, it either has to loop through the all of the folders included in `image_data/frames`, where each folder contains the cel data for each frame seperately, or, if the final blended images are included and that's all we care about, it just has to loop through all of the images inside the `image_data` folder, where each image corresponds to every frame of the project, and import them.
 
-### ZSTD compression
-During save, you are given the option to select ZSTD compression. If you do, this will reduce your pxo size, but if your project is large and has a lot of content in it, it may take some time to save and load it. Saving projects with ZSTD compression is currently unsupported in the Web version. If you are writing software that supports .pxo files, make sure to detect if the files are compressed first.
+### Include blended images
+During save, you are given the option to select if the blended images will be included in the exported file. If enabled, the final blended images are also being stored in the pxo, for each frame. This makes the pxo file larger and is useful for importing by third-party software or [CLI exporting](../user_manual/cli). Loading pxo files in Pixelorama does not need this option to be enabled.
