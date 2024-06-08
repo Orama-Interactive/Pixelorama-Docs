@@ -20,7 +20,7 @@ Image effects are **destructive**. This means that, once they are applied, they 
 | Invert colors | Inverts the colors of the image. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Desaturation | Desaturates the colors of the image, turning them to grayscale. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Adjust Hue/Saturation/Value | Adjusts the hue, saturation and the value of the colors of the image. |
-| Palettize | Limits the number of colors of the image to the colors of the currently active palette. |
+| Palettize | Limits the number of colors of the image to the colors of the currently active palette. Each color is being mapped to the nearest color in the palette. |
 | Pixelize | Pixelates the image by combining its pixels into larger squares, containing their average color. |
 | Posterize | Limits the number of colors of the image to the posterization level. Can also set an optional dither intensity. |
 | Gradient | Generates a gradient. Its colors can be modified from the gradient edit, by clicking on the colored area to add new color steps. Clicking on the color steps with the left mouse allows you to change the color of that step, and right clicking on a step, removes it. Gradients can either be linear or radial, and they can optionally be dithered and/or repeated. You can also generate step gradients by changing the interpolation type to constant. |
