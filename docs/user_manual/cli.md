@@ -3,7 +3,7 @@ id: cli
 title: Command Line Interface 
 sidebar_label: Command Line Interface
 ---
-Pixelorama offers a Command Line Interface (CLI), allowing you to use some of its features, such as project [exporting](save_and_export), from the command line. The CLI can be used to automate tasks easily. It can only be used on desktop platforms, such us Windows, Linux and macOS.
+Pixelorama offers a Command Line Interface (CLI), allowing you to use some of its features, such as project [exporting](save_and_export), from the command line. The CLI can be used to automate tasks easily. It can only be used on desktop platforms, such as Windows, Linux and macOS.
 
 ## Options
 For the full list of the system options, you can refer to [Godot's documentation](https://docs.godotengine.org/en/stable/tutorials/editor/command_line_tutorial.html). Only the options that have the green checkbox icon in their description can be used in Pixelorama.
