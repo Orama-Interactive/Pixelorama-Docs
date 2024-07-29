@@ -31,16 +31,16 @@ If you want a layer to ignore onion skinning simply add the "_io" suffix in its 
 :::
 
 ## Layers
-On the left side of the timeline, you will see the layer buttons. Clicking on a layer button will select the current layer. Double-clicking will let you change the name of that layer.
+On the left side of the timeline, you will see the layer buttons. Clicking on a layer button will select the current layer. Double-clicking will let you change the name of that layer. Right clicking a layer button will open up a menu, with options such as the layer's properties, and whether it's a clipping mask or not.
 
 The layer buttons have three more buttons on them. The first toggles the layer's visibility. While invisible, the layer cannot be edited by the user. It will also remain invisible on export. The second locks and unlocks the layer. If the layer is locked, it cannot be edited by the user, but it does remain visible. The third button is used to automatically link the new cels that are being created. If it's toggled on, it is essentially a fast way to create linked cels.
 
-There are 6 more buttons located on top of the layers. These, in order of appearance: add a new layer, remove the currently active layer, move the current layer up and down, clone the current layer and merge the current layer with the one directly below it.
+There are 7 more buttons located on top of the layers. These, in order of appearance: add a new layer, remove the currently active layer, move the current layer up and down, clone the current layer, merge the current layer with the one directly below it, and open up a dialog for layer effects. Below these buttons, you can change the selected layer's blend mode and opacity.
 
 ## Frames
 Directly above the cels, you will notice some buttons with each one having a number. These are the frame buttons, and the number they have is their order in the animation.
 
-Clicking on a frame button will select that frame, and right-clicking a frame button will open up a menu. The menu options include a remove frame option, clone frame, move frame to the left, move frame to the right and frame properties. Clicking on frame properties brings up a window that lets you change the duration of that frame.
+Clicking on a frame button will select that frame, and right-clicking a frame button will open up a menu. The menu options include frame properties, remove frame, clone frame, move frame to the left, move frame to the right, new tag, reverse frames (only works when multiple frames are selected), and center frames. Clicking on frame properties brings up a window that lets you change the duration of that frame, as well as set custom user-defined data.
 
 :::tip frame duration
 By default, the duration of each frame is set to 1x, which means it will take exactly as much time as the timeline FPS (frames per second). Setting it to 2x, for example, that frame will take twice as much time, while setting it to 0.5x will take half the time, meaning it will play out faster.
@@ -48,25 +48,21 @@ By default, the duration of each frame is set to 1x, which means it will take ex
 
 You can also drag and drop frame buttons to re-arrange them. This will also affect their corresponding cels.
 
-On the top side of the timeline, you will find frame-related buttons which offer the same functionality as the frame button right-click menu, like adding, removing, cloning and moving frames. You will also find a button that is used to modify `frame tags`.
+On the top side of the timeline, you will find frame-related buttons which offer the same functionality as the frame button right-click menu, like adding, removing, cloning and moving frames.
 
 ### Frame tags
 Frame tags are used to organize different parts of your animated sprite. Those parts can also be exported independently using frame tags.
 
-Clicking on the button mentioned above will bring up this window.
+To create a new tag, you can right click on a frame button and select "New Tag". A popup will appear that lets you set a name for the tag, a color, the starting (from) and ending (to) frame, as well as custom user-defined data.
 
-![Frame tags](../../../static/img/frame_tag_window.png)
+To edit an already existing tag, you can click on its name on the timeline, above the frame area. You can quickly move and resize it by dragging its edges.
 
-Here you can see the list of all of the frame tags of the current [project](../../concepts/project). Using the plus (+) sign, you can add more tags. A tag has a starting frame (from), an ending frame (to), a name and a color.
-
-To edit an already existing tag, you can click on the "Edit" button next to the tag you want.
-
-If "Animation plays only on frames of the same tag" is toggled on, then, when you preview your animation, it will only preview the frames that belong on the same tag as the currently selected frame. This is a great way to preview parts of your animation separately.
+If "Animation plays only on frames of the same tag" is toggled on in the timeline options, then, when you preview your animation, it will only preview the frames that belong on the same tag as the currently selected frame. This is a great way to preview parts of your animation separately.
 
 ## Cels
 Cels are the intersection of layers and frames. For a more detailed explanation, you can [read this page](../../concepts/cel). To select a cel in order to draw on it, you can left-click on their respective button. The cel buttons take the most space in the timeline, and they are located to the right of the layer buttons and below the frame buttons. They also have a small preview of their image data on them.
 
-Right-clicking on a cel button will bring up a menu, with options such as Link (or Unlink) Cel, and Delete, which clears the content of the cel, making it fully transparent.
+Right-clicking on a cel button will bring up a menu, with options such as properties, link (or unlink) cel, and delete, which clears the content of the cel, making it fully transparent. In the cel properties, you can change their opacity (cel opacity is different than layer opacity), their z-index and also set custom user-defined data.
 
 :::tip Selecting multiple cels
 You can select/deselect multiple cels by holding the <kbd>Control</kbd> key and left-clicking individual cels, or hold the <kbd>Shift</kbd> key and left-click a cel to also select all of the cels between the one that was clicked and the one that has been selected last.
