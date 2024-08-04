@@ -13,8 +13,8 @@ Pixelorama is a free and open-source project. This means that all of our income 
 
 [![Become a Patron!](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://patreon.com/OramaInteractive)
 
-## Wishlist (and soon purchase) on Steam
-As you may be aware, [Pixelorama is coming to Steam!](https://store.steampowered.com/app/2779170/Pixelorama/) A great way to support our project is to wishlist it on Steam, and purchase it there when it's available. You can refer to our [FAQ](faq) to find out what's different in the Steam version.
+## Purchase on Steam
+As you may be aware, [Pixelorama is available on Steam!](https://store.steampowered.com/app/2779170/Pixelorama/) Purchasing it and leaving a review is a great way to support our project. You can refer to our [FAQ](faq) to find out what's different in the Steam version.
 <iframe src="https://store.steampowered.com/widget/2779170/" frameborder="0" width="646" height="190"></iframe>
 
 ## Contributing Code

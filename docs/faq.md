@@ -11,14 +11,14 @@ A: Pixelorama is available for the *extremely cheap price of $0.00!* That's righ
 - You are free to download and use Pixelorama for any purpose, personal, non-profit, commercial, or otherwise.
 - You are free to modify, distribute, redistribute, and remix Pixelorama to your heart’s content, for any reason, both non-commercially and commercially.
 
-However, the [Steam version](https://store.steampowered.com/app/2779170/Pixelorama/) will be paid.
+However, the [Steam version](https://store.steampowered.com/app/2779170/Pixelorama/) is paid.
 
 ## Q: What platforms is Pixelorama available on?
 A: Pixelorama is currently available for Windows, Linux, Mac and Web browsers. More platforms may be supported in the future.
 You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama), [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases) and very soon on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
 
 ## Q: What benefits does the Steam version provide?
-A: Users who buy Pixelorama through Steam will enjoy the benefits that Steam provides to all of the games and software hosted there, such as automatic updates. It is also a great way to fund the project's development! Apart from that, there will be no other difference between the non-Steam version. All of Pixelorama's features will be the same in all versions, and all versions will receive the same updates. In other words, the Steam version will not be a "Pro" version. It will be exactly the same as the non-Steam version, just with the added benefits that come naturally from Steam.
+A: Users who buy Pixelorama through Steam will enjoy the benefits that Steam provides to all of the games and software hosted there, such as automatic updates and Steam Achievements. It is also a great way to fund the project's development! Apart from that, there will be no other difference between the non-Steam version. All of Pixelorama's features will be the same in all versions, and all versions will receive the same updates. In other words, the Steam version will not be a "Pro" version. It will be exactly the same as the non-Steam version, just with the added benefits that come naturally from Steam.
 
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.oramainteractive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
@@ -27,7 +27,7 @@ A: Pixelorama is being developed by [Orama Interactive](https://www.oramainterac
 A: Pixelorama is completely safe, as long as you download it from official sources (see `Q: What platforms is Pixelorama available on?` above). Its open-source nature allows for perfect transparency, thus it is impossible for us to sneak in malicious code without anyone noticing. The official builds are also being generated directly from the source code using GitHub Actions, so there is no worry that someone is sneaking in malicious code in the process of compiling. You may, however, get some security warnings from security software, such as Windows SmartScreen. The reason for this is that Pixelorama is not signed, and thus not recognized by the security system. You can safely ignore these warnings and proceed to run Pixelorama.
 
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
-A: Pixelorama is being developed with the Godot Engine (version 4.1), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
+A: Pixelorama is being developed with the Godot Engine (version 4.2), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Can I contribute to this project?
 Yes! Read our [Ways to Contribute](development_and_contributing) page to learn more.

@@ -8,7 +8,7 @@ sidebar_position: 1
 Pixelorama is available for free for all major desktop platforms, namely Windows, Linux and macOS. There is also a Web version available, which can be used directly from your browser, without downloading it. Stay tuned, because more platforms will be supported soon.
 
 ## Steam
-Pixelorama is coming soon to [Steam](https://store.steampowered.com/app/2779170/Pixelorama/) for Windows and Linux. It will become available once version 1.0 is out, and it will be paid, as a way to financially support the project. The Steam version is essentially the same as the free version, with some added benefits that come naturally from Steam, such as automatic updates. If you wish to be kept up to date as to when it will be available, **please wishlist it on Steam**.
+Pixelorama is available on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/) for Windows and Linux. It is paid, as a way to financially support the project. The Steam version is essentially the same as the free version, with some added benefits that come naturally from Steam, such as automatic updates and Steam Achievements.
 <iframe src="https://store.steampowered.com/widget/2779170/" frameborder="0" width="646" height="190"></iframe>
 
 ## Itch.io
@@ -21,7 +21,7 @@ On the itch.io page, you are also able to run Pixelorama's Web version directly 
 Pixelorama is available for free on [GitHub](https://github.com/Orama-Interactive/Pixelorama/releases) for Windows, Linux and macOS. On that page, you can also find previous versions of Pixelorama, but it is recommended to always download the most recent one.
 
 ## Windows
-Windows users can download Pixelorama from itch.io, GitHub Releases and Scoop. It should run on all new Windows versions from Windows 7 and on. There are three available versions, 64-bit portable, 32-bit portable and a 64-bit installer. [See this page to find out whether your Operating System is 64-bit or 32-bit](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+Windows users can download Pixelorama from itch.io, GitHub Releases and Scoop. It should run on all new Windows versions from Windows 7 and on. There are three available versions, 64-bit portable, 32-bit portable and a 64-bit installer. [See this page to find out whether your system is 64-bit or 32-bit](https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
 
 ### Scoop
 You can get Pixelorama with [Scoop](https://scoop.sh/), by pasting these lines in the command prompt.
@@ -31,7 +31,7 @@ You can get Pixelorama with [Scoop](https://scoop.sh/), by pasting these lines i
 `scoop install pixelorama`
 
 ## Linux
-Linux users can download Pixelorama from itch.io, GitHub Releases, Flathub and the Snap Store. There are two available versions, 64-bit and 32-bit. [See this page to find out whether your Operating System is 64-bit or 32-bit](https://www.howtogeek.com/198615/how-to-check-if-your-linux-system-is-32-bit-or-64-bit/).
+Linux users can download Pixelorama from itch.io, GitHub Releases, Flathub and the Snap Store. There are four available versions, x86 64-bit (x86_64), x86 32-bit (x86_32), ARM 64-bit and ARM 32-bit. Most likely you will need to use the x86_64 version, but you can [see this page to find out your CPU architecture, and whether it's 64-bit or 32-bit](https://www.howtogeek.com/198615/how-to-check-if-your-linux-system-is-32-bit-or-64-bit/).
 
 ### Flathub
 You can find Pixelorama for free on [Flathub](https://flathub.org/apps/details/com.orama_interactive.Pixelorama). If you have Flatpak installed, follow the instructions on that page to learn how to install and run the software.
