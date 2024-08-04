@@ -36,6 +36,7 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 | Select By Color | Selects all parts of the cel that share the same color.| L: <kbd>W</kbd>, R: <kbd> Alt + W</kbd> |
 | Magic Wand | Selects the neighboring same-color area of the pixel the cursor was in on mouse button press. | L: <kbd>Q</kbd>, R: <kbd> Alt + Q</kbd> |
 | Lasso / Free Select Tool | Selects a rough outline of an area. | L: <kbd>F</kbd>, R: <kbd> Alt + F</kbd> |
+| Select By Drawing | Select individual pixels manually. Behaves similar to the Pencil tool, but selects instead of drawing. | I: <kbd>F</kbd>, R: <kbd> Alt + I</kbd> |
 
 ### Utility tools
 | Name      | Description | Default Shortcut |
@@ -59,6 +60,7 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 | Bucket | Fill a same-color area or all of the pixels of the same color with a new color. | L: <kbd>B</kbd>, R: <kbd> Alt + B</kbd> |
 | Shading | [See this page for a detailed explanation.](shading)| L: <kbd>U</kbd>, R: <kbd> Alt + U</kbd> |
 | Line Tool | Create a straight line. | L: <kbd>L</kbd>, R: <kbd> Alt + L</kbd> |
+| Curve Tool | Creates a Bézier curve. Click where you want each point of the curve to be, and hold and drag to modify the curve. Pressing <kbd>Control</kbd> removes the last added point. Can also be used as a polygon tool, if "fill shape" is enabled. | L: <kbd>J</kbd>, R: <kbd> Alt + J</kbd> |
 | Rectangle Tool | Create a rectangle.| L: <kbd>S</kbd>, R: <kbd> Alt + S</kbd> |
 | Ellipse Tool | Create an ellipse. | L: <kbd>C</kbd>, R: <kbd> Alt + C</kbd> |
 
@@ -85,6 +87,3 @@ The tool options change every time the user changes the available tool, and most
 
 ![An example of tool options, for the Pencil and Eraser tool.](../../static/img/tool_options.png)
 ##### An example of tool options, for the Pencil and Eraser tool.
-
-### Changing colors
-On the above screenshot, on the top side, you can see two color buttons, for the left and right tools. To change them, you can either click on them and a color picker window will appear, or you can also choose a color from the palette. Left-clicking a swatch from the palette will change the left color, and right-clicking a swatch will change the right color. You can also switch between them by clicking on the double-arrow button above the two color buttons (also mapped to the <kbd>X</kbd> keyboard button by default). The small button below the two color buttons is used to change them back to the default colors, which are black for the left color, and white for the right color.
