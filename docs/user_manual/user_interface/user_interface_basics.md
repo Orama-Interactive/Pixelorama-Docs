@@ -15,7 +15,7 @@ Now, let's categorize the common elements of which the UI is consisted of and gi
 
 - **1** - The traditional top bar with menus found in most windowed applications.
 - **2** - The [toolbar](../tools). The area where you can select a tool to work with.
-- **3** - The [canvas] area. Located in the middle of your view, the canvas is the "sheet" on which you are creating your artwork. This is the main area of the workspace because this is where you will be doing all of the drawing. On the top side you will also find the project tabs, where all of your currently opened projects are. You can switch between them by clicking on their respective tab.
+- **3** - The [canvas](canvas) area. Located in the middle of your view, the canvas is the "sheet" on which you are creating your artwork. This is the main area of the workspace because this is where you will be doing all of the drawing. On the top side you will also find the project tabs, where all of your currently opened projects are. You can switch between them by clicking on their respective tab.
 - **4** - The [timeline](timeline). This is where you will find the projects's layers and frames for animation.
 - **5** - The global tool options, which contain some settings such as mirroring, pixel perfect, alpha lock and dynamics that are being shared between both the left and the right tool.
 - **6** - The color picker, where you can change the colors of the left and right tools.
