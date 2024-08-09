@@ -37,7 +37,7 @@ Adds a simple Panel as a tab, which will be placed at the same place as the Tool
 ```
 extends Node
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 # some references to nodes that will be created later
 var panel
@@ -64,7 +64,7 @@ Adds a menu item in Help menu, which displays a message when clicked on it.
 ```
 extends Node
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 var item_id: int
 
@@ -93,7 +93,7 @@ Adds a theme to pixelorama **Preferences > Interface > Themes** (you need to hav
 ```
 extends Node
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 var theme = load("res://path_to_some_theme.tres") # Replace this with your theme resource
 # your theme resource must be a derivative of themes from
@@ -120,7 +120,7 @@ Sometimes you only need a different font instead of a different theme. This is m
 extends Node
 # used If your goal is to only use a different font
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 var font_res = load("res://path_to_some_font.ttf")  # Replace this with your font resource
 var old_font
@@ -153,9 +153,9 @@ extends Node
 # https://github.com/Orama-Interactive/Pixelorama/blob/master/src/UI/Timeline/AnimationTimeline.gd
 
 # NOTE: some more advanced methods can be accessed from timeline node (un-comment line below to get them)
-#onready var timeline = ExtensionsApi.general.get_global().animation_timeline
+#@onready var timeline = ExtensionsApi.general.get_global().animation_timeline
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 var item_id: int
 var type: int
@@ -204,7 +204,7 @@ Adds a basic custom exporter that will export only odd frames.
 ```
 extends Node
 
-onready var extension_api: Node  # Variable for keeping reference to the Api
+@onready var extension_api: Node  # Variable for keeping reference to the Api
 
 var id: int
 
