@@ -27,7 +27,7 @@ A: Pixelorama is being developed by [Orama Interactive](https://www.oramainterac
 A: Pixelorama is completely safe, as long as you download it from official sources (see `Q: What platforms is Pixelorama available on?` above). Its open-source nature allows for perfect transparency, thus it is impossible for us to sneak in malicious code without anyone noticing. The official builds are also being generated directly from the source code using GitHub Actions, so there is no worry that someone is sneaking in malicious code in the process of compiling. You may, however, get some security warnings from security software, such as Windows SmartScreen. The reason for this is that Pixelorama is not signed, and thus not recognized by the security system. You can safely ignore these warnings and proceed to run Pixelorama.
 
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
-A: Pixelorama is being developed with the Godot Engine (version 4.2), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
+A: Pixelorama is being developed with the Godot Engine (version 4.3), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Can I contribute to this project?
 Yes! Read our [Ways to Contribute](development_and_contributing) page to learn more.
@@ -39,7 +39,7 @@ A: Pixelorama was originally created as a stand-alone program. Our current focus
 A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in is the system language of your device. You can easily change it by going to the Edit menu, Preferences, Language.
 
 ## Q: What are the minimum system requirements to run Pixelorama?
-A: Pixelorama is a relatively lightweight software and it should run on most devices, as long as OpenGL 2.1 / OpenGL ES 2.0 is supported. Please be aware that once Pixelorama v1.0 is out, these requirements will be increased to OpenGL 3.3 / OpenGL ES 3.0.
+A: Pixelorama is a relatively lightweight software and it should run on most devices, as long as OpenGL 3.3 / OpenGL ES 3.0 is supported.
 
 ## Q: Does Pixelorama work on the Steam Deck?
 A: It should! It works on Linux, so it should work on Steam Deck as well. Pixelorama also supports gamepad shortcuts, so you should be able to map the Steam Deck's buttons to actions such as undo/redo, copy, paste, etc. The reason we're not 100% certain is because we don't currently own a Steam Deck to test it ourselves.
