@@ -13,7 +13,7 @@ Right now, there are three types of layers. Pixel layers, group layers, and 3D l
 Pixel layers are the default and most straight forward type of layer. Their cels contain regular raster image data, in which you can normally draw and manipulate pixels. Pixel cels are the only types of cels that can be linked right now.
 
 ### Group layers
-Group layers are used solely for organization and their cels are empty and do not hold any actual data. They can be used to group common layers together, and they can expanded and collapsed from view in the timeline. Right now, they do not affect blending or masking.
+Group layers are used mostly for organization and their cels are empty and do not hold any actual data. They can be used to group common layers together, and they can expanded and collapsed from view in the timeline. If their blend mode is set to something other than passthrough, they blend all of their children together, and they can be used as clipping masks, and by clipping masks.
 
 ### 3D layers
 The cels of 3D layers contain 3D mesh, lighting, camera and environment data, that are being rasterized based on the size of the canvas. They can contain lights, such as directional lights, spot lights and point lights, and a variety of primitive meshes, including boxes, capsules, spheres, cylinders, prisms, toruses, planes and even text. Importing custom .obj models is also possible.
@@ -23,6 +23,7 @@ The blend mode of each layer determines how its colors blend with the colors of 
 
 | Name      | Category | Description |
 | ----------- | ----------- | ----------- |
+| Passthrough | Normal | Only for group layers. Ignores group blending, like the group doesn't exist. |
 | Normal | Normal | The blend layer colors are simply placed on top of the base colors. |
 | Darken | Darken | Keeps the darker colors between the blend and the base layers. |
 | Multiply | Darken | Multiplies the numerical values of the two colors, giving a darker result. |
