@@ -9,10 +9,13 @@ This is the documentation for Api version 4
 :::
 
 ### Description
-This Api gives you the essentials to develop a working extension for Pixelorama.
-The Api consists of many smaller Apis, each giving access to different areas of the Software;
+This Api gives you the essentials to develop a working extension for Pixelorama. To keep things organized, the Api is divided into
+many smaller Apis, each giving access to different areas of the Software;
 
-To access this anywhere in the extension use `get_node_or_null("/root/ExtensionsApi")`
+To access this anywhere in the extension use `get_node_or_null("/root/ExtensionsApi")` e.g.
+``` 
+var api = get_node_or_null("/root/ExtensionsApi")
+```
 
 :::tip
 Keep in mind that this API is targeted towards users who are not fully familiar with Pixelorama's source code. If you need to do something more complicated and more low-level, you would need to interact directly with the source code. 
@@ -41,13 +44,13 @@ Keep in mind that this API is targeted towards users who are not fully familiar 
 - **Array[Node]** `get_main_nodes(extension_name: StringName)`
 
     - Returns the initial nodes of an extension named `extension_name`. initial nodes are the nodes whose paths are in the `nodes` key of an extension.json file.
-An extensions can be made to communicate with each other using this method. 
+Extensions can be made to communicate with each other using this method. 
 
 
 GeneralAPI
 ---
 ### Description
-This part of Api provides stuff like commonly used Autoloads, App's version info etc the most basic (but important) stuff.
+This part of Api provides the general stuff, like commonly used Autoloads, App's version info etc. The most basic (but important) stuff.
 
 ### Method Descriptions
 
@@ -57,20 +60,21 @@ This part of Api provides stuff like commonly used Autoloads, App's version info
 
 - **ConfigFile** `get_config_file()`
 
-    - Returns the `ConfigFile` contains all the settings (Brushes, sizes, preferences, etc...).
+    - Returns the `ConfigFile` containing all Pixelorama settings (e.g. Brushes, sizes, preferences, etc...).
 
 - **"src/Autoload/Global.gd"** `get_global()`
 
-    - Returns the Global autoload used by Pixelorama.
-Contains references to almost all UI Elements, Variables that indicate different settings etc..., In short it is the most important autoload of Pixelorama.
+    - Returns the **Global** autoload used by Pixelorama.
+Contains references to almost all UI Elements, Variables that indicate different settings etc...,
+In short it is the most important autoload of Pixelorama.
 
 - **"src/Autoload/DrawingAlgos.gd"** `get_drawing_algos()`
 
-    - Returns the DrawingAlgos autoload, contains different drawing algorithms used by Pixelorama.
+    - Returns the **DrawingAlgos** autoload, contains different drawing algorithms used by Pixelorama.
 
 - **ShaderImageEffect** `get_shader_image_effect()`
 
-    - Gives you a new ShaderImageEffect class. this class can apply shader to an image.
+    - Gives you a new `ShaderImageEffect` class. this class can apply shader to an image.
 It contains method: `generate_image(img: Image, shader: Shader, params: Dictionary, size: Vector2)`
 Whose parameters are identified as:
 
@@ -91,15 +95,15 @@ Whose parameters are identified as:
 
 - **ValueSlider** `create_value_slider()`
 
-    - Returns a new ValueSlider. Useful for editing floating values.
+    - Returns a new `ValueSlider`. Useful for editing floating values.
 
 - **ValueSliderV2** `create_value_slider_v2()`
 
-    - Returns a new ValueSliderV2. Useful for editing 2D vectors.
+    - Returns a new `ValueSliderV2`. Useful for editing 2D vectors.
 
 - **ValueSliderV3** `create_value_slider_v3()`
 
-    - Returns a new ValueSliderV3. Useful for editing 3D vectors.
+    - Returns a new `ValueSliderV3`. Useful for editing 3D vectors.
 
 
 MenuAPI
@@ -123,7 +127,7 @@ Gives ability to add/remove items from menus in the top bar.
 - **int** `add_menu_item(menu_type: int, item_name: String, item_metadata: Variant, item_id := -1)`
 
     - Adds a menu item of title `item_name` to the `menu_type` defined by `@unnamed_enums`.
-`item_metadata` is usually a window node you want to appear when you click the `item_name`. That window node should also have a `menu_item_clicked` function inside its script.
+`item_metadata` is usually a window node you want to appear when you click the `item_name`. That window node should also have a `menu_item_clicked() -> void` function inside its script.
 Index of the added item is returned (which can be used to remove menu item later on).
 
 - **void** `remove_menu_item(menu_type: int, item_idx: int)`
