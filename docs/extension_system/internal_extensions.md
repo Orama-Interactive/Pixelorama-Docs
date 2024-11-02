@@ -13,17 +13,17 @@ The concept of internal extensions was origally targeted towards potentially mak
 
         | Internal Extensions | Standard way (as separate project) |
         | --- | --- |
-        | Both ways are easily interchangable | Both ways are easily interchangable |
-        | During development you don't have to export a pck, everytime you need to debug the extension | To debug you'd have to re-export your extension which is time consuming |
+        | Both ways are easily interchangeable | Both ways are easily interchangeable |
+        | During development you don't have to export a pck, every time you need to debug the extension | To debug you'd have to re-export your extension which is time consuming |
         | Both Pixelorama's source code and creating an Extension project is required (The Extension project is required for when you **release** your extension) | Creating the Extension project is required but Pixelorama's source code is optional |
-        | You can extend pixelorama's classes (like BaseTool) | You can still extend classes godot's code editor will complain (it's perfectly fine but it's not very pleasing to the eye) |
+        | You can extend pixelorama's classes (like BaseTool) | You can still extend classes, but Godot's code editor will complain (it's perfectly fine but it's not very pleasing to the eye) |
 
 ## Making an Extension, internal
 :::tip version control
 To ensure your work isn't accidentally lost, it is highly recommended that also use version control (e.g Git) in your extension project and in pixelorama's source.
 :::
 
-1. First, make an extension project by following [this tutorial](./extension_basics#making-an-extension) (from here, it will now be reffered to as **your project**).
+1. First, make an extension project by following [this tutorial](./extension_basics#making-an-extension) (from here, it will now be referred to as **your project**).
 2. Get and unzip the [source code](https://github.com/Orama-Interactive/Pixelorama/releases) of pixelorama that you intend to use for your extension.
 3. Create an `Extensions` folder (case sensitive) in the pixelorama's source code in the `src` folder.
 4. from your project, copy (not cut/move) the contents from `src/Extensions` folder to the `src/Extensions` folder in pixelorama (created in step 3).
