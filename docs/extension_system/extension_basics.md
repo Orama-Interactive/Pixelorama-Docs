@@ -15,6 +15,10 @@ First of all, there are a few prerequisites for you to start creating extensions
 - [Source code](https://github.com/Orama-Interactive/Pixelorama/releases) for your target version of Pixelorama (This is optional but will speed up your debugging workflow).
 
 ### Process
+:::tip version control
+To ensure your work isn't accidentally lost, it is highly recommended that you use version control (e.g Git) in your extension project. 
+:::
+
 1. First of all make a new Godot project of name "Example" (the project name is irrelevant but for simplicity we'll name it the same as our extension).
 2. After that make a directory structure as shown in the image below.
 
