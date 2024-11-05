@@ -89,6 +89,9 @@ func _exit_tree() -> void:  # Extension is being uninstalled or disabled
 ```
 
 ## Exporting the Extension
+:::info Export Templates
+Downloading/Installing export templates is not required for `.pck` export.
+:::
 
 Now that you have the basic extension code ready, let's export it;
 1. From the top bar in Godot editor go to **Project > Export** and choose any platform option (the extension should work on other platforms regardless of which platform you choose).
@@ -102,10 +105,6 @@ Now that you have the basic extension code ready, let's export it;
 ##### Extension Export Options.
 
 3. After that, press <kbd>Export PCK/Zip</kbd> and export it as a PCK file (both Zip and PCK extensions are recognized by Pixelorama but PCK is recommended). The name of exported pck should be the same as the `name` of your extension, in this case it should be `Example.pck`
-
-:::tip
-You don't have to install export templates for the `.pck` export.
-:::
 
 ## Installing the Extension
 
