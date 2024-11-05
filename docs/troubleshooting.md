@@ -6,6 +6,9 @@ sidebar_label: Troubleshooting
 
 This page lists common issues encountered when using Pixelorama and possible solutions. To experience as less issues as possible, make sure you are always using the latest stable version of Pixelorama.
 
+## Some things stopped working after the update!
+After updating pixelorama, if some things like tools or effects stop working, some extension may be causing this behavior due to some file conflicts, try to update your extensions as soon as possible or uninstall them if there is none (Disabling the extension won't fix it). 
+
 ## Pixelorama crashed while I was working on my project!
 Crashes are unfortunate, and while we are doing our best to fix them, some issues causing the application to crash may have escaped our grasp. The good news is that you can enable **automatic backups**, that save your work every a certain time interval. You can enable them from the Edit menu, Preferences, Backup and then by ticking on "Enable autosave".
 
@@ -21,13 +24,18 @@ You are saving instead of exporting. Saving creates pxo files, which are Pixelor
 
 
 ## macOS says that Pixelorama is damaged!
+![Damaged App](../static/img/damaged_app.png)
+
 You may encounter some errors saying that Pixelorama is damaged. This is because the latest versions of MacOS mark the launcher of unknown binaries as a non-executable file. This most likely has to do with the fact that Pixelorama is not signed.
 
 Read this guide for more information: https://disable-gatekeeper.github.io/
 
 
 ## I have performance issues, Pixelorama is very slow on my machine
-We are doing our best to optimize the performance. That being said, you can improve the performance of the app significantly by changing its maximum framerate, in order to reduce CPU usage. To do that, you can go to the Edit menu, Preferences and then click the Performance tab. There, you can set a maximum value for the FPS in "Set application FPS limit:". Keep in mind that the lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive, so make sure not to set it *too low*. 0 means that there is no limit.
+We are doing our best to optimize the performance. That being said, you can improve the performance of the app significantly by trying the following:
+- Change the **app's** maximum framerate, in order to reduce CPU usage. To do that, you can go to the Edit menu, Preferences and then click the Performance tab. There, you can set a maximum value for the FPS in "Set application FPS limit:". Keep in mind that the lower the number, the lower the CPU usage, but the application gets slower, choppier and unresponsive, so make sure not to set it *too low*. 0 means that there is no limit.
+
+- If you have any group layers, try setting their blend mode to "Passthrough".
 
 If you have a specific performance issue you'd like us to look at, feel free to [open an issue on Pixelorama's GitHub Repository](https://github.com/Orama-Interactive/Pixelorama/issues).
 
@@ -48,6 +56,8 @@ If neither of these works, you could save your projects as a pxo file, open the 
 
 ## Drawing is very slow when using a drawing tablet
 If you are on Windows, try changing the tablet driver Pixelorama is using, from the Edit menu, Preferences, Drivers.
+
+![Tablet Drivers](../static/img/tablet_driver.png)
 
 
 ## Guides are not being created

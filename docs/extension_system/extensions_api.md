@@ -2,10 +2,10 @@
 id: extension_api
 title: ExtensionsApi
 sidebar_label: ExtensionsApi
-sidebar_position: 2
+sidebar_position: 3
 ---
 :::tip
-This is the documentation for Api version 4
+This is the documentation for Api version 5
 :::
 
 ### Description
@@ -203,6 +203,18 @@ Gives access to theme related functions.
 - **void** `remove_theme(theme: Theme)`
 
     - Remove the `theme` from preferences.
+
+- **void** `add_font(font: Font)`
+
+    - Adds a new `font`.
+
+- **void** `remove_font(font: Font)`
+
+    - Removes a loaded `font`. If that font is the current one of the interface, the font gets changed to `Roboto`.
+
+- **void** `set_font(font: Font)`
+
+    - Sets a `font` as the current one for the interface. The font must have been added beforehand by `add_font()`.
 
 
 ToolAPI

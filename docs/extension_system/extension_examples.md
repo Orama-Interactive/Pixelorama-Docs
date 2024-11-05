@@ -2,7 +2,7 @@
 id: extension_examples
 title: Examples
 sidebar_label: Examples
-sidebar_position: 3
+sidebar_position: 4
 ---
 :::caution code version
 The examples below assume you are developing for the latest Pixelorama release
