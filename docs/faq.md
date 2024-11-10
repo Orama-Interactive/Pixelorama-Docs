@@ -15,10 +15,10 @@ However, the [Steam version](https://store.steampowered.com/app/2779170/Pixelora
 
 ## Q: What platforms is Pixelorama available on?
 A: Pixelorama is currently available for Windows, Linux, Mac and Web browsers. More platforms may be supported in the future.
-You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama), [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases) and very soon on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
+You can download Pixelorama from [itch.io](https://orama-interactive.itch.io/pixelorama), [GitHub releases](https://github.com/Orama-Interactive/Pixelorama/releases) and on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/). It is also available on Scoop for Windows, as a [Flatpak](https://flathub.org/apps/details/com.orama_interactive.Pixelorama) and [Snap](https://snapcraft.io/pixelorama) for Linux.
 
 ## Q: What benefits does the Steam version provide?
-A: Users who buy Pixelorama through Steam will enjoy the benefits that Steam provides to all of the games and software hosted there, such as automatic updates and Steam Achievements. It is also a great way to fund the project's development! Apart from that, there will be no other difference between the non-Steam version. All of Pixelorama's features will be the same in all versions, and all versions will receive the same updates. In other words, the Steam version will not be a "Pro" version. It will be exactly the same as the non-Steam version, just with the added benefits that come naturally from Steam.
+A: Users who buy Pixelorama through Steam will enjoy the benefits that Steam provides to all of the games and software hosted there, such as automatic updates and Steam Achievements. It is also a great way to fund the project's development! Apart from that, there will be no other difference between the non-Steam version. All of Pixelorama's features will be the same in all versions, and all versions will receive the same updates. In other words, the Steam version will **not** be a "Pro" version. It will be exactly the same as the non-Steam version, just with the added benefits that come naturally from Steam.
 
 ## Q: Who is working on Pixelorama?
 A: Pixelorama is being developed by [Orama Interactive](https://www.oramainteractive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
@@ -36,7 +36,7 @@ Yes! Read our [Ways to Contribute](development_and_contributing) page to learn m
 A: Pixelorama was originally created as a stand-alone program. Our current focus is to keep improving it and not implementing it into Godot itself, but we are not declining the possibility of it being a plugin one day. However, if you are interested in direct Pixelorama support from Godot, you can use this amazing [Godot Pixelorama importer plugin](https://github.com/Technohacker/godot_pixelorama_importer) which can be used to make Godot import pxo files.
 
 ## Q: What languages is Pixelorama available in?
-A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in is the system language of your device. You can easily change it by going to the Edit menu, Preferences, Language.
+A: The main language is English, but Pixelorama is also available in numerous other languages! [All of our translation files are hosted in Crowdin](https://crowdin.com/project/pixelorama). By default, the language that Pixelorama is in is the system language of your device. You can easily change it by going to the `Edit menu > Preferences > Language`.
 
 ## Q: What are the minimum system requirements to run Pixelorama?
 A: Pixelorama is a relatively lightweight software and it should run on most devices, as long as OpenGL 3.3 / OpenGL ES 3.0 is supported.

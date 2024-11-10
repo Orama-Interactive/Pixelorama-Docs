@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Palettes are a way to organize colors in your projects.
 
-Pixelorama ships on most platforms with several pre-made palettes. These palettes can be freely modified.
+Pixelorama ships on most platforms with two pre-made palettes (`Default` and `Pixelorama`). These palettes can be freely modified.
 
 All palettes are physically stored on disk in Pixelorama data folder.
 
@@ -18,11 +18,9 @@ Palettes currently don't support undo/redo so be careful with any modifications 
 ## Palettes panel
 ![Pixelorama's Canvas](../../static/img/palettes-panel.png)
 
-The top of the panel consists of `Palettes selector`, [`Edit palette button`](#editing-palette-metadata) and [`Add new palette button`](#creating-new-palette).
+The top of the panel consists of [`tools`](#palette-grid-tools) (used to edit colors of the palette), `Palettes selector`, [`Edit palette button`](#editing-palette-metadata) and [`Add new palette button`](#creating-new-palette).
 
 The main section is the [`Palette grid`](#palette-grid), displaying all colors present in the currently selected palette.
-
-On the left of the [`Palette grid`](#palette-grid) are [`tools`](#palette-grid-tools) used to edit the colors of the palette.
 
 ### Creating a new palette {#creating-new-palette}
 ![Pixelorama's Canvas](../../static/img/palette-create.png)
@@ -102,15 +100,16 @@ Tools allow you to edit colors in the palette.
 | -----  | ---- | ----------- |
 | `+` | Add a new color | Left mouse click adds left tool color. Right mouse click adds right tool color. |
 | `-` | Remove a selected color | Left mouse click removes left selected color. Right mouse click removes right selected color. |
+| `↓` | Palette sorting options| A drop-down appears, containing the available sorting options. You can either apply the new color order directly to palette or to a copy of it. |
 
 ### Colors movement
 Colors can be moved and copied around in the palette grid.
 
 | Shortcut | Movement description |
-| -------- | --------  |
+| -------- | -------- |
 | `Mouse drag` | Color switches with a color it is dropped on. |
-| <kbd>Shift</kbd> + `Mouse drag` | Color is inserted where dropped. If dropped on another color the original color is moved to the right with every color next to it.  |
-| <kbd>Ctrl</kbd> + `Mouse drag` | Color is copied where dropped. If dropped on another color the original color is overwritten.  |
+| <kbd>Shift</kbd> + `Mouse drag` | Color is inserted where dropped. If dropped on another color the original color is moved to the right with every color next to it. |
+| <kbd>Ctrl</kbd> + `Mouse drag` | Color is copied where dropped. If dropped on another color the original color is overwritten. |
 
 ## Palettes import
 To import a palette, either `drag and drop` a palette file into Pixelorama window or use `File > Open` dialog.
