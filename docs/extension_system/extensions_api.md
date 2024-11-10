@@ -355,7 +355,7 @@ Gives access to adding custom exporters.
  - IMAGE = 0
  - SPRITESHEET = 1
 
-## Method Descriptions
+### Method Descriptions
 
 - **int** `add_export_option(format_info: Dictionary, exporter_generator: Object, tab: ExportTab, is_animated: bool)`
 
@@ -383,7 +383,7 @@ ImportAPI
 ### Description
 Gives access to adding custom exporters.
 
-## Method Descriptions
+### Method Descriptions
 
 - **int** `add_import_option(import_name: StringName, import_scene_preload: PackedScene)`
 
@@ -404,7 +404,7 @@ PaletteAPI
 ### Description
 Gives access to palette related stuff.
 
-## Method Descriptions
+### Method Descriptions
 
 - **void** `remove_import_option(id: int)`
 
