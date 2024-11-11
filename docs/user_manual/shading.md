@@ -18,3 +18,9 @@ Here is a video by Brandon James Greer that explains the concept of hue shifting
 :::caution hue shifting limits
 The hue shifting mode does not always change the hue, saturation and value of the colors exactly as much as the values have been set by the user. For example, a color with a hue of 70 and the shading tool set to hue shifting, lighten and a hue of, let's say, 20, will not result in a color with a hue of 50 (because 70 - 20 = 50), but it will rather stay limited to 60, as this is the hard limit of lighting. Similarly, the hard hue limit of darkening is 240. If you want to exactly change the HSV values of a color, you can use the `Adjust Hue/Saturation/Value` image effect under the Image menu.
 :::
+
+## Color Replace
+This mode is pretty much self explainatory. The user selects an array of colors by first selecting a color on the palette and then specifying the number of colors to pick after it through the `Colors right` slider. When shading, if a color is present in the chosen array of colors, it then gets replaced by the next (or previous) color in the array, depending on your current lighten/darken mode.
+
+![Color replace mode properties](../../static/img/shading_cr.png)
+##### Properties of the Color replace shading mode.
