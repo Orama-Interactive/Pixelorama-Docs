@@ -231,6 +231,49 @@ Gives ability to add/remove tools.
     - At the moment extensions can't make their own shortcuts so you can leave `shortcut` and `extra_shortcuts` as `[]`.
 To determine the position of tool in tool list, use `insert_point` (if you leave it empty then the added tool will be placed at bottom)
 
+    - Your tool must have a script attached to it with the following updaters inside (Pixelorama's tool system expects these to be present inside a tool).
+        ```
+        extends VBoxContainer  ## Or whatever your tool extends
+
+
+        ## Reference to the tool's slot (assigned by Tools autoload).
+        var tool_slot
+        ## Tools autoload displays it's content to the cursor label at top menu.
+        var cursor_text := ""
+
+
+        ## Gets called whenever tool starts drawing.
+        func draw_start(pos: Vector2i) -> void:
+	        pass
+
+
+        ## Gets called whenever tool moves (during drawing only).
+        func draw_move(pos: Vector2i) -> void:
+	        pass
+
+
+        ## Gets called when tool stops drawing.
+        func draw_end(pos: Vector2i) -> void:
+	        pass
+
+
+        ## Gets called whenever tool's cursor moves
+        func cursor_move(pos: Vector2i) -> void:
+	        return
+
+
+        ## Gets called whenever tool's cursor moves
+        ## (You are allowed to use functions associated with _draw() here)
+        func draw_indicator(left: bool) -> void:
+	        return
+
+
+        ## Whenever tool's preview is required.
+        ## (You are allowed to use functions associated with _draw() here)
+        func draw_preview() -> void:
+	        pass
+        ```
+
 - **void** `remove_tool(tool_name: String)`
 
     - Removes a tool with name `tool_name` and assign Pencil as left tool, Eraser as right tool.
