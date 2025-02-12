@@ -9,35 +9,42 @@ Internal extensions are extensions that are not `.pck` files, but actual code (a
 
 The concept of internal extensions was origally targeted towards potentially making pixelorama more modular by grouping some of it's features into smaller extensions, but it can also be used in developing of extensions by users.
 
+We will refer to our extension as "Example"
+
 ## Comparing the two methods
 
         | Internal Extensions | Standard way (as separate project) |
         | --- | --- |
         | Both ways are easily interchangeable | Both ways are easily interchangeable |
         | During development you don't have to export a pck, every time you need to debug the extension | To debug you'd have to re-export your extension which is time consuming |
-        | Both Pixelorama's source code and creating an Extension project is required (The Extension project is required for when you **release** your extension) | Creating the Extension project is required but Pixelorama's source code is optional |
+        | Pixelorama's source code is required | Creating the Extension project is required but Pixelorama's source code is optional |
         | You can extend pixelorama's classes (like BaseTool) | You can still extend classes, but Godot's code editor will complain (it's perfectly fine but it's not very pleasing to the eye) |
 
-## Making an Extension, internal
-:::tip version control
-To ensure your work isn't accidentally lost, it is highly recommended that you use version control (e.g Git) in your extension project and in pixelorama's source.
-:::
+## Making an Internal Extension
 
-1. First, make an extension project by following [this tutorial](./extension_basics#making-an-extension) (from here, it will now be referred to as **your project**).
-2. Get and unzip the [source code](https://github.com/Orama-Interactive/Pixelorama/releases) of pixelorama that you intend to use for your extension.
-3. Create an `Extensions` folder (case sensitive) in the pixelorama's source code in the `src` folder.
-4. From your project, copy (not cut/move) the contents from `src/Extensions` folder to the `src/Extensions` folder in pixelorama (created in step 3).
-5. Navigate to the `src/Extensions/(extension name)/extension.json` file and copy the value of the `name` key. Then open `src/HandleExtensions.gd` file in pixelorama's source and find the `_add_internal_extensions()` method. Modify and save it as follows:
+1. Get and unzip the [source code](https://github.com/Orama-Interactive/Pixelorama/releases) of pixelorama that you intend to use for your extension.
+2. Create an `Extensions` folder (case sensitive) in the pixelorama's source code inside the `res://src` folder.
+3. Make the necessary files mentioned in step 2 of [this tutorial](./extension_basics#process). Your directory structure will resemble something like this
+
+(Add Image here)
+
+4. Navigate to the `res://src/Extensions/(extension name)/extension.json` file and copy the value of the `name` key. Then open `res://src/HandleExtensions.gd` file in pixelorama's source and find the `_add_internal_extensions()` method. Modify and save it as follows:
     ```
     func _add_internal_extensions() -> void:
-        _load_extension("ExtensionName", true)  # Add this line, and replace `ExtensionName` with the value of your `name` key.
+        _load_extension("Example", true)  # Add this line, and replace `Example` with the value of your `name` key.
     ```
-Now the extension has become internal. From here you can continue to code in the `Extensions/<your extension>` folder of pixelorama (just don't create any files in outside your extension folder).
+Now the extension has become internal. From here you can continue to code in the `res://src/Extensions/<your extension>` folder of pixelorama (just don't create any files in outside your extension folder).
 
+## Exporting an Internal Extension
 
-## Exporting your extension.
+### Converting an Internal Extension into an External one
 
-When you are done making your extension and are ready to release and distribute your extension you have to convert your internal extension back to a regular extension.
-1. Remove/comment the line that was added to `src/HandleExtensions.gd` (In step 5 of [Making an Extension, internal](#making-an-extension-internal))
-2. From pixelorama, copy (not cut/move) your extension folder from `src/Extensions`, back to the `src/Extensions` folder of your project (replacing existing files).
-3. Export your project by following [this tutorial](./extension_basics#exporting-the-extension).
+These steps are basically the reverse of the steps mentioned in the previous section.
+1. Make a new Godot project called "Example" (the **project name** is irrelevant but for simplicity we'll name it the same as our extension).
+2. Remove/comment the line that was added to `res://src/HandleExtensions.gd` (In step 5 of [Making an Extension, internal](#making-an-extension-internal)). This step is not compulsory but is mentioned anyway for the sake of completeness.
+3. From Pixelorama, move/cut your extension folder from `res://src/Extensions/Example`, To the `res://src/Extensions/Example` folder of your project (replacing existing files).
+
+(Add Image Here)
+
+4. Now you can safely delete pixelorama's source code if you want (or use it for some other extension).
+5. Export your extension, using steps from [this tutorial](./extension_basics#exporting-the-extension).
