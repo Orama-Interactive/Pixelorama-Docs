@@ -21,6 +21,9 @@ We will refer to our extension as "Example"
         | You can extend pixelorama's classes (like BaseTool) | You can still extend classes, but Godot's code editor will complain (it's perfectly fine but it's not very pleasing to the eye) |
 
 ## Making an Internal Extension
+:::tip converting external extension
+The process for converting an **existing** external extension into an internal extension is almost the same as this. Instead of making files (step 3), you copy them over.
+:::
 
 1. Get and unzip the [source code](https://github.com/Orama-Interactive/Pixelorama/releases) of pixelorama that you intend to use for your extension.
 2. Create an `Extensions` folder (case sensitive) in the pixelorama's source code inside the `res://src` folder.
