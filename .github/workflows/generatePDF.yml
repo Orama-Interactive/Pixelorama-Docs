@@ -52,7 +52,7 @@ jobs:
       run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
         
     - name: Upload results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Pixelorama Documentation
         # The output filename can be specified with --output option
