@@ -182,7 +182,8 @@ func menu_item_clicked():
 		# get an image (For testing) from the current cel
 		dest_img = extension_api.project.get_current_cel().get_image()
 		# also make a new project
-		new_project = extension_api.project.new_project([], "Test", Vector2(64, 64))
+		var frames := Array([], TYPE_OBJECT, &"RefCounted", load("res://src/Classes/Frame.gd"))
+		new_project = extension_api.project.new_project(frames, "Test", Vector2(64, 64))
 	if thing_to_do == 1:
 		# To change something or get something in a project we must make it our "current_project" first
 		extension_api.project.switch_to(new_project)
