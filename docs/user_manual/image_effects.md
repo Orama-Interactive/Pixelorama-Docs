@@ -19,6 +19,7 @@ Image effects are **destructive**. This means that, once they are applied, they 
 | Desaturation | Desaturates the colors of the image, turning them to grayscale. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Adjust Hue/Saturation/Value | Adjusts the hue, saturation and the value of the image's colors. |
 | Adjust Brightness/Contrast | Adjusts the brightness, contrast, and even the saturation, RGB values and tint color of the image's colors. |
+| Color Curves | Adjusts the RGB, Red, Green, Blue, Alpha, Hue, Saturation and Value channels of the image using curves. |
 | Palettize | Limits the number of colors of the image to the colors of the currently active palette. Each color is being mapped to the nearest color in the palette. |
 | Posterize | Limits the number of colors of the image to the posterization level. Can also set an optional dither intensity. |
 | Gradient map | Converts the colors of the image into a gradient, based on their lightness. Darker colors are mapped to colors on the left side of the gradient, and brighter colors are mapped to colors on the right side of the gradient. |
