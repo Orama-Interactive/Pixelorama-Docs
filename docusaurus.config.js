@@ -81,11 +81,40 @@ module.exports={
           "title": "Community",
           "items": [
             {
-              "label": "Twitter",
-              "to": "https://twitter.com/OramaInteractiv"
-            }
+              "label": "Steam",
+              "to": "https://store.steampowered.com/app/2779170/Pixelorama/"
+            },
+            {
+              "label": "Patreon",
+              "to": "https://www.patreon.com/c/OramaInteractive/"
+            },
+            {
+              "label": "Itch.io",
+              "to": "https://orama-interactive.itch.io/pixelorama"
+            },
+            {
+              "label": "Discord",
+              "to": "https://discord.gg/GTMtr8s"
+            },
           ]
-        }
+        },
+        {
+          "title": "Social media",
+          "items": [
+            {
+              "label": "Mastodon",
+              "to": "https://mastodon.art/@Pixelorama"
+            },
+            {
+              "label": "Bluesky",
+              "to": "https://bsky.app/profile/pixelorama.bsky.social"
+            },
+            {
+              "label": "YouTube",
+              "to": "https://www.youtube.com/@OramaInteractive"
+            },
+          ]
+        },
       ],
       "copyright": "Copyright © 2020-present Orama Interactive",
       "logo": {
