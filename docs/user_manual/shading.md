@@ -20,7 +20,7 @@ The hue shifting mode does not always change the hue, saturation and value of th
 :::
 
 ## Color Replace
-This mode is pretty much self explainatory. The user selects an array of colors by first selecting a color on the palette and then specifying the number of colors to pick after it through the `Colors right` slider. When shading, if a color is present in the chosen array of colors, it then gets replaced by the next (or previous) color in the array, depending on your current lighten/darken mode.
+This mode is pretty much self explanatory. The user selects an array of colors by first selecting a color on the palette and then specifying the number of colors to pick after it through the `Colors right` slider. When shading, if a color is present in the chosen array of colors, it then gets replaced by the next (or previous) color in the array, depending on your current lighten/darken mode.
 
 ![Color replace mode properties](../../static/img/shading_cr.png)
 ##### Properties of the Color replace shading mode.
