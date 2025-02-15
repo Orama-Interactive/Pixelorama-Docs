@@ -25,6 +25,7 @@ The blend mode of each layer determines how its colors blend with the colors of 
 | ----------- | ----------- | ----------- |
 | Passthrough | Normal | Only for group layers. Ignores group blending, like the group doesn't exist. |
 | Normal | Normal | The blend layer colors are simply placed on top of the base colors. |
+| Erase | Normal | Erases the non-transparent areas of the upper layer from the lower layer's alpha. |
 | Darken | Darken | Keeps the darker colors between the blend and the base layers. |
 | Multiply | Darken | Multiplies the numerical values of the two colors, giving a darker result. |
 | Color burn | Darken | Darkens by increasing the contrast between the blend and base colors. |
