@@ -8,7 +8,7 @@ In Pixelorama, the term "Project" refers to the entire sprite, which contains al
 
 A project contains the following properties:
 - The image data of each individual [cel](cel).
-- The properties of the project itself, such as its name, size and FPS (frames per second).
+- The properties of the project itself, such as its name, size, FPS (frames per second) and [color mode](color_mode).
 - All of the properties of frames, [layers](layer), cels, animation tags, [guides](../user_manual/user_interface/canvas/#rulers-and-guides).
 - [Brushes](brush) that are local to that specific project.
 
