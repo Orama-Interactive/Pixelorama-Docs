@@ -19,7 +19,7 @@ Group layers are used mostly for organization and their cels are empty and do no
 The cels of 3D layers contain 3D mesh, lighting, camera and environment data, that are being rasterized based on the size of the canvas. They can contain lights, such as directional lights, spot lights and point lights, and a variety of primitive meshes, including boxes, capsules, spheres, cylinders, prisms, toruses, planes and even text. Importing custom .obj models is also possible.
 
 ### Tilemap layers
-Tile map layers are a special type of pixel layer, where they contain a tileset, and each grid cell has a reference to a tile from its tileset.
+Tilemap layers are a special type of pixel layer which use a tileset, and each cell of the grid has a reference to a tile from that tileset. See [the tilemaps page](../user_manual/tilemaps) for more information.
 
 ### Audio layers
 Audio layers do not contain any visible data. Rather, as their name suggests, they contain audible data. More specifically, each audio layer contains an audio file, which can be played at any time during the animation. Users can load an audio file (only `.mp3` files are supported at the moment), and choose the frame they want the audio to start playing. Making an audio layer invisible essentially mutes the audio. Exporting a project file with audio layers as a video file will include the audio in the exported video.

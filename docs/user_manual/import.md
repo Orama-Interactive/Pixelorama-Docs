@@ -25,6 +25,7 @@ These options include:
 - New palette, which creates a new [palette](palettes) using the colors of the imported image.
 - New brush, which opens the imported image as a [brush](../concepts/brush). You can choose whether the new brush will be a file brush, a project brush, or a random brush.
 - New pattern, which opens the imported image as a pattern, which can be used by the bucket tool.
+- Tileset, which can be used by [tilemap layers](tilemaps). You can manually set the amount of horizontal and vertical slices, or select "smart slice", which attempts to figure out the amount of frames in the spritesheet automatically.
 
 ## Importing multiple images
 When importing multiple images at the same time, the import dialogs will also have an "apply to all" checkbox. When toggling this on in a dialog, the rest of the dialogs will hide and all of the imported images will share the same options. This way you can easily import multiple images as multiple projects, frames, layers, etc. The order that they are being imported is backwards, meaning that the the last image that you attempted to import, will be the first one that actually gets opened. For example, if you attempt to import image files named `1.png`, `2.png` and `3.png` in that order as new frames, the first frame would be image `3.png`, then `2.png` and then `1.png`.
