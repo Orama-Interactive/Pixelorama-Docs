@@ -38,7 +38,7 @@ jobs:
       env:
         CI: "true"
     - run: |
-           npm install
+           npm install docs-to-pdf
            npm run docusaurus build
            npm run docusaurus serve &
     - name: Sleep for 30 seconds
