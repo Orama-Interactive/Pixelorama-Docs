@@ -1,5 +1,4 @@
-# Uses a derivative of https://github.com/vaggeliskls/docusaurus-to-pdf?tab=readme-ov-file#example-workflow
-name: "Generate PDF from Docusaurus"
+name: Generate PDF
 
 on:
   push:
@@ -10,33 +9,48 @@ on:
     branches:
       - master
       - main
-
 jobs:
-  generate-pdf:
+  build:
     runs-on: ubuntu-latest
+    env:
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+      CI: 'true'
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/previous-releases
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - run: |
+    - uses: actions/checkout@v2
+    - run: |
            sudo apt-get update
+           sudo apt-get install -y libgbm-dev
            sudo apt-get install -y chromium-browser
-           npm install docusaurus
-           npx docusaurus start
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        args: install
+    - uses: mujo-code/puppeteer-headful@18.9.0
+      env:
+        CI: "true"
+    - run: |
+           npm install docs-to-pdf
+           npm run docusaurus build
+           npm run docusaurus serve
 
-      - name: Sleep for 30 seconds
-        run: sleep 30s
+    - name: Sleep for 30 seconds
+      run: sleep 30s
 
-      - name: Run Docusaurus to PDF Action
-        uses: vaggeliskls/docusaurus-to-pdf@v1
-        with:
+    - name: Run Docusaurus to PDF Action
+      uses: vaggeliskls/docusaurus-to-pdf@v1
+      with:
           DOCS_URL: "http://localhost:3000/docs/"
           OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
           COVER_TITLE: "Pixelorama Documentation"
           EXTRA_ARGS: --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --pdfMargin="10,20,30,40" --paperFormat="A4"
 
-      - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v4
-        with:
+    - name: Upload PDF Artifact
+      uses: actions/upload-artifact@v4
+      with:
           name: Pixelorama Documentation
           path: "./Pixelorama-Docs.pdf"
