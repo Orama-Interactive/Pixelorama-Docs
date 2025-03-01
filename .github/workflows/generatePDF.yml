@@ -18,10 +18,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - run: |
+           npm run docusaurus build
+           npm run docusaurus serve &
+
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+
       - name: Run Docusaurus to PDF Action
         uses: vaggeliskls/docusaurus-to-pdf@v1
         with:
-          DOCS_URL: "https://www.oramainteractive.com/Pixelorama-Docs"
+          DOCS_URL: "http://localhost:3000/docs/"
           OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
           COVER_TITLE: "Pixelorama Documentation"
           EXTRA_ARGS: --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --pdfMargin="10,20,30,40" --paperFormat="A4"
