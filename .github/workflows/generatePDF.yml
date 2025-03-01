@@ -20,8 +20,7 @@ jobs:
 
       - run: |
            npm install docusaurus
-           npm run docusaurus build
-           npm run docusaurus serve &
+           npx docusaurus start
 
       - name: Sleep for 30 seconds
         run: sleep 30s
