@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - run: |
+           npm install docusaurus
            npm run docusaurus build
            npm run docusaurus serve &
 
