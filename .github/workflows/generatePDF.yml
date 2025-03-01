@@ -1,5 +1,5 @@
-# inspired from https://dev-classmethod-jp.translate.goog/articles/convert-docsaurus-v3-docs-to-pdf-automatically-on-github-actions-2023-11-15/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_hist=true
-name: Generate PDF
+# Uses a derivative of https://github.com/vaggeliskls/docusaurus-to-pdf?tab=readme-ov-file#example-workflow
+name: "Generate PDF from Docusaurus"
 
 on:
   push:
@@ -10,50 +10,24 @@ on:
     branches:
       - master
       - main
+
 jobs:
-  build:
+  generate-pdf:
     runs-on: ubuntu-latest
-    env:
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
-      CI: 'true'
-    defaults:
-      run:
-        working-directory: "."
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/previous-releases
     steps:
-    - uses: actions/checkout@v2
-    - run: |
-           sudo apt-get update
-           sudo apt-get install -y libgbm-dev
-           sudo apt-get install -y chromium-browser
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        args: install
-    - uses: mujo-code/puppeteer-headful@18.9.0
-      env:
-        CI: "true"
-    - run: |
-           npm install docs-to-pdf
-           npm run docusaurus build
-           npm run docusaurus serve &
-    - name: Sleep for 30 seconds
-      run: sleep 30s
-      shell: bash
-    - run: |
-           npx docs-to-pdf --no-sandbox --initialDocURLs="http://localhost:3000/docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --coverTitle="Pixelorama Documentation" --pdfMargin="10,20,30,40" --paperFormat="A4"
-    
-    - name: Rename File
-      run: mv docs-to-pdf.pdf Pixelorama-Docs.pdf
-        
-    - name: Upload results
-      uses: actions/upload-artifact@v4
-      with:
-        name: Pixelorama Documentation
-        # The output filename can be specified with --output option
-        path: Pixelorama-Docs.pdf
-        if-no-files-found: error
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Docusaurus to PDF Action
+        uses: vaggeliskls/docusaurus-to-pdf@v1
+        with:
+          DOCS_URL: "https://www.oramainteractive.com/Pixelorama-Docs"
+          OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
+          COVER_TITLE: "Pixelorama Documentation"
+          EXTRA_ARGS: --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --pdfMargin="10,20,30,40" --paperFormat="A4"
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pixelorama Documentation
+          path: "./Pixelorama-Docs.pdf"
