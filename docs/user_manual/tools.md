@@ -60,7 +60,7 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 | Bucket | Fill a same-color area or all of the pixels of the same color with a new color. | L: <kbd>B</kbd>, R: <kbd> Alt + B</kbd> |
 | Shading | [See this page for a detailed explanation.](shading)| L: <kbd>U</kbd>, R: <kbd> Alt + U</kbd> |
 | Line Tool | Create a straight line. | L: <kbd>L</kbd>, R: <kbd> Alt + L</kbd> |
-| Curve Tool | Creates a Bézier curve. Click where you want each point of the curve to be, and hold and drag to modify the curve. Pressing <kbd>Control</kbd> removes the last added point. Can also be used as a polygon tool, if "fill shape" is enabled. | L: <kbd>J</kbd>, R: <kbd> Alt + J</kbd> |
+| Curve Tool | Creates a Bézier curve. Click where you want each point of the curve to be, and hold and drag to modify the curve. Double-click to finish drawing the curve. Pressing <kbd>Control</kbd> removes the last added point. Can also be used as a polygon tool, if "fill shape" is enabled. | L: <kbd>J</kbd>, R: <kbd> Alt + J</kbd> |
 | Rectangle Tool | Create a rectangle.| L: <kbd>S</kbd>, R: <kbd> Alt + S</kbd> |
 | Ellipse Tool | Create an ellipse. | L: <kbd>C</kbd>, R: <kbd> Alt + C</kbd> |
 

@@ -26,11 +26,14 @@ Now, let's categorize the common elements of which the UI is consisted of and gi
 There are even more panels in Pixelorama, but they are hidden by default. To make them visible, you can go to the top bar menu, select Window, Panels, and toggle on the panels you wish to make visible. You can hide them by toggling them off the same way.
 :::
 
-## Changing theme
-By default, the dark theme is enabled on Pixelorama. You can select another by going to the Edit menu on the top bar, selecting Preferences and clicking on the `Interface` tab on the left.
+## Changing the look of the interface
+By default, the dark theme is enabled on Pixelorama. You can select another by going to the Edit menu on the top bar, selecting Preferences and clicking on the `Interface` tab on the left. There, you can also change other settings, such as the display scale of the entire interface and the font that the text of the interface uses, as well as its size.
 
 ## UI customization
 The user interface of Pixelorama is very customizable, allowing you to re-arrange the panels however you want. To move a panel, you have to enable "Moveable Panels" from the Window menu (or press F9, which is its default shortcut). This will make each panel have their own tab. Click with your left mouse button (or touch, if you are using a touch screen) on the tab of the panel you wish to move, and drag it to the area you want to move it to. A highlight will appear while dragging, which lets you know of the space the panel will take once you finish dragging. Release your mouse button (or your finger) to move the panel to its new position.
+
+## Floating windows
+If the tabs of the panels are visible, on the right side of the tab area, there will be a small options button. Clicking on that, a menu appears with the option make the panel into a floating window. Closing that floating window will turn it back into a panel. By default, these windows will be embedded into Pixelorama's main window. If you want them to be able to go outside the main window and act as native windows of your operating system, you can go to the Edit menu, Preferences, and under the Interface category, toggle "Single window mode" off, and then restart Pixelorama.
 
 ## UI layouts
 You also have the ability to make custom layouts of the user interface. You can change the layout by going to the Window menu, and selecting a layout from the Layouts submenu. If you want to save the current state of the UI as a layout, you can go to the Window menu, and, under Layouts, select "Manage Layouts". A dialog will appear, where you can add a new layout that is based of the current state of the user interface, and you can rename and delete other layouts. Clicking on a layout in that dialog will show a preview of how that layout looks like, and double clicking it will apply it to the UI.
