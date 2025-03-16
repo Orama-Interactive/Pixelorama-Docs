@@ -45,6 +45,7 @@ When this mode is used, the behavior of most tools changes.
 | Pencil, bucket, line, curve and shape | Place tiles |
 | Eraser | Remove tiles |
 | Color picker | Quickly select a tile from the tilemap |
+| Move | Moves the tilemap's offset along with its tiles |
 | Selection | Select entire grid cells. Resizing a selection does not resize the pixels. Instead, it resizes the tile indices of the grid cells, placing more tiles if the selection is enlarged, or removing if it gets smaller. |
  
 
