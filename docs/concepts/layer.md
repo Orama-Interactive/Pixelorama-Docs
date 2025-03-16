@@ -22,7 +22,7 @@ The cels of 3D layers contain 3D mesh, lighting, camera and environment data, th
 Tilemap layers are a special type of pixel layer which use a tileset, and each cell of the grid has a reference to a tile from that tileset. See [the tilemaps page](../user_manual/tilemaps) for more information.
 
 ### Audio layers
-Audio layers do not contain any visible data. Rather, as their name suggests, they contain audible data. More specifically, each audio layer contains an audio file, which can be played at any time during the animation. Users can load an audio file (only `.mp3` files are supported at the moment), and choose the frame they want the audio to start playing. Making an audio layer invisible essentially mutes the audio. Exporting a project file with audio layers as a video file will include the audio in the exported video.
+Audio layers do not contain any visible data. Rather, as their name suggests, they contain audible data. More specifically, each audio layer contains an audio file, which can be played at any time during the animation. Users can load an audio file (only `.mp3` and `.wav` files are supported at the moment), and choose the frame they want the audio to start playing. Making an audio layer invisible essentially mutes the audio. Exporting a project file with audio layers as a video file will include the audio in the exported video.
 
 ## Blend modes
 The blend mode of each layer determines how its colors blend with the colors of the layer directly below it. Pixelorama supports the following blend modes:
