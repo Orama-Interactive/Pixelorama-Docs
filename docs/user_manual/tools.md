@@ -41,17 +41,18 @@ These are all of the available tools in Pixelorama in order, from top to bottom.
 ### Utility tools
 | Name      | Description | Default Shortcut |
 | ----------- | ----------- | ----------- |
-| Move | Moves the content of the active cel. A transformation tool, see [transforming](transforming). | L: <kbd>T</kbd>, R: <kbd> Alt + T</kbd> |
-| Crop | Changes the size of the [canvas](user_interface/canvas). |  |
+| Move | Moves the content of the active cel. A transformation tool, see [transforming](transforming). | L: <kbd>M</kbd>, R: <kbd> Alt + M</kbd> |
+| Crop | Changes the size of the [canvas](user_interface/canvas). | L: <kbd>V</kbd>, R: <kbd> Alt + V</kbd> |
+| Text | Adds custom text to the image. | L: <kbd>T</kbd>, R: <kbd> Alt + T</kbd> |
 | 3D Shape Edit | Only enabled when the actively selected layer is a 3D layer. Used to select 3D shapes in the canvas to edit them. |  |
 
 ### [Canvas](user_interface/canvas) navigation tools
 | Name      | Description | Default Shortcut |
 | ----------- | ----------- | ----------- |
 | Zoom | Allows the user to change the zoom level of the canvas.| L: <kbd>Z</kbd>, R: <kbd> Alt + Z</kbd> |
-| Pan | Allows the user to move around the canvas. | L: <kbd>M</kbd>, R: <kbd> Alt + M</kbd> |
+| Pan | Allows the user to move around the canvas. | L: <kbd>A</kbd>, R: <kbd> Alt + A</kbd> |
 
-### [Drawing tools and drawing-assisting tools](drawing)
+### [Drawing and drawing-assisting tools](drawing)
 | Name      | Description | Default Shortcut |
 | ----------- | ----------- | ----------- |
 | Color Picker | Get the color of the pixel on mouse position. | L: <kbd>O</kbd>, R: <kbd> Alt + O</kbd> |
