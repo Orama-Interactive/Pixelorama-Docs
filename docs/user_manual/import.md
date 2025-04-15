@@ -51,7 +51,7 @@ Pixelorama can import Aseprite files, with the following features supported:
 
 Does not yet support:
 - Palettes. Will be supported once we add project palettes in Pixelorama.
-- Slices. Will be supported once we add slices (or a similar concept) in Pixelorama. Related: #812
+- Slices. Will be supported once we add slices (or a similar concept) in Pixelorama. Related: [#812](https://github.com/Orama-Interactive/Pixelorama/discussions/812)
 - Cel extra, color profile, external files & mask.
 
 \* Aseprite projects with grayscale color mode are being converted to RGBA color mode when imported in Pixelorama, as Pixelorama does not support this color mode at the moment.
