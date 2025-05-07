@@ -17,10 +17,10 @@ A project contains the following properties:
 See [this page](../user_manual/save_and_export/#saving) to learn how to save a project.
 
 ## .pxo files
-Pxo files are Pixelorama's custom file format that saves the entire content of the project. It cannot be opened in other image editors.
+Pxo files are Pixelorama's custom file format that saves the entire content of the project. As it is a format dedicated to Pixelorama, it is not meant to be opened by most other conventional image editors, unless they have manually added support for it.
 
 ### File structure
-The file format is essentially a .zip file in disguise. It contains a `data.json` file, and an `image_data` folder. The `data.json` file contains all of the project's metadata, such as project name, size, FPS, and the metadata of layers, frames, cels, etc. They are stored in JSON form, so they can easily be read by other software.
+The file format is essentially a .zip file in disguise. It contains a `data.json` file, and an `image_data` folder. The `data.json` file contains all of the project's metadata, such as project name, size, FPS, and the metadata of layers, frames, cels, etc. They are stored in JSON form, so they can easily be read by other software, such as custom tools or game engine plugins.
 
 The `image_data` folder contains all of the image data. It contains another folder called `frames`, which in turn contains a folder for each `frame` of the project, and each frame folder contains the image data of every [cel](cel) that belongs to that frame. To preserve a non-destructive workflow, the cel image data are not affected by layer blend modes and layer effects. Along with the image data themselves, the data of the indices of each pixel are also being stored in the form of images. The files of these names start with `indices_`, and they are needed for [indexed mode](color_mode#indexed). 
 
