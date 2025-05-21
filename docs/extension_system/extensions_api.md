@@ -5,7 +5,7 @@ sidebar_label: ExtensionsApi
 sidebar_position: 3
 ---
 :::tip
-This is the documentation for Api version 5
+This is the documentation for Api version 6
 :::
 
 ### Description
@@ -13,12 +13,12 @@ This Api gives you the essentials to develop a working extension for Pixelorama.
 many smaller Apis, each giving access to different areas of the Software;
 
 To access this anywhere in the extension use `get_node_or_null("/root/ExtensionsApi")` e.g.
-``` 
+```
 var api = get_node_or_null("/root/ExtensionsApi")
 ```
 
 :::tip
-Keep in mind that this API is targeted towards users who are not fully familiar with Pixelorama's source code. If you need to do something more complicated and more low-level, you would need to interact directly with the source code. 
+Keep in mind that this API is targeted towards users who are not fully familiar with Pixelorama's source code. If you need to do something more complicated and more low-level, you would need to interact directly with the source code.
 :::
 
 ### Properties
@@ -44,7 +44,7 @@ Keep in mind that this API is targeted towards users who are not fully familiar 
 - **Array[Node]** `get_main_nodes(extension_name: StringName)`
 
     - Returns the initial nodes of an extension named `extension_name`. initial nodes are the nodes whose paths are in the `nodes` key of an extension.json file.
-Extensions can be made to communicate with each other using this method. 
+Extensions can be made to communicate with each other using this method.
 
 
 GeneralAPI
@@ -116,11 +116,11 @@ Gives ability to add/remove items from menus in the top bar.
  - FILE = 0
  - EDIT = 1
  - SELECT = 2
- - IMAGE = 3
- - EFFECTS = 3
- - VIEW = 4
- - WINDOW = 5
- - HELP = 6
+ - PROJECT = 3
+ - EFFECTS = 4
+ - VIEW = 5
+ - WINDOW = 6
+ - HELP = 7
 
 ### Method Descriptions
 
@@ -184,6 +184,10 @@ Gives access to theme related functions.
 
 ### Method Descriptions
 
+- **"src/Autoload/Themes.gd"** `autoload()`
+
+    - Returns the **Themes** autoload. Allows interactions with themes on a more deeper level.
+
 - **void** `add_theme(theme: Theme)`
 
     - Adds the `theme` to **Edit > Preferences > Interface > Themes**.
@@ -222,11 +226,23 @@ ToolAPI
 ### Description
 Gives ability to add/remove tools.
 
+### Enumerations
+**enum**  `LayerTypes`:
+ - PIXEL = 0
+ - GROUP = 1
+ - THREE_D = 2
+ - TILEMAP = 3
+ - AUDIO = 4
+
 ### Method Descriptions
+
+- **"src/Autoload/Tools.gd"** `autoload()`
+
+    - Returns the **Tools** autoload. Allows interactions with tools on a more deeper level.
 
 - **void** `add_tool(tool_name: String, display_name: String, scene: PackedScene, layer_types: PoolIntArray = [], extra_hint := "", shortcut: String, extra_shortucts := [], insert_point := -1)`
 
-    - Adds a tool to pixelorama with name `tool_name` (without spaces), display name `display_name`, tool scene `scene`, layers that the tool works on `layer_types`, `extra_hint` (text that appears when mouse havers tool icon), primary shortcut name `shortcut` and any extra shortcuts `extra_shortucts`. 
+    - Adds a tool to pixelorama with name `tool_name` (without spaces), display name `display_name`, tool scene `scene`, layers that the tool works on `layer_types` defined by `LayerTypes`, `extra_hint` (text that appears when mouse havers tool icon), primary shortcut name `shortcut` and any extra shortcuts `extra_shortucts`.
 
     - At the moment extensions can't make their own shortcuts so you can leave `shortcut` and `extra_shortcuts` as `[]`.
 To determine the position of tool in tool list, use `insert_point` (if you leave it empty then the added tool will be placed at bottom)
@@ -314,6 +330,10 @@ Gives access to pixelorama's selection system.
 
     - Makes a project brush out of the current selection's content.
 
+- **Image** `get_enclosed_image()`
+
+    - Returns the portion of current cel's image enclosed by the selection. It's similar to `make_brush()` but it returns the image instead.
+
 - **void** `copy()`
 
     - Copies the selection content (works in or between pixelorama instances only).
@@ -340,7 +360,7 @@ Gives access to basic project manipulation functions.
 
 ### Method Descriptions
 
-- **Project** `new_project(frames: Array[Frame] = [], name: String = tr(...), size: Vector2 = Vector2(64, 64), fill_color: Color = Color.TRANSPARENT)`
+- **Project** `new_project(frames: Array[Frame] = [], name: String = tr("untitled"), size: Vector2 = Vector2(64, 64), fill_color: Color = Color.TRANSPARENT)`
 
     - Creates a new project (with new tab) with name `name`, size `size`, fill color `fill_color` and frames `frames`. The created project also gets returned.
 
@@ -363,7 +383,7 @@ Frames are counted from left to right, layers are counted from bottom to top. Fr
 
 - **BaseCel** `get_current_cel()`
 
-    - Returns the current cel. Cel type can be checked using function `get_class_name()` located inside the cel. It's type can be **GroupCel**, **PixelCel**, **Cel3D**, or **BaseCel**.
+    - Returns the current cel. Cel type can be checked using function `get_class_name()` located inside the cel. It's type can be **GroupCel**, **PixelCel**, **Cel3D**, **CelTileMap**, **AudioCel** or **BaseCel**.
 
 - **BaseCel** `get_cel_at(project: Project, frame: int, layer: int)`
 
@@ -377,15 +397,17 @@ Frames are counted from left to right, layers are counted from bottom to top. Fr
 
     - Adds a new frame in the current project after frame `after_frame`.
 
-- **void** `add_new_layer(above_layer: int, name: String, type: res://src/Autoload/Global.gd.LayerTypes)`
+- **void** `add_new_layer(above_layer: int, name := "", type: res://src/Autoload/Global.gd.LayerTypes = 0)`
 
-    - Adds a new Layer of type `type` with name `name` in the current project above layer `above_layer` (`above_layer` = 0 is the bottom-most layer and so on). 
+    - Adds a new Layer of type `type` with name `name` in the current project above layer `above_layer` (`above_layer` = 0 is the bottom-most layer and so on).
 
         | `type` | class |
         | --- | --- |
         | 0 | PixelLayer |
         | 1 | GroupLayer |
         | 2 | 3DLayer |
+        | 3 | LayerTileMap |
+        | 4 | AudioLayer |
 
 
 ExportAPI
@@ -400,7 +422,11 @@ Gives access to adding custom exporters.
 
 ### Method Descriptions
 
-- **int** `add_export_option(format_info: Dictionary, exporter_generator: Object, tab: ExportTab, is_animated: bool)`
+- **"src/Autoload/Export.gd"** `autoload()`
+
+    - Returns the **Export** autoload. Allows interactions with the export workflow on a more deeper level.
+
+- **int** `add_export_option(format_info: Dictionary, exporter_generator: Object, tab := ExportTab.IMAGE, is_animated := true)`
 
     - `format_info` has keys: `extension` and `description` whose values are of type **String** e.g:
 
@@ -414,11 +440,11 @@ Gives access to adding custom exporters.
 
     - If the value of `tab` is not in `ExportTab` then the format will be added to both tabs.
 
-    - Returns the index of exporter, which can be used to remove exporter later.
+    - Returns the `id` of exporter, which can be used to remove exporter later.
 
 - **void** `remove_export_option(id: int)`
 
-    - Removes the exporter with `id` from Pixelorama.
+    - Removes the exporter having the given `id` from Pixelorama.
 
 
 ImportAPI
@@ -428,6 +454,14 @@ Gives access to adding custom exporters.
 
 ### Method Descriptions
 
+- **"src/Autoload/OpenSave.gd"** `open_save_autoload()`
+
+    - Returns the **OpenSave** autoload. Contains code to handle file loading and project saving (.pxo).
+
+- **"src/Autoload/Import.gd"** `import_autoload()`
+
+    - Returns the **Import** autoload. Manages import of brushes and patterns.
+
 - **int** `add_import_option(import_name: StringName, import_scene_preload: PackedScene)`
 
     - `import_scene` is a scene preload that will be instanced and added to "import options" section of pixelorama's import dialogs and will appear whenever `import_name` is chosen from import menu.
@@ -435,7 +469,7 @@ Gives access to adding custom exporters.
         1. An optional variable named `import_preview_dialog` of type ConfirmationDialog, If present, it will automatically be assigned a reference to the relevant import dialog's ImportPreviewDialog class so that you can easily access variables and methods of that class. (This variable is meant to be read-only)
         2. The method `initiate_import()`, which takes 2 arguments: `path`, `image`. Values will automatically be passed to these arguments at the time of import.
 
-    - Returns the id of the importer.
+    - Returns the `id` of the importer.
 
 - **void** `remove_import_option(id: int)`
 
@@ -449,7 +483,11 @@ Gives access to palette related stuff.
 
 ### Method Descriptions
 
-- **void** `remove_import_option(id: int)`
+- **"src/Autoload/Palettes.gd"** `autoload()`
+
+    - Returns the **Palettes** autoload. Allows interacting with palettes on a more deeper level.
+
+- **void** `create_palette_from_data(palette_name: String, data: Dictionary)`
 
     - Creates and adds a new palette with name `palette_name` containing `data`. `data` is a *Dictionary* containing the palette information.
 
@@ -534,4 +572,6 @@ Gives access to the basic commonly used signals. Some less common signals are no
 
     - Connects/disconnects a signal to `callable`, that emits whenever preview is about to be drawn.
 
-    - **Binds:** It has one bind of type **Dictionary** with keys: `exporter_id`, `export_tab`, `preview_images`, `durations`. Use this if you plan on changing preview of export
+    - **Binds:** It has one bind of type **Dictionary** with keys: `exporter_id`, `export_tab`, `preview_images`. Use this if you plan on changing preview of export.
+
+    - (Note: `preview_images` is an array of ProcessedImage resource which further has parameters `image` and `duration`)
