@@ -356,7 +356,7 @@ Gives access to basic project manipulation functions.
 
 | Name | Description |
 | --- | --- |
-| **bool** current_project | Sets/Gets project currently in focus. |
+| **Project** current_project | Sets/Gets project currently in focus. |
 
 ### Method Descriptions
 
