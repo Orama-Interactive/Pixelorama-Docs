@@ -10,7 +10,12 @@ slug: /
 You can also download the [offline version](https://nightly.link/Orama-Interactive/Pixelorama-Docs/workflows/generatePDF/master/Pixelorama%20Documentation.zip) of this documentation.
 :::
 
-Welcome, fellow dreamer, to the documentation of Pixelorama: your free and open-source pixel-art creation tool, developed by Orama Interactive and our contributors. If you are new to this documentation, we recommend you start by learning [how to install the application](user_manual/installation), then reading the [User Interface Basics](user_manual/user_interface/user_interface_basics) page to familiarize yourself with Pixelorama's workspace. The ultimate goal of this program is to be able to keep up with the user's imagination and assist them in creating any kind of pixel art they wish. This could be a cool landscape, a dope animation, game graphics, random sketches or a well-thought pixelated meme. Thank you for researching our tool!
+Welcome, fellow dreamer, to the documentation of Pixelorama: your free and open-source pixel-art creation tool, developed by Orama Interactive and our contributors. If you are new to this documentation, we recommend you start by learning [how to install the application](user_manual/installation), then reading the [User Interface Basics](user_manual/user_interface/user_interface_basics) page to familiarize yourself with Pixelorama's workspace.
+
+If you prefer an introduction in video form, you can watch this from our official channel:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6srsqLhGhKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The ultimate goal of this program is to be able to keep up with the user's imagination and assist them in creating any kind of pixel art they wish. This could be a cool landscape, a dope animation, game graphics, random sketches or a well-thought pixelated meme. Thank you for researching our tool!
 
 Here, you will understand the application's aspects, features, and tools from our tutorials. Eventually, you will be able to master it and apply it to your own pixelated goals. If you are an experienced pixel artist, familiar with most of Pixelorama's functionalities, you can search for some specific features and understand them better or get some ideas on how to creatively apply techniques you may not have thought of. In any case, fasten your seat belts because we are about to start!
 
