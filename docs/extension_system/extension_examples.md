@@ -232,8 +232,8 @@ func override_export(details: Dictionary) -> bool:
 	# keys of (details) are:
 	# "processed_images", "durations", "export_dialog", "export_paths", "project"
 	for i in range(0, details["processed_images"].size(), 2):
-		var image: Image = details["processed_images"][i]
-		var error = image.save_png(details["export_paths"][i])
+		var image: Image = details["processed_images"][i].image
+		var error := image.save_png(details["export_paths"][i])
 		if error != OK:
 			return false
 	return true
