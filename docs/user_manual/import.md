@@ -8,7 +8,7 @@ sidebar_position: 4
 In Pixelorama, it is possible to import [.pxo files](../concepts/project/#pxo-files), image files, [palette files](palettes) and [extension files](../extension_system/extension_basics). To import a file, either `drag and drop` it into Pixelorama window or use `File > Open` dialog. You can also open files in Pixelorama through the your computer's file explorer by right clicking on a file, selecting "Open with" and selecting Pixelorama, but the process of making this work is different for each operating system/desktop environment. Doing this will open Pixelorama with the file automatically opened. You can also achieve the same thing by opening Pixelorama through the command line, and giving the names of the files you want to open as arguments.
 
 ## Supported image formats
-The image formats that can be imported are: `.png`, `.apng`, `.jpg`/`.jpeg`, `.webp`, `.bmp`, `.svg`, `.tga`, `.hdr`. Pixelorama can also import more complex image file formats, such as our own `.pxo`, as well as [OpenRaster](https://www.openraster.org/) (`.ora`) and Aseprite's `.ase`/`.aseprite`.
+The image formats that can be imported are: `.png`, `.apng`, `.jpg`/`.jpeg`, `.webp`, `.bmp`, `.svg`, `.tga`, `.hdr`. Pixelorama can also import more complex image file formats, such as our own `.pxo`, as well as [OpenRaster](https://www.openraster.org/) (`.ora`), Aseprite's `.ase`/`.aseprite`, Krita's `.kra`, Photoshop's `.psd` and Piskel's `.piskel`.
 
 ## Import image options
 When attempting to import an image, a dialog will appear, containing a preview of the image you want to import, along with options that let you change how you want the image to be imported.
@@ -42,7 +42,7 @@ Pixelorama can import Aseprite files, with the following features supported:
 - Pixel, group & tilemap layers with their cels and preserved layer hierarchy (groups & children)
 - Linked cels
 - Layer blend modes, visibility/locked/collapsed, layer/cel opacity, layer name, color etc
-- Projects with RGBA, Grayscale* and Indexed** color modes
+- Projects with RGBA, Grayscale* and Indexed color modes
 - Frame tags
 - Frame duration
 - Tilesets
@@ -50,10 +50,31 @@ Pixelorama can import Aseprite files, with the following features supported:
 - User data for projects, layers, frame tags & cels
 
 Does not yet support:
-- Palettes. Will be supported once we add project palettes in Pixelorama.
 - Slices. Will be supported once we add slices (or a similar concept) in Pixelorama. Related: [#812](https://github.com/Orama-Interactive/Pixelorama/discussions/812)
 - Cel extra, color profile, external files & mask.
 
 \* Aseprite projects with grayscale color mode are being converted to RGBA color mode when imported in Pixelorama, as Pixelorama does not support this color mode at the moment.
 
-** While projects using indexed mode are being imported, their internal palettes are not, meaning that the colors will be different when importing the Aseprite file in Pixelorama, if the currently selected palette is different. To see the same colors, you need to bring the palette over from Aseprite into Pixelorama and select it. Once we add project palettes in Pixelorama (palettes that are being stored inside the project instead of being global), this will be fixed.
+## Importing Krita files
+Pixelorama can import Krita files, with the following features supported:
+- Paint, group & vector layers with preserved layer hierarchy (groups & children). Vector layers are currently being rasterized into pixel layers in Pixelorama. This will change once we support vector layers.
+- Layer blend modes, visibility/locked/collapsed, layer/cel opacity, layer name.
+- Animation frames and framerate.
+- Guides.
+
+Does not yet support:
+- Projects that do not use RGBA with 8-bit color depth 
+- The rest of the layer types and masks.
+- Layer styles.
+
+## Importing Photoshop files
+Pixelorama can import Photoshop files. Support is limited due to the file format's lacking documentation, and it is likely we will never manage to support 100% of its features. The following features are supported:
+- Raster and group layers with preserved layer hierarchy (groups & children).
+- Layer blend modes, visibility/locked/collapsed, layer/cel opacity, layer name.
+- Animation frames and individual frame time.
+- Guides.
+
+Does not yet support:
+- Projects that do not use RGBA color depth.
+- Other layer types other than raster layers and groups, and masks.
+- Layer styles.
