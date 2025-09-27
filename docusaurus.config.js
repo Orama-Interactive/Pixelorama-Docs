@@ -36,21 +36,8 @@ module.exports={
       }
     ]
   ],
-  "plugins": [],
+  "plugins": [require.resolve('docusaurus-lunr-search')],
   "themeConfig": {
-	"algolia": {
-      "appId": 'Q1VSXGNOJI',
-      "apiKey": '9702a7187ea2079fe9def3138dd61b8b',
-      "indexName": 'pixelorama',
-
-      // Optional: see doc section bellow
-      "contextualSearch": false,
-
-      // Optional: Algolia search parameters
-      "searchParameters": {},
-
-      //... other Algolia params
-    },
     "docs": {
       "sidebar": {
         "hideable": true,
