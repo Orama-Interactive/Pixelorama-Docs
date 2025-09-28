@@ -1,5 +1,5 @@
 module.exports={
-  "title": "Pixelorama Documentation",
+  "title": "Pixelorama",
   "tagline": "Documentation for Pixelorama, your free & open source sprite editor.",
   "url": "https://Orama-Interactive.github.io/",
   "baseUrl": "/Pixelorama-Docs/",
@@ -44,13 +44,13 @@ module.exports={
       },
     },
     "navbar": {
-      "title": "Pixelorama Documentation",
+      "title": "Pixelorama",
       "logo": {
         "src": "./img/favicon.ico"
       },
       "items": [
         {
-          "to": "/",
+          "to": "/Introduction",
           "label": "Docs",
           "position": "left"
         },
@@ -110,7 +110,7 @@ module.exports={
       ],
       "copyright": "Copyright © 2020-present Orama Interactive",
       "logo": {
-        "src": "./img/oss_logo.png"
+        "src": "./img/orama_logo.svg"
       }
     }
   }
