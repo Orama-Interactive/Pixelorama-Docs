@@ -2,7 +2,7 @@
 title: "Pixelorama v1.0.2 is out!"
 slug: pixelorama-1.0.2-is-out
 date: 2024-08-21
-author: Emmanouil Papadeas
+authors: [Overloaded]
 image: img/blog/pixelorama-1.0.2-is-out/main.png
 ---
 ```mdx-code-block
