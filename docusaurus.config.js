@@ -31,7 +31,7 @@ module.exports={
           "path": "blog"
         },
         "theme": {
-          "customCss": "src/css/customTheme.css"
+          "customCss": "src/css/custom.css"
         }
       }
     ]
@@ -58,6 +58,11 @@ module.exports={
           "href": "https://github.com/Orama-Interactive/Pixelorama-Docs",
           "label": "GitHub",
           "position": "left"
+        },
+        {
+          "href": "https://www.patreon.com/c/OramaInteractive/s",
+          "label": "Support Us ❤️",
+          "position": "right"
         }
       ]
     },
