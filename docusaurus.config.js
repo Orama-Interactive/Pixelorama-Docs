@@ -115,7 +115,8 @@ module.exports={
       ],
       "copyright": "Copyright © 2020-present Orama Interactive",
       "logo": {
-        "src": "./img/orama_logo.svg"
+        "src": "./img/orama_logo.svg",
+        "alt": "Orama Interactive Logo"
       }
     }
   }
