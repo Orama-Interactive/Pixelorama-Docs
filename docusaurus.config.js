@@ -55,6 +55,11 @@ module.exports={
           "position": "left"
         },
         {
+          "to": "blog",
+          "label": "Blog",
+          "position": "left"
+        },
+        {
           "href": "https://github.com/Orama-Interactive/Pixelorama-Docs",
           "label": "GitHub",
           "position": "left"
