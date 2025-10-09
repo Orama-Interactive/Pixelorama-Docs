@@ -24,7 +24,7 @@
   justify-content: center;
 }
 
-.features {
+.smallfeatures {
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -43,13 +43,13 @@
   margin: 0 auto;
 }
 
-.featureImage {
+.smallfeatureImage {
   width: auto;
   max-height: 128px;
   margin: 0 auto;
 }
 
-.featureHeading {
+.smallfeatureHeading {
   font-size: var(--ifm-h3-font-size);
   padding-top: 1rem;
 }
@@ -280,4 +280,46 @@ html[data-theme='dark'] .topBannerTitleText {
 /* Used to test CSS insertion order */
 .test-marker-site-index-page {
   content: 'site-index-page';
+}
+
+.featureRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 4rem 0;
+}
+
+.featureText {
+  flex: 1;
+  text-align: left;
+}
+
+.featureImage {
+  flex: 1.1;
+  text-align: center;
+}
+
+.featureImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Reversed layout for alternating rows */
+.reversed {
+  flex-direction: row-reverse;
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 768px) {
+  .featureRow {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reversed {
+    flex-direction: column;
+  }
 }

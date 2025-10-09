@@ -1,7 +1,7 @@
 import React, {type ReactNode} from 'react';
 import Translate, {translate} from '@docusaurus/Translate';
 
-export type FeatureItem = {
+export type SmallFeatureItem = {
   title: string;
   image: {
     src: string;
@@ -11,14 +11,14 @@ export type FeatureItem = {
   text: ReactNode;
 };
 
-const FEATURES: FeatureItem[] = [
+const FEATURES: SmallFeatureItem[] = [
   {
     title: translate({
       message: 'Wide Range of Tools',
       id: 'homepage.features.powered-by-mdx.title',
     }),
     image: {
-      src: '/img/undraw_typewriter.svg',
+      src: '/img/exported_gif.gif',
       width: 1009.54,
       height: 717.96,
     },
@@ -50,7 +50,7 @@ const FEATURES: FeatureItem[] = [
       id: 'homepage.features.ready-for-translations.title',
     }),
     image: {
-      src: '/img/undraw_around_the_world.svg',
+      src: '/img/exported_gif.gif',
       width: 1137,
       height: 776.59,
     },

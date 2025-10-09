@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Features, {type FeatureItem} from '@site/src/data/features';
+import SmallFeatures, {type SmallFeatureItem} from '@site/src/data/small_features';
+import BigFeatures, {type BigFeatureItem} from '@site/src/data/big_features';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Link from '@docusaurus/Link';
@@ -11,6 +12,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useColorMode} from '@docusaurus/theme-common';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+import { motion } from 'framer-motion';
+
 
 function TopBanner() {
   return (
@@ -73,7 +76,7 @@ function CTA() {
   );
 }
 
-function Feature({
+function SmallFeature({
   feature,
   className,
 }: {
@@ -85,14 +88,14 @@ function Feature({
   return (
     <div className={clsx('col', className)}>
       <img
-        className={styles.featureImage}
+        className={styles.smallfeatureImage}
         alt={feature.title}
         width={Math.floor(feature.image.width)}
         height={Math.floor(feature.image.height)}
         src={withBaseUrl(feature.image.src)}
         loading="lazy"
       />
-      <Heading as="h3" className={clsx(styles.featureHeading)}>
+      <Heading as="h3" className={clsx(styles.smallfeatureHeading)}>
         {feature.title}
       </Heading>
       <p className="padding-horiz--md">{feature.text}</p>
@@ -100,14 +103,51 @@ function Feature({
   );
 }
 
-function FeaturesContainer() {
+function SmallFeaturesContainer() {
  return (
-    <div id="features" className="container text--center">
+    <div id="smallfeatures" className="container text--center">
       <div className="row margin-top--lg margin-bottom--lg">
-        {Features.map((feature, idx) => (
-          <Feature feature={feature} key={idx} className="col col--4" />
+        {SmallFeatures.map((feature, idx) => (
+          <SmallFeature feature={feature} key={idx} className="col col--4" />
         ))}
       </div>
+    </div>
+  );
+}
+
+function BigFeature({feature, reversed}) {
+  const {withBaseUrl} = useBaseUrlUtils();
+  return (
+  <motion.div
+      className={clsx(styles.featureRow, reversed && styles.reversed)}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
+    <div className={clsx(styles.featureRow, reversed && styles.reversed)}>
+      <div className={styles.featureText}>
+        <h3>{feature.title}</h3>
+        <p>{feature.text}</p>
+      </div>
+      <div className={styles.featureImage}>
+        <img alt={feature.title}
+        width={Math.floor(feature.image.width)}
+        height={Math.floor(feature.image.height)}
+        src={withBaseUrl(feature.image.src)}
+        loading="lazy" />
+      </div>
+    </div>
+    </motion.div>
+  );
+}
+
+function BigFeaturesContainer() {
+  return (
+    <div className="container margin-top--xl margin-bottom--xl">
+      {BigFeatures.map((feature, idx) => (
+        <BigFeature key={idx} feature={feature} reversed={idx % 2 === 1} />
+      ))}
     </div>
   );
 }
@@ -201,7 +241,7 @@ export default function Home() {
     <HeroBanner />
     <CTA />
     <div className={styles.section}>
-      <FeaturesContainer />
+      <BigFeaturesContainer />
       <VideoContainer />
     </div>
     <Download />
