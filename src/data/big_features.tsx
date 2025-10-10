@@ -24,7 +24,7 @@ const FEATURES: BigFeatureItem[] = [
     },
     text: (
       <Translate id="homepage.features.powered-by-mdx.text">
-        Pixelorama's animation system lets you draw frame by frame with onion skinning, frame tags, and even real-time drawing while the animation is playing. Synchronize audio and manage complex projects across multiple layers and frames. Export to spritesheets, gifs and even videos. Import your animations from other software, such as Aseprite, Photoshop & Krita.
+        Pixelorama's animation system lets you draw frame by frame with onion skinning, frame tags, and even real-time drawing while the animation is playing. Synchronize audio and manage complex projects across multiple layers and frames. Export to spritesheets, gifs and even videos. Support for importing animations from other software, such as Aseprite, Photoshop & Krita.
       </Translate>
     ),
   },

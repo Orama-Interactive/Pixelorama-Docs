@@ -127,7 +127,7 @@ function BigFeature({feature, reversed}) {
     >
     <div className={clsx(styles.featureRow, reversed && styles.reversed)}>
       <div className={styles.featureText}>
-        <h3>{feature.title}</h3>
+        <h2>{feature.title}</h2>
         <p>{feature.text}</p>
       </div>
       <div className={styles.featureImage}>

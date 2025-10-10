@@ -304,7 +304,10 @@ html[data-theme='dark'] .topBannerTitleText {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.featureImage img:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
 /* Reversed layout for alternating rows */
