@@ -1,0 +1,1 @@
+(globalThis.webpackChunkpixelorama_docs=globalThis.webpackChunkpixelorama_docs||[]).push([[8577],{549:(a,s,o)=>{"use strict";o.d(s,{A:()=>l});var c=o(8291);const l=c},5741:()=>{}}]);
