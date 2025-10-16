@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40mm"
+   height="40.000015mm"
+   viewBox="0 0 40 40.000015"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="pixelorama.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="4"
+     inkscape:cx="51.5"
+     inkscape:cy="82.625"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="-69.999999"
+       originy="-74.999987"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch3"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#dfe1c3;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13">
+      <g
+         inkscape:label="Clip"
+         id="use13" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-70,-74.999992)">
+    <g
+       id="g1">
+      <rect
+         style="fill:#47091a;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect1"
+         width="30.000004"
+         height="5"
+         x="74.999992"
+         y="110.00001" />
+      <rect
+         style="fill:#47091a;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect1-3"
+         width="5"
+         height="5"
+         x="105"
+         y="105.00001" />
+      <rect
+         style="fill:#47091a;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect1-6"
+         width="5"
+         height="5"
+         x="70"
+         y="105.00001" />
+      <rect
+         style="fill:#3bb167;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect1-2"
+         width="10.057978"
+         height="35.000031"
+         x="84.942024"
+         y="74.999992" />
+      <path
+         style="fill:#af294e;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         d="M 95.000001,110 H 105 v -5 h 5 V 80.000005 h -5 v -5 h -9.999999 z"
+         id="path3" />
+      <path
+         style="fill:#3c78c4;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         d="M 85.000003,110.00001 H 75.000002 v -5 h -5 V 80.000007 h 5 v -5 h 10.000001 z"
+         id="path3-5" />
+      <path
+         style="fill:#dfe1c3;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         d="M 80.000002,100.00001 H 100 V 85.000003 h -4.999999 v -4.999998 h -9.999999 v 5 l -5,-2e-6 z"
+         id="path4"
+         sodipodi:nodetypes="ccccccccc" />
+      <rect
+         style="fill:#47091a;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect4"
+         width="10"
+         height="9.999999"
+         x="85"
+         y="85.000008" />
+    </g>
+  </g>
+</svg>
