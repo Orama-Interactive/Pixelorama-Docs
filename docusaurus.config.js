@@ -1,7 +1,7 @@
 module.exports={
   "title": "Pixelorama",
   "tagline": "Pixelorama, your free & open source sprite editor.",
-  "url": "https://Orama-Interactive.github.io/",
+  "url": "https://www.pixelorama.org",
   "baseUrl": "/",
   "organizationName": "Orama-Interactive",
   "projectName": "Pixelorama-Docs",
