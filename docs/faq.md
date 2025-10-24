@@ -36,7 +36,7 @@ A: The main language is English, but Pixelorama is also available in numerous ot
 A: Pixelorama is being developed by [Orama Interactive](https://www.oramainteractive.com/), a game development team. Of course, Pixelorama would not be the same without the help of our beloved [contributors](https://github.com/Orama-Interactive/Pixelorama/graphs/contributors)!
 
 ## Q: What engine is being used to develop Pixelorama? Where is the code hosted?
-A: Pixelorama is being developed with the Godot Engine (version 4.3), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
+A: Pixelorama is being developed with the Godot Engine (version 4.5), and since it is open-source anyone can contribute to it! The code is available on [Pixelorama's GitHub repository](https://github.com/Orama-Interactive/Pixelorama)!
 
 ## Q: Why is Godot used to develop Pixelorama?
 A: Mostly because it's easy to use, while being powerful at the same time. If we started Pixelorama using plain C++ or something like that it would be much more primitive and the development would be a lot slower. Features such as the image and layer effects, 3D layers, the extension system and others would be a lot harder to implement without Godot. Most of the community came from Godot, so if Godot wasn't used, it would also be less popular and it would have less contributors, leading to even less features and polish. Godot handles a lot of stuff for us already behind the scenes, and pretty much most major Godot releases also bring visible improvements to Pixelorama without us having to do big changes. Having to do all of that from scratch would be exhausting.
