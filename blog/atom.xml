@@ -2,11 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.pixelorama.org/blog</id>
     <title>Pixelorama Blog</title>
-    <updated>2025-09-06T00:00:00.000Z</updated>
+    <updated>2025-10-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.pixelorama.org/blog"/>
     <subtitle>Pixelorama Blog</subtitle>
     <icon>https://www.pixelorama.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Pixelorama v1.1.6 is out!]]></title>
+        <id>https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out</id>
+        <link href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out"/>
+        <updated>2025-10-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Artwork by BearSaidNo, made with Pixelorama]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Artwork by BearSaidNo, made with Pixelorama" src="https://www.pixelorama.org/assets/images/main-6532647f00e6b88bc358302b71c3c5b8.png" width="684" height="384" class="img_ev3q">
+Artwork by <a href="https://bearsaidno.neocities.org/" target="_blank" rel="noopener noreferrer" class="">BearSaidNo</a>, one of the artists for v1.1's splash screen artworks.</p>
+<p>Trick or treat 🎃? Treat for sure, as we bring you a new version of Pixelorama as a Halloween present! Version 1.1.6 comes with various new features, such as diagonal symmetry, font loading, two new color picker shapes, and a lot more bug fixes and quality of life improvements!</p>
+<p>If you wish to support us, you can <a href="https://www.patreon.com/OramaInteractive" target="_blank" rel="noopener noreferrer" class="">become a Patron</a> and receive exclusive awards, or <a href="https://store.steampowered.com/app/2779170/Pixelorama/" target="_blank" rel="noopener noreferrer" class="">buy Pixelorama on Steam</a>, <a href="https://orama-interactive.itch.io/pixelorama" target="_blank" rel="noopener noreferrer" class="">or from itch.io</a>!</p>
+<p><a href="https://patreon.com/OramaInteractive" target="_blank" rel="noopener noreferrer" class=""><img decoding="async" loading="lazy" alt="Become a patron" src="data:image/png;base64,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" width="217" height="51" class="img_ev3q"></a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="new-website">New website<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#new-website" class="hash-link" aria-label="Direct link to New website" title="Direct link to New website" translate="no">​</a></h2>
+<p>We have launched a new website at <a href="https://pixelorama.org/" target="_blank" rel="noopener noreferrer" class="">https://pixelorama.org</a>! It contains a landing page which briefly explains Pixelorama's features and contains links to download, the documentation you already know, and a blog. Feel free to let us know what you think! Starting from this version, the blog posts will be posted on Pixelorama's website instead of Orama's.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="extension-incompatibility">Extension incompatibility<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#extension-incompatibility" class="hash-link" aria-label="Direct link to Extension incompatibility" title="Direct link to Extension incompatibility" translate="no">​</a></h2>
+<p>Due to version 1.1.6 updating to Godot 4.5.1, Pixelorama extensions exported with Godot versions prior to 4.5 will no longer work. This essentially means that you have to <strong>re-download</strong> the extensions you are using, if you are using any, from the extension explorer when they get updated, which they will shortly after this release. If you are an extension developer, simply re-export your extension using Godot 4.5 or 4.5.1 and it should work fine.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="full-changelog-of-version-116">Full changelog of version 1.1.6:<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#full-changelog-of-version-116" class="hash-link" aria-label="Direct link to Full changelog of version 1.1.6:" title="Direct link to Full changelog of version 1.1.6:" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="added">Added<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#added" class="hash-link" aria-label="Direct link to Added" title="Direct link to Added" translate="no">​</a></h3>
+<ul>
+<li class="">Added buttons that enable diagonal symmetry!</li>
+<li class="">If Pixelorama crashed in the previous session, a window will appear the next time it is launched to let the user know that they can restore data, if there are any projects that can be restored.</li>
+<li class="">Two new color picker shapes, OK HS Rectangle and OK HL Rectangle.</li>
+<li class="">Users can now drag and drop font files to load them. Fonts can be used by the text tool, text meshes in 3D layers and the user interface itself.</li>
+<li class="">Added an Undo History dialog.</li>
+<li class="">The convolution matrix layer effect now has a kernel normalization factor.</li>
+<li class="">Added Arabic translation and made improvements to the UI so that it works better for Right-To-Left languages.</li>
+<li class="">Pixelorama can now load Lospec palettes if started with "lospec-palette://" plus the palette's name as a CLI argument. In theory, this allows Pixelorama to open when clicking on the "Open In App" button on a palette on Lospec's website, but for now <strong>it does not work automatically</strong>, as it requires different setup for different operating systems.</li>
+<li class="">A preview.png file is now saved inside pxo files. This can help file managers to generate thumbnails for pxo files. <strong>Note that this doesn't mean that you will automatically see thumbnails for pxo files — it's up to file managers to implement this.</strong></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="changed">Changed<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#changed" class="hash-link" aria-label="Direct link to Changed" title="Direct link to Changed" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Extensions made for previous versions of Pixelorama will fail to load on this version.</strong> Make sure to re-download the extensions you want.</li>
+<li class="">The timeline now scrolls when adding/moving layers, when the current cel is changing from shortcuts or from the timeline buttons, and when cels, frames and layers are being dragged.</li>
+<li class="">The layer effect settings dialog now scrolls automatically when dragging layer effects to re-order them.</li>
+<li class="">When moving frames using the arrow buttons in the timeline, all moved cels are now being selected. <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1358" target="_blank" rel="noopener noreferrer" class="">#1358</a></li>
+<li class="">The "Offset/Zoom" effect has been renamed to "Offset &amp; Scale". <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1362" target="_blank" rel="noopener noreferrer" class="">#1362</a></li>
+<li class="">On Linux, the native screen color picker of the operating system is now used.</li>
+<li class="">The canvas can now be moved by arrow keys if there is a selection tool selected, but there is not an active selection. If there is, the selection itself gets moved, just like before.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fixed">Fixed<a href="https://www.pixelorama.org/blog/pixelorama-1.1.6-is-out#fixed" class="hash-link" aria-label="Direct link to Fixed" title="Direct link to Fixed" translate="no">​</a></h3>
+<ul>
+<li class="">The canvas no longer jitters when it is zoomed out a lot and smooth zoom is enabled.</li>
+<li class="">The screen color picker now works properly on Linux, users can pick colors outside of Pixelorama's window.</li>
+<li class="">Optimized the "Mirror Image" effect when a selection is active. Now it should no longer lag on big canvases.</li>
+<li class="">Fixed a crash when a user selects a 3D object, then does an undo or redo <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1353" target="_blank" rel="noopener noreferrer" class="">#1353</a></li>
+<li class="">Fixed tilemap cells being erased in manual mode if there are cells outside of the canvas boundaries.</li>
+<li class="">Invisible layers are no longer included when exporting images in headless mode, such as from the command line. <a href="https://github.com/Orama-Interactive/Pixelorama/issues/1368" target="_blank" rel="noopener noreferrer" class="">#1368</a></li>
+<li class="">Fixed transparent checkers not following canvas movement vertically, if "Follow canvas movement" was enabled, and "Follow canvas zoom level" was disabled from the Preferences.</li>
+<li class="">The color picker's RGB values can no longer go higher than 255. <a href="https://github.com/Orama-Interactive/Pixelorama/issues/349" target="_blank" rel="noopener noreferrer" class="">#349</a></li>
+<li class="">Fixed the restore to default button in the Preferences not hiding after being clicked next to text fields and color buttons.</li>
+<li class="">Fixed the "Open last project" button in the splash screen not hiding in the Web version.</li>
+</ul>
+<p>Happy painting, and keep pixelating your dreams! 🎨✨</p>
+<p>Pixelorama is available on <a href="https://store.steampowered.com/app/2779170/Pixelorama/" target="_blank" rel="noopener noreferrer" class="">Steam</a> and <a href="https://orama-interactive.itch.io/pixelorama" target="_blank" rel="noopener noreferrer" class="">Itch.io</a>!</p>]]></content>
+        <author>
+            <name>Emmanouil Papadeas</name>
+            <uri>https://github.com/OverloadedOrama</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pixelorama v1.1.5 is out!]]></title>
         <id>https://www.pixelorama.org/blog/pixelorama-1.1.5-is-out</id>
