@@ -5,7 +5,8 @@ sidebar_label: ExtensionsApi
 sidebar_position: 3
 ---
 :::tip
-This is the documentation for Api version 7 (commit 3fd3758348f083f1bba94925197851ee0792a681)
+This is the documentation for Api version 8
+(In sync with Pixelorama commit [`e8224dd140f7305d4ae6f83d6c3a1bcb242d6cd0`](https://github.com/Orama-Interactive/Pixelorama/commit/e8224dd140f7305d4ae6f83d6c3a1bcb242d6cd0))
 :::
 
 ### Description
@@ -126,13 +127,15 @@ Gives ability to add/remove items from menus in the top bar.
 
 - **int** `add_menu_item(menu_type: int, item_name: String, item_metadata: Variant, item_id := -1)`
 
-    - Adds a menu item of title `item_name` to the `menu_type` defined by `@unnamed_enums`.
-`item_metadata` is usually a window node you want to appear when you click the `item_name`. That window node should also have a `menu_item_clicked() -> void` function inside its script.
-Index of the added item is returned (which can be used to remove menu item later on).
+    - Adds a menu item of title `item_name` to the `menu_type` defined by `@unnamed_enums`. An optional `item_id` can be given, if not then the item index will be used to calculate item's ID. New items are appended at the end.
 
-- **void** `remove_menu_item(menu_type: int, item_idx: int)`
+    - `item_metadata` is usually a window node you want to appear when you click the `item_name`. That window node should also have a `menu_item_clicked() -> void` function inside its script.
 
-    - Removes a menu item at index `item_idx` from the `menu_type` defined by `@unnamed_enums`.
+    - A unique ID of the added item is returned (which can be used to remove menu item later on).
+
+- **void** `remove_menu_item(menu_type: int, item_id: int)`
+
+    - Removes a menu item at index `item_id` from the `menu_type` defined by `@unnamed_enums`.
 
 
 DialogAPI
@@ -187,6 +190,22 @@ Gives access to theme related functions.
 - **"src/Autoload/Themes.gd"** `autoload()`
 
     - Returns the **Themes** autoload. Allows interactions with themes on a more deeper level.
+
+- **Dictionary[String, String]** `get_theme_colors(theme: Theme)`
+
+    - Returns the colors used by the given `theme` as a Dictionary. This includes all the *StyleBox* colors used by the `theme`.
+
+    - This is meant to be used by developer to use in combination with `get_theme()` and `JSON.stringify()` (for more friendly format) as a starting point for data in creating their variant of a theme.
+
+    - To set colors, see `set_theme_colors()`.
+
+- **void** `set_theme_colors(theme: Theme, data: Dictionary[String, String], debug_mode := false)`
+
+    - Changes the colors of the given `theme` according to the given `data`. Only the colors specified by `data` are changed and the rest remain the same as original.
+
+    - Make sure you don't set call this method using currently active Theme, otherwise this method will be slow.
+
+    - While developing extension, it is recommended to set `debug_mode` to true, this allows printing messages in console, warning developer about related properties they forgot to set (for example if they set border color but forgot to set a non-zero width). At the end, this also prints a clean version of the `data`, excluding parameters ignored by the theme.
 
 - **void** `add_theme(theme: Theme)`
 
@@ -360,15 +379,15 @@ Gives access to basic project manipulation functions.
 
 ### Method Descriptions
 
-- **Project** `new_project(frames: Array[Frame] = [], name: String = tr("untitled"), size: Vector2 = Vector2(64, 64), fill_color: Color = Color.TRANSPARENT)`
+- **Project** `new_project(frames: Array[Frame] = [], name: String = tr("untitled"), size: Vector2 = Vector2(64, 64), fill_color: Color = Color.TRANSPARENT, is_resource := false)`
 
-    - Creates a new project (with new tab) with name `name`, size `size`, fill color `fill_color` and frames `frames`. The created project also gets returned.
+    - Creates a new [Project](../concepts/project) (with new tab) with name `name`, size `size`, fill color `fill_color` and frames `frames`. The created project also gets returned. If `is_resource` is true then a virtual [Resource Project](../concepts/resource_project) is created instead.
 
     - `frames` is an **Array** of type **Frames**. Usually it can be left as [].
 
-- **Project** `new_empty_project(name: String = tr("untitled"))`
+- **Project** `new_empty_project(name: String = tr("untitled"), is_resource := false)`
 
-    - Creates and returns a new Project in a new tab, with an optional `name`.
+    - Creates and returns a new [Project](../concepts/project) in a new tab, with an optional `name`. If `is_resource` is true then a virtual [Resource Project](../concepts/resource_project) is created instead.
 
     - Unlike **new_project()**, no starting frame/layer gets created. Useful if you want to deserialize project data.
 
