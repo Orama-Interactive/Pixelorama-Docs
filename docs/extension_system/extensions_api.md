@@ -5,7 +5,7 @@ sidebar_label: ExtensionsApi
 sidebar_position: 3
 ---
 :::tip
-This is the documentation for Api version 6
+This is the documentation for Api version 7 (commit 3fd3758348f083f1bba94925197851ee0792a681)
 :::
 
 ### Description
@@ -372,6 +372,24 @@ Gives access to basic project manipulation functions.
 
     - Unlike **new_project()**, no starting frame/layer gets created. Useful if you want to deserialize project data.
 
+- **ImageExtended** `new_image_extended(width: int, height: int, mipmaps: bool, format: Image.Format, is_indexed := false, from_data := PackedByteArray())`
+
+    - Creates a new ImageExtended (A custom image class used by Pixelorama) of the given size and format. `from_data` can be passed if the ImageExtended is meant to be a copy of another Image (or ImageExtended).
+
+    - If `mipmaps` is true, generates mipmaps for this image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering.
+
+    - If `is_indexed` is true, the ImageExtended is initially marked as indexed. Note that this property can be changed later, for example:
+        ```
+        # Creating an ImageExtended without index mode
+        var image := get_node_or_null("/root/ExtensionsApi").project.new_image_extended(64, 64, false, Image.FORMAT_RGBA8, false)
+        # Converting it to indexed later
+        image.is_indexed = true
+	    if image.is_indexed:
+		    image.resize_indices()
+		    image.select_palette("", false)
+		    image.convert_rgb_to_indexed()
+        ```
+
 - **Dictionary** `get_project_info(project: Project)`
 
     - Returns a dictionary containing all the project information.
@@ -487,11 +505,13 @@ Gives access to palette related stuff.
 
     - Returns the **Palettes** autoload. Allows interacting with palettes on a more deeper level.
 
-- **void** `create_palette_from_data(palette_name: String, data: Dictionary)`
+- **void** `create_palette_from_data(palette_name: String, data: Dictionary, is_global := true)`
 
-    - Creates and adds a new palette with name `palette_name` containing `data`. `data` is a *Dictionary* containing the palette information.
+    - Creates and adds a new palette with name `palette_name` containing `data`.
 
-    - An example of data will be:
+    - If `is_global` is true, the palette gets loaded as a global palette, otherwise it's loaded as a project palette.
+
+    - `data` is a *Dictionary* containing the palette information. An example of `data` dictionary for the palette is:
         ```
         {
         "colors": [
