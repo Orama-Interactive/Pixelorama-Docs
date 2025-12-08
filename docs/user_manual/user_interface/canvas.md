@@ -47,7 +47,7 @@ To toggle its visibility, you can click on "Show Pixel Grid" in the View menu, o
 If you are working with tiles, it might be useful to preview them in such a way so you can see if they repeat seamlessly. For this reason, you can enable Tile Mode, which repeats the canvas in multiple dimensions around the central area. To enable Tile Mode, you can go to the View menu, hover on Tile Mode and select what you want. "None" will disable Tile Mode, "Tiled in Both Axis" will repeat the canvas horizontally, vertically and diagonally, and the other two options will just repeat it either horizontally or vertically. It is also possible to draw in the tiled area.
 
 ## Second Canvas
-On the right side of the canvas, there is a grabber. Moving it to the left will reveal a second canvas. The purpose of this is to easily preview your artwork in different positions or zoom levels. As of right now, you **cannot** draw on it.
+To enable the second canvas, you can go to the Window menu, and under "Panels", enable "Second Canvas". The purpose of this is to easily preview your artwork in different positions or zoom levels. As of right now, you **cannot** draw on it.
 
 ## Rulers and Guides
 On the top and left sides of the canvas, you can find two rulers. These serve two purposes, the first is to let the user easily and effortlessly measure distances in pixels, and the second is to create guides by clicking on them with the left mouse button and, while it's being held, dragging the cursor to the position you want your guide to be at. Guides are either horizontal or vertical lines that can be used as references to help you properly align stuff on your canvas.
