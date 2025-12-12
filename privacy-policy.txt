@@ -1,0 +1,5 @@
+Pixelorama does not collect, store, or transmit any personal data.
+
+When downloading extensions, Pixelorama connects directly to GitHub’s servers.
+GitHub may collect standard web request information (such as IP address) according to its own privacy policy.
+Pixelorama does not receive or store this information.
