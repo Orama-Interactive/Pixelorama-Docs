@@ -1,0 +1,37 @@
+Pixelorama – Terms of Service
+
+Welcome to Pixelorama. By using Pixelorama (the “Software”), you agree to the following Terms of Service.
+
+1. Use of the Software
+
+Pixelorama is an open-source pixel art editor provided under the MIT License. You may use, copy, modify, and distribute the Software in accordance with that license.
+
+2. No Warranty
+
+The Software is provided “as is,” without warranty of any kind, as stated in the MIT License.
+Pixelorama’s developers are not liable for any damages resulting from the use or inability to use the Software.
+
+3. User Content
+
+Any artwork or files you create using Pixelorama remain your property.
+Pixelorama does not claim ownership of your creations.
+
+4. Prohibited Use
+
+You may not use the Software in any way that:
+
+Violates local laws or regulations
+
+Attempts to harm the Software, its infrastructure, or its users
+
+Misrepresents the Software as your own proprietary product
+
+5. Third-Party Services
+
+Pixelorama may link to external websites (such as GitHub or Discord). Each service has its own terms, and Pixelorama is not responsible for their content.
+
+6. Updates to These Terms
+
+These Terms may be updated periodically. Your continued use of the Software constitutes acceptance of any modifications.
+
+If you have questions, you may contact the project maintainers via GitHub.
