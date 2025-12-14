@@ -114,6 +114,159 @@ func _exit_tree() -> void:  # Extension is being uninstalled or disabled
 		extension_api.theme.remove_theme(theme)  # Adds the theme to preferences
 ```
 
+Changes colors of the Default theme to be High contrast
+```
+extends Node
+
+@onready var extension_api: Node  ## A variable for easy reference to the Api
+var color_picker_button: Button
+var was_native_picker_used := false
+
+# In entries resembling a:b:c, the keys are in order of 
+# (stylebox_name:theme_type:stylebox_color_name)  # Colors inside Stylebox
+# and in entries resembling a:b, the keys are in order of 
+# (color_name:theme_type)  # Colors outside Stylebox
+var theme_colors: Dictionary[String, String] = {
+	"button_pressed:Tree:background_color": "000000ff",
+	"clear_color:Misc": "000000ff",
+	"cursor:ItemList:border_color": "ffffffff",
+	"cursor:Tree:border_color": "ffffffff",
+	"cursor_unfocused:ItemList:border_color": "ffffffff",
+	"cursor_unfocused:Tree:border_color": "ffffffff",
+	"custom_button_hover:Tree:background_color": "000000ff",
+	"custom_button_hover:Tree:border_color": "ffffffff",
+	"disabled:Button:background_color": "000000ff",
+	"disabled:ColorPickerButton:border_color": "ffffffff",
+	"disabled:RulerButton:border_color": "ffffffff",
+	"embedded_border:Window:background_color": "000000ff",
+	"embedded_unfocused_border:Window:background_color": "000000ff",
+	"focus:Button:border_color": "ffffffff",
+	"focus:ColorPickerButton:border_color": "ffffffff",
+	"focus:LineEdit:background_color": "000000ff",
+	"focus:LineEdit:border_color": "ffffffff",
+	"focus:RulerButton:background_color": "000000ff",
+	"focus:TextEdit:background_color": "000000ff",
+	"focus:TextEdit:border_color": "ffffffff",
+	"grabber:HScrollBar:background_color": "000000ff",
+	"grabber:VScrollBar:background_color": "000000ff",
+	"grabber_area:HSlider:background_color": "000000ff",
+	"grabber_area:VSlider:background_color": "000000ff",
+	"grabber_area_highlight:HSlider:background_color": "000000ff",
+	"grabber_area_highlight:VSlider:background_color": "000000ff",
+	"grabber_highlight:HScrollBar:background_color": "000000ff",
+	"grabber_highlight:VScrollBar:background_color": "000000ff",
+	"grabber_pressed:HScrollBar:background_color": "000000ff",
+	"grabber_pressed:VScrollBar:background_color": "000000ff",
+	"guide:CelButton:background_color": "000000ff",
+	"guide:CelButton:border_color": "ffffffff",
+	"hover:Button:background_color": "000000ff",
+	"hover:CelButton:background_color": "000000ff",
+	"hover:CelButton:border_color": "ffffffff",
+	"hover:ColorPickerButton:background_color": "000000ff",
+	"hover:ColorPickerButton:border_color": "ffffffff",
+	"hover:PopupMenu:background_color": "000000ff",
+	"hover:RulerButton:background_color": "000000ff",
+	"normal:Button:background_color": "000000ff",
+	"normal:CelButton:background_color": "000000ff",
+	"normal:CelButton:border_color": "ffffffff",
+	"normal:ColorPickerButton:background_color": "000000ff",
+	"normal:ColorPickerButton:border_color": "ffffffff",
+	"normal:LineEdit:background_color": "000000ff",
+	"normal:LineEdit:border_color": "ffffffff",
+	"normal:RichTextLabel:background_color": "000000ff",
+	"normal:RichTextLabel:border_color": "ffffffff",
+	"normal:RulerButton:background_color": "000000ff",
+	"normal:TextEdit:background_color": "000000ff",
+	"normal:TextEdit:border_color": "ffffffff",
+	"panel:AcceptDialog:background_color": "000000ff",
+	"panel:ItemList:border_color": "ffffffff",
+	"panel:Panel:background_color": "000000ff",
+	"panel:PanelContainer:background_color": "000000ff",
+	"panel:PopupMenu:background_color": "000000ff",
+	"panel:PopupMenu:border_color": "ffffffff",
+	"panel:PopupPanel:background_color": "000000ff",
+	"panel:TabContainer:background_color": "000000ff",
+	"panel:TabContainer:border_color": "ffffffff",
+	"panel:TooltipPanel:background_color": "000000ff",
+	"panel:TooltipPanel:border_color": "ffffffff",
+	"panel:Tree:background_color": "000000ff",
+	"pressed:Button:background_color": "000000ff",
+	"pressed:Button:border_color": "ffffffff",
+	"pressed:CelButton:background_color": "000000ff",
+	"pressed:CelButton:border_color": "ffffffff",
+	"pressed:ColorPickerButton:background_color": "000000ff",
+	"pressed:ColorPickerButton:border_color": "ffffffff",
+	"pressed:LayerFrameButton:background_color": "000000ff",
+	"pressed:LayerFrameButton:border_color": "ffffffff",
+	"pressed:RulerButton:background_color": "000000ff",
+	"read_only:LineEdit:background_color": "000000ff",
+	"read_only:LineEdit:border_color": "ffffffff",
+	"read_only:TextEdit:background_color": "000000ff",
+	"read_only:TextEdit:border_color": "ffffffff",
+	"scroll:HScrollBar:background_color": "000000ff",
+	"scroll:VScrollBar:background_color": "000000ff",
+	"scroll_focus:HScrollBar:border_color": "ffffffff",
+	"scroll_focus:VScrollBar:border_color": "ffffffff",
+	"selected:ItemList:background_color": "000000ff",
+	"selected:Tree:background_color": "000000ff",
+	"selected_focus:ItemList:background_color": "000000ff",
+	"selected_focus:Tree:background_color": "000000ff",
+	"slider:HSlider:background_color": "000000ff",
+	"slider:VSlider:background_color": "000000ff",
+	"tab_disabled:TabBar:background_color": "000000ff",
+	"tab_disabled:TabBar:border_color": "ffffffff",
+	"tab_disabled:TabContainer:background_color": "000000ff",
+	"tab_disabled:TabContainer:border_color": "ffffffff",
+	"tab_focus:TabBar:border_color": "ffffffff",
+	"tab_focus:TabContainer:border_color": "ffffffff",
+	"tab_hovered:TabBar:background_color": "000000ff",
+	"tab_hovered:TabBar:border_color": "ffffffff",
+	"tab_hovered:TabContainer:background_color": "000000ff",
+	"tab_hovered:TabContainer:border_color": "ffffffff",
+	"tab_selected:TabBar:background_color": "000000ff",
+	"tab_selected:TabBar:border_color": "ffffffff",
+	"tab_selected:TabContainer:background_color": "000000ff",
+	"tab_selected:TabContainer:border_color": "ffffffff",
+	"tab_unselected:TabBar:background_color": "000000ff",
+	"tab_unselected:TabBar:border_color": "bebebeff",
+	"tab_unselected:TabContainer:background_color": "000000ff",
+	"tab_unselected:TabContainer:border_color": "ffffffff",
+	"title_button_hover:Tree:background_color": "000000ff",
+	"title_button_normal:Tree:background_color": "000000ff",
+	"title_button_pressed:Tree:background_color": "000000ff"
+}
+
+
+
+## This script acts as a setup for the extension
+func _enter_tree() -> void:
+	# NOTE: Use get_node_or_null("/root/ExtensionsApi") to access api.
+	# NOTE: See https://www.oramainteractive.com/Pixelorama-Docs/extension_system/extension_api for
+	# detailed documentation.
+	extension_api = get_node_or_null("/root/ExtensionsApi")
+
+    # First we get the currently open theme
+	var base_theme: Theme = extension_api.theme.autoload().themes[0]
+    # Then we make a copy of it (this copy will be our high contrast theme)
+	var our_theme: Theme = base_theme.duplicate_deep()
+    # We do some (optional) border adjustments manually
+	var p_container_stylebox: StyleBoxFlat = our_theme.get_stylebox("tab_unselected", "TabBar")
+	p_container_stylebox.border_width_left = 0
+	p_container_stylebox.border_width_right = 0
+	p_container_stylebox.border_width_top = 1
+	p_container_stylebox.border_width_bottom = 0
+	var tab_container_stylebox: StyleBoxFlat = our_theme.get_stylebox("panel", "TabContainer")
+	tab_container_stylebox.border_width_left = 2
+	tab_container_stylebox.border_width_right = 2
+	tab_container_stylebox.border_width_top = 2
+	tab_container_stylebox.border_width_bottom = 2
+	# Now we set the theme name and colors.
+	our_theme.resource_name = "High Contrast"
+	extension_api.theme.set_theme_colors(our_theme, theme_colors)
+    # Add theme to the list in prefferences
+	extension_api.theme.add_theme(our_theme)
+```
+
 ### Change Font
 Sometimes you only need a different font instead of a different theme. This is much easier to achieve than adding themes.(you need to have a `.ttf` font resource beforehand)
 ```
