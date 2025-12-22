@@ -367,14 +367,14 @@ func _enter_tree() -> void:
 	extension_api = get_node_or_null("/root/ExtensionsApi")  # Accessing the Api
 
 	var exporter_info := {"extension": ".png", "description": "Only Alternate Frames"}
-	id = extension_api.exports.add_export_option(
-		exporter_info, self, extension_api.exports.ExportTab.IMAGE, false
+	id = extension_api.export.add_export_option(
+		exporter_info, self, extension_api.export.ExportTab.IMAGE, false
 	)  # 2nd argument (in this case "self") must have "override_export()" in it's script
 
 
 func _exit_tree() -> void:
 	# remember to remove things that you added using this extension
-	extension_api.exports.remove_export_option(id)
+	extension_api.export.remove_export_option(id)
 
 
 func override_export(details: Dictionary) -> bool:
