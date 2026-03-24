@@ -339,7 +339,7 @@ func menu_item_clicked():
 		new_project = extension_api.project.new_project(frames, "Test", Vector2(64, 64))
 	if thing_to_do == 1:
 		# To change something or get something in a project we must make it our "current_project" first
-		extension_api.project.switch_to(new_project)
+		extension_api.project.current_project = new_project
 	if thing_to_do == 2:
 		# Add 3 frames (the new_project will now have 4 total frames)
 		for i in range(3):
