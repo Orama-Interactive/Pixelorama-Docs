@@ -14,7 +14,11 @@ module.exports={
     "repoUrl": "https://github.com/Orama-Interactive/Pixelorama"
   },
   "onBrokenLinks": "log",
-  "onBrokenMarkdownLinks": "log",
+  "markdown": {
+    "hooks": {
+      "onBrokenMarkdownLinks": "log"
+    }
+  },
   "presets": [
     [
       "@docusaurus/preset-classic",
