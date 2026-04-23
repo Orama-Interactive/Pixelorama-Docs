@@ -10,6 +10,7 @@ A project contains the following properties:
 - The image data of each individual [cel](cel).
 - The properties of the project itself, such as its name, size, FPS (frames per second) and [color mode](color_mode).
 - All of the properties of frames, [layers](layer), cels, animation tags, [guides](../user_manual/user_interface/canvas/#rulers-and-guides).
+- [Project palettes](../user_manual/palettes).
 - [Brushes](brush) that are local to that specific project.
 - [Tilesets](../user_manual/tilemaps#tileset) that are used by [tilemap layers](../user_manual/tilemaps).
 
