@@ -30,7 +30,11 @@ If you want you resize only selected part(s) of your artwork, you can create a [
 You can also manually change the size of the selection from the tool options. If there is an active transformation, the content will be affected as well, otherwise, it will only scale the selection itself without its content.
 
 ## Rotate
-To rotate your image, you can go to the Effects menu and select Rotate Image. There, you can choose one of the three rotation algorithms. You can experiment with every one of them to see what works best for you. You are also given the option to only affect the selected part of the image or the entire area of the active cels. In the future, there will most likely be gizmos that rotate the selection directly, just like there are for scaling.
+To rotate your image, you can go to the Effects menu and select Rotate Image. There, you can choose one of the three rotation algorithms. You can experiment with every one of them to see what works best for you. You are also given the option to only affect the selected part of the image or the entire area of the active cels.
+
+You can also rotate a selection directly in the canvas by dragging and moving the area above the four corner gizmos of the selection. If you drag and move the areas above the other four gizmos, the selection will shear instead. In the selection's tool options, you can also change the algorithm of the rotation/shear. Nearest neighbor is the fastest one, but provides the worst results. If you want to achieve the best result possible, choose `cleanEdge` or `OmniScale`.
+
+![Rotate image using gizmos](../../static/img/rotation_gizmos.gif)
 
 ## Having An Active Transformation
 When moving or scaling a selection with its contents, the selected pixels will suddenly become transparent. This indicates that a selection transformation has started. This means that your changes haven't yet been applied to the image. When there is an active transformation, moving and scaling will only affect the transformed content and nothing else, until it is applied.
