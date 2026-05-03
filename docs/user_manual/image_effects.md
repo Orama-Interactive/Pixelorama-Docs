@@ -3,7 +3,7 @@ id: image_effects
 title: Image effects
 sidebar_label: Image effects
 ---
-You can apply multiple image effects to an image, to easily and quickly affect its content, without modifying it pixel by pixel. The image effects can be found under the Image menu.
+You can apply multiple image effects to an image, to easily and quickly affect its content, without modifying it pixel by pixel. The image effects can be found under the Effects menu.
 
 :::warning
 Image effects are **destructive**. This means that, once they are applied, they directly modify the image data, and the only way to reverse this change is by undoing. If you want to use a non-destructive workflow, use [layer effects](../concepts/layer#layer-effects) instead.

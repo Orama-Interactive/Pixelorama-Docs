@@ -4,7 +4,7 @@ title: Color mode
 sidebar_label: Color mode
 ---
 
-As of right now, Pixelorama supports the **RGBA** and **Indexed** color modes for its [projects](project). You can choose a color mode when creating a new project, or at any time during the editing of a project, by going to the Image menu, and selecting a color mode from the "Color mode" submenu.
+As of right now, Pixelorama supports the **RGBA** and **Indexed** color modes for its [projects](project). You can choose a color mode when creating a new project, or at any time during the editing of a project, by going to the Project menu, and selecting a color mode from the "Color mode" submenu.
 
 ## RGBA
 RGBA is the default color mode. It stands for Red, Green, Blue and Alpha. When using this color mode, each pixel of the image contains four values: a red value, a green value, a blue value and an alpha value. The first three values make up the color of the pixel, and the alpha value contains its transparency.
