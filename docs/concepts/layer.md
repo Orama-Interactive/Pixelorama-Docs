@@ -24,6 +24,8 @@ Tilemap layers are a special type of pixel layer which use a tileset, and each c
 ### Audio layers
 Audio layers do not contain any visible data. Rather, as their name suggests, they contain audible data. More specifically, each audio layer contains an audio file, which can be played at any time during the animation. Users can load an audio file (only `.mp3` and `.wav` files are supported at the moment), and choose the frame they want the audio to start playing. Making an audio layer invisible essentially mutes the audio. Exporting a project file with audio layers as a video file will include the audio in the exported video.
 
+If you have created audio layers and cannot hear any sound, make sure that the "Use dummy audio driver" option is disabled. You can find it in Edit -> Preferences -> Performance.
+
 ## Blend modes
 The blend mode of each layer determines how its colors blend with the colors of the layer directly below it. Pixelorama supports the following blend modes:
 
