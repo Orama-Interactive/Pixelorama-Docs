@@ -9,7 +9,7 @@ Pixelorama allows you to customize its shortcuts however you want, to fit your n
 Each action can contain multiple shortcut events. You can add new shortcut events to each action, or you can edit existing ones.
 
 :::note
-You cannot make modifications to the default shortcut profile. To change the shortcut profile, you can click on the option button next to the "Shortcut profile:" label, and select "Custom". You can also create new shortcut profiles by clicking on "New".
+If you want to restore the default shortcuts, you can click on the `Reset` button at the top, next to the `Shortcut profile` option button.
 :::
 
 ## Adding a shortcut event
@@ -20,3 +20,6 @@ To edit an event, you can press the pencil button next to it. Similar to adding 
 
 ## Removing an event
 Removing an event is straight-forward. Simply click on the X button and that event will be deleted. Clicking the X button on an action will remove all of its events.
+
+## Creating a new profile
+If you wish to have different sets of shortcuts and easily switch between them, you can create new profiles by clicking on the `New` button at the top of the `Shortcuts` category. To switch between profiles, just click on the `Shortcut profile` option button.
