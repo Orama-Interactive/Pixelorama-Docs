@@ -5,7 +5,9 @@ sidebar_label: Import
 sidebar_position: 4
 ---
 
-In Pixelorama, it is possible to import [.pxo files](../concepts/project/#pxo-files), image files, [palette files](palettes) and [extension files](../extension_system/extension_basics). To import a file, either `drag and drop` it into Pixelorama window or use `File > Open` dialog. You can also open files in Pixelorama through the your computer's file explorer by right clicking on a file, selecting "Open with" and selecting Pixelorama, but the process of making this work is different for each operating system/desktop environment. Doing this will open Pixelorama with the file automatically opened. You can also achieve the same thing by opening Pixelorama through the command line, and giving the names of the files you want to open as arguments.
+In Pixelorama, it is possible to import [.pxo files](../concepts/project/#pxo-files), image files, [palette files](palettes), video files, audio files, [extension files](../extension_system/extension_basics) and projects from other software, such as Krita, Aseprite & Photoshop, with limited support. To import a file, either `drag and drop` it into Pixelorama window or use `File > Open` dialog.
+
+You can also open files in Pixelorama through the your computer's file explorer by right clicking on a file, selecting "Open with" and selecting Pixelorama, but the process of making this work is different for each operating system/desktop environment. Doing this will open Pixelorama with the file automatically opened. You can also achieve the same thing by opening Pixelorama through the command line, and giving the names of the files you want to open as arguments.
 
 ## Supported image formats
 The image formats that can be imported are: `.png`, `.apng`, `.jpg`/`.jpeg`, `.webp`, `.bmp`, `.svg`, `.tga`, `.hdr`. Pixelorama can also import more complex image file formats, such as our own `.pxo`, as well as [OpenRaster](https://www.openraster.org/) (`.ora`), Aseprite's `.ase`/`.aseprite`, Krita's `.kra`, Photoshop's `.psd` and Piskel's `.piskel`.
@@ -29,6 +31,9 @@ These options include:
 
 ## Importing multiple images
 When importing multiple images at the same time, the import dialogs will also have an "apply to all" checkbox. When toggling this on in a dialog, the rest of the dialogs will hide and all of the imported images will share the same options. This way you can easily import multiple images as multiple projects, frames, layers, etc. The order that they are being imported is backwards, meaning that the the last image that you attempted to import, will be the first one that actually gets opened. For example, if you attempt to import image files named `1.png`, `2.png` and `3.png` in that order as new frames, the first frame would be image `3.png`, then `2.png` and then `1.png`.
+
+## Importing audio
+If you import `.mp3` and `.wav` files, they will automatically be created as [audio layers](../concepts/layer/#audio-layers) for the current project. You can also create the audio layers first and then open an audio file for them, by right clicking on the layer button in the timeline and clicking on Properties. From the window that appears, you can click on the `Load file` button and browse your files to find the file you want to import. You can also change the audio file that the audio layer is using that way.
 
 ## Importing videos
 It is also possible to import video and gif files, and Pixelorama will automatically import them as multiple frames. For this, you need [FFMPEG](https://ffmpeg.org/). All you have to do is download it if it's not already installed, and then find its **executable path** and copy it inside Pixelorama, in `Edit>Preferences>Startup>FFMPEG`. If you have FFMPEG in the PATH environment variable of your Operating System, you can just put "`ffmpeg`" in the text field in the Preferences, instead of copying the path. Otherwise, make sure to include the entire path to the executable. For example, on Windows, it needs to look something like this: `[path_to_ffmpeg]/bin/ffmpeg.exe`.
