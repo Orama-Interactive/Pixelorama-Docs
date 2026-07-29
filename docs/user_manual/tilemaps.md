@@ -68,6 +68,8 @@ Once you have set up the autotiling peering bits, you can enable Autotiling by c
 
 ![A GIF that showcases the autotiling feature in a tilemap layer.](/img/blog/pixelorama-1.2/autotiling.gif)
 
+You can download an example `.pxo` file with autotiling already set up here: https://github.com/Orama-Interactive/Pixelorama/raw/refs/heads/master/Misc/example_pxo_files/tilemap_with_autotiling.pxo
+
 ## Exporting tilesets
 You can export tilesets either as image files, or as [Godot TileSet resources](https://docs.godotengine.org/en/stable/tutorials/2d/using_tilesets.html). To do that, you can right-click a tilemap layer in the timeline → Properties → Export tileset, or go to Project → Project Properties → Tilesets and click the save icon on the tileset you want to export. A window will let you set the rows, shape and size. Click Export and choose where to save.
 

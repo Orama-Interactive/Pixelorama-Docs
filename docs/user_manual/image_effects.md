@@ -15,6 +15,7 @@ Image effects are **destructive**. This means that, once they are applied, they 
 | Offset | Moves the pixels of the image to a new position. The moved pixels can optionally be wrapped around when they go out of bounds. For example, if a pixel leaves the canvas from the right, it re-appears on the left side. |
 | Mirror | Mirrors the content of the image horizontally, vertically or both. |
 | Rotate | Rotates the content of the image. Can change the angle, the pivot point, as well as the algorithm. There are seven rotation algorithms to choose from: Rotxel with Smear, cleanEdge, OmniScale, Nearest Neighbor (Shader), Nearest Neighbor, Rotxel and "Upscale, Rotate and Downscale". The first four are shader-based, meaning that they use the GPU, while the rest use the CPU. The algorithms that use the GPU tend to be faster. Rotxel with Smear can also create a smearing effect. |
+| Flat to Isometric | Converts a flat image into isometric. |
 | Invert colors | Inverts the colors of the image. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Desaturation | Desaturates the colors of the image, turning them to grayscale. Can choose whether this affects the red, blue, green or alpha channels, or multiple at once. |
 | Adjust Hue/Saturation/Value | Adjusts the hue, saturation and the value of the image's colors. |
