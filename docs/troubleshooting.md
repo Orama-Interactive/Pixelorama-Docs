@@ -7,7 +7,7 @@ sidebar_label: Troubleshooting
 This page lists common issues encountered when using Pixelorama and possible solutions. To experience as less issues as possible, make sure you are always using the latest stable version of Pixelorama.
 
 ## Some things stopped working after the update!
-After updating pixelorama, if some things like tools or effects stop working, some extension may be causing this behavior due to some file conflicts, try to update your extensions as soon as possible or uninstall them if there is none (Disabling the extension won't fix it). 
+After updating Pixelorama, if some things like tools or effects stop working, some extension may be causing this behavior due to some file conflicts. Try to update your extensions as soon as possible, or uninstall them if there is none Disabling the extension won't fix the issue.
 
 ## Pixelorama crashed while I was working on my project!
 Crashes are unfortunate, and while we are doing our best to fix them, some issues causing the application to crash may have escaped our grasp. The good news is that you can enable **automatic backups**, that save your work every a certain time interval. You can enable them from the Edit menu, Preferences, Backup and then by ticking on "Enable autosave".
@@ -17,6 +17,12 @@ Crashes are unfortunate, and while we are doing our best to fix them, some issue
 Besides that, it is **strongly recommended** that you save often, and keep copies of your files as backups in case something gets lost.
 
 You can also aid us in our fight against crashes by [reporting issues on GitHub](https://github.com/Orama-Interactive/Pixelorama/issues) and uploading the content of Pixelorama's log files. You can find the log files in `C:\Users\[USERNAME]\AppData\Roaming\Pixelorama\logs` on Windows, `~/.local/share/Pixelorama/logs` on Linux and `/Users/[USERNAME]/Library/Application Support/Pixelorama/logs` for macOS. It is also extremely helpful, if not necessary, to be as specific as possible with the steps that led to the crash. By giving us specific steps to reproduce the issue, we can solve it faster.
+
+## My drawing tablet is not working!
+If you are on Windows, try changing the tablet driver Pixelorama is using, from the Edit menu, Preferences, Drivers.
+
+![Tablet Drivers](../static/img/tablet_driver.png)
+
 
 ## My images are being saved as pxo files, and not png, jpg, gif, etc
 You are saving instead of exporting. Saving creates pxo files, which are Pixelorama's custom file format for [projects](concepts/project). To create image files such as png, you need to go to the File menu and select Export. You can refer to the [Save and Export](user_manual/save_and_export) page for more information.
@@ -52,13 +58,6 @@ This error has only been spotted in the Windows platform. Sometimes, when export
 It is also possible that this issue may be solved if you run Pixelorama as an administrator.
 
 If neither of these works, you could save your projects as a pxo file, open the Web version, drag and drop the pxo file there, and export the png file from the Web version.
-
-
-## Drawing is very slow when using a drawing tablet
-If you are on Windows, try changing the tablet driver Pixelorama is using, from the Edit menu, Preferences, Drivers.
-
-![Tablet Drivers](../static/img/tablet_driver.png)
-
 
 ## Guides are not being created
 To create guides, you have to drag them out from the rulers, on the top and the left of the canvas. However, sometimes this doesn't appear to do anything. If that's the case, then it is very likely that you have disabled guide visibility. To make sure that they are visible, go to the View menu and see if "Show Guides" is ticked on. If it is not, make sure to tick it.
