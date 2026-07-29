@@ -57,5 +57,18 @@ When this mode is used, the behavior of most tools changes.
 | Move | Moves the tilemap's offset along with its tiles |
 | Selection | Select entire grid cells. Resizing a selection does not resize the pixels. Instead, it resizes the tile indices of the grid cells, placing more tiles if the selection is enlarged, or removing if it gets smaller. Note that this **only works with rectangular tiles**, and not isometric or hexagonal at the moment. |
  
-
 ![A GIF of a tileset being resized with selection tools, using the draw tiles mode.](../../static/img/tileset_selection_resize.gif)
+
+## Autotiling
+Autotiling is a feature that automatically picks the right tile based on its neighbors.
+
+To set up autotiling in Pixelorama, use the **Tiles Property Tool** on your tilemap layer. Simply draw using that tool on the parts of each tile that have connections to other tiles. The technical term for these parts is peering bits. If you're new to autotiling, we recommend watching a tutorial. Any general autotiling video will do, since the core logic is the same. (We plan to make a Pixelorama-specific one in the future!).
+
+Once you have set up the autotiling peering bits, you can enable Autotiling by clicking on the three vertical dots button on the Tiles panel, and make sure that the **draw tiles** mode is enabled. Now, when you use any drawing tool, you will see that it will automatically places the correct tile according to what neighbors it has. If you select the transparent tile that is at the beginning of the tileset, it will **erase tiles** instead.
+
+![A GIF that showcases the autotiling feature in a tilemap layer.](/img/blog/pixelorama-1.2/autotiling.gif)
+
+## Exporting tilesets
+You can export tilesets either as image files, or as [Godot TileSet resources](https://docs.godotengine.org/en/stable/tutorials/2d/using_tilesets.html). To do that, you can right-click a tilemap layer in the timeline → Properties → Export tileset, or go to Project → Project Properties → Tilesets and click the save icon on the tileset you want to export. A window will let you set the rows, shape and size. Click Export and choose where to save.
+
+If you save it as a `.tres` file, it will be saved as a Godot TileSet resource and it will keep extra data, such as autotiling peering bits and tile probabilities. We recommend first exporting it as a png first, and then as tres. That way, you can replace the embedded image in Godot with the PNG to save disk space.

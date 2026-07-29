@@ -60,7 +60,7 @@ Layer effects are image effects that are being applied to the layer in a non-des
 To add a layer effect, you can click on the "FX" button in the layer area of the timeline. A window will appear, that lets you add, remove and change the order of layer effects. You can also change the properties of each effect. For a list of all available layer effects, see [image effects](../user_manual/image_effects#list-of-image-effects).
 
 :::info Layer vs image effects
-The difference between layer effects and image effects, is that layer effects can only be **applied per-layer** and are **non-destructive**, while image effects can be applied to **multiple cels** at the same time, and are **destructive**. Also, as of right now, layer effects cannot be animated.
+The difference between layer effects and image effects, is that layer effects can only be **applied per-layer** and are **non-destructive**, while image effects can be applied to **multiple cels** at the same time, and are **destructive**.
 :::
 
 ## Clipping mask
