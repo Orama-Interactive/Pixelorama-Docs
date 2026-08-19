@@ -23,7 +23,7 @@ jobs:
       - name: Run Docusaurus to PDF Action
         uses: vaggeliskls/docusaurus-to-pdf@v1
         with:
-          DOCS_URL: "https://www.oramainteractive.com/Pixelorama-Docs"
+          DOCS_URL: "https://pixelorama.org/Introduction"
           OUTPUT_PDF_FILENAME: "Pixelorama-Docs.pdf"
           COVER_TITLE: "Pixelorama Documentation"
           EXTRA_ARGS: --coverImage="https://www.oramainteractive.com/Pixelorama-Docs/img/favicon.ico" --pdfMargin="10,20,30,40" --paperFormat="A4"
