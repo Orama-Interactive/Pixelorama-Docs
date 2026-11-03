@@ -73,6 +73,7 @@ We also added a new Layer FX panel, replacing the old window & timeline button, 
 ### Removed
 - Removed the keyframe properties (value, interpolation, easing type) from the right side of the keyframe timeline to save some space. [#1631](https://github.com/Orama-Interactive/Pixelorama/pull/1631)
 - The Grayscale view has been removed, you can now use the new Luma effect. [#1620](https://github.com/Orama-Interactive/Pixelorama/pull/1620)
+
 Happy painting, and keep pixelating your dreams! 🎨✨
 
 Pixelorama is available on [Steam](https://store.steampowered.com/app/2779170/Pixelorama/) and [Itch.io](https://orama-interactive.itch.io/pixelorama)!
