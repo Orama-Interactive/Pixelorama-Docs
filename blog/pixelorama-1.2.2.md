@@ -42,7 +42,7 @@ If you wish to support us, you can [become a Patron](https://www.patreon.com/Ora
 - Integer zoom now zooms exponentially, just like the normal zoom. [#1594](https://github.com/Orama-Interactive/Pixelorama/pull/1594)
 
 ### Fixed
-- Fixed keyframe IDs conflicting with already existing keyframes when loading pxo files and adding new keyframes on them.
+- Fixed keyframe IDs conflicting with already existing keyframes when loading pxo files and adding new keyframes on them. Note: existing keyframes in saved pxo files need to be re-created once.
 - Massively improved performance of stacked layer effects. [#1591](https://github.com/Orama-Interactive/Pixelorama/pull/1591)
 - Fixed cel button preview acting like the cel is still linked, even if it got unlinked.
 
