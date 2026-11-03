@@ -57,7 +57,7 @@ The blend mode of each layer determines how its colors blend with the colors of 
 ## Layer effects
 Layer effects are image effects that are being applied to the layer in a non-destructive way. This means that they do not directly modify the image data, which allows artists to disable and enable them at will, without having to worry that their work will be modified in a permanent way. They are only being applied on [export](../user_manual/save_and_export), and they can be previewed in the canvas, if "Display Layer Effects" is enabled, under the View menu. Each layer can contain multiple layer effects.
 
-To add a layer effect, you can click on the "FX" button in the layer area of the timeline. A window will appear, that lets you add, remove and change the order of layer effects. You can also change the properties of each effect. For a list of all available layer effects, see [image effects](../user_manual/image_effects#list-of-image-effects).
+To add a layer effect, you can go to the Layer FX panel. If it's not visible, you can turn it on by going to `Window -> Panels -> Layer FX`. There, you can add, remove and change the order of layer effects. You can also change the properties of each effect. For a list of all available layer effects, see [image effects](../user_manual/image_effects#list-of-image-effects).
 
 You can also animate the properties of a layer effect by enabling the [keyframe view of the timeline](../user_manual/user_interface/timeline#keyframe-timeline).
 

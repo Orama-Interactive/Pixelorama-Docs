@@ -75,4 +75,4 @@ You can drag and drop layer, frame and cel buttons to re-arrange them. Re-arrang
 :::
 
 ## Keyframe timeline
-You can enable the keyframe timeline view by clicking on the film icon button to the right of the FX button. The keyframe timeline lets you animate layer properties, such as its opacity, as well as the properties of any [layer effect](../../concepts/layer#layer-effects) on that layer. Right-click on the property track at the frame where you want to add a keyframe, and select "Insert keyframe". Then, on the right side, you can change the value of the property on that frame, along with its interpolation and easing method.
+You can enable the keyframe timeline view by clicking on the film icon button right above the layers on the timeline. The keyframe timeline lets you animate layer properties, such as its opacity, as well as the properties of any [layer effect](../../concepts/layer#layer-effects) on that layer. Right-click on the property track at the frame where you want to add a keyframe, and select "Insert keyframe". Then, on the right side, you can change the value of the property on that frame, along with its interpolation and easing method.
