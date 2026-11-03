@@ -75,9 +75,9 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="removed">Removed<a href="https://www.pixelorama.org/blog/pixelorama-1.2.4#removed" class="hash-link" aria-label="Direct link to Removed" title="Direct link to Removed" translate="no">​</a></h3>
 <ul>
 <li>Removed the keyframe properties (value, interpolation, easing type) from the right side of the keyframe timeline to save some space. <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1631" target="_blank" rel="noopener noreferrer">#1631</a></li>
-<li>The Grayscale view has been removed, you can now use the new Luma effect. <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1620" target="_blank" rel="noopener noreferrer">#1620</a>
-Happy painting, and keep pixelating your dreams! 🎨✨</li>
+<li>The Grayscale view has been removed, you can now use the new Luma effect. <a href="https://github.com/Orama-Interactive/Pixelorama/pull/1620" target="_blank" rel="noopener noreferrer">#1620</a></li>
 </ul>
+<p>Happy painting, and keep pixelating your dreams! 🎨✨</p>
 <p>Pixelorama is available on <a href="https://store.steampowered.com/app/2779170/Pixelorama/" target="_blank" rel="noopener noreferrer">Steam</a> and <a href="https://orama-interactive.itch.io/pixelorama" target="_blank" rel="noopener noreferrer">Itch.io</a>!</p>]]></content:encoded>
         </item>
         <item>
